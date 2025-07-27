@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Our Mission | Cinema & Character</title>
+    <meta name="description" content="Learn how we chose these films and what healthy masculinity means in cinema. Discover our research-backed criteria and the importance of positive male representation.">
+    <meta name="keywords" content="healthy masculinity, film criteria, cinema research, positive role models, gender studies, film analysis">
+    <meta name="author" content="Cinema & Character">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cinemaandcharacter.com/about.html">
+    <meta property="og:title" content="About Our Mission | Cinema & Character">
+    <meta property="og:description" content="Understanding how we chose these films and what healthy masculinity means in cinema.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cinemaandcharacter.com/about.html">
+    <meta property="twitter:title" content="About Our Mission | Cinema & Character">
+    <meta property="twitter:description" content="Understanding how we chose these films and what healthy masculinity means in cinema.">
+    
+    <link rel="canonical" href="https://cinemaandcharacter.com/about.html">
+    
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --border-radius: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 3rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(-100px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+        }
+
+        .back-btn {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            display: inline-block;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            font-weight: 500;
+        }
+
+        .back-btn:hover {
+            background: white;
+            color: var(--primary-color);
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        main {
+            padding: 4rem 0;
+        }
+
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .movie-section {
+            margin-bottom: 4rem;
+        }
+
+        .movie-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            position: relative;
+        }
+
+        .movie-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--secondary-color);
+            border-radius: 2px;
+        }
+
+        .movie-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+
+        .characteristics-list {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .characteristics-list li {
+            background: var(--card-bg);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            border-left: 6px solid var(--secondary-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .characteristics-list li:hover {
+            transform: translateX(5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .characteristics-list strong {
+            color: var(--primary-color);
+            display: block;
+            margin-bottom: 0.75rem;
+            font-size: 1.2rem;
+        }
+
+        .characteristics-list p {
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .selection-list {
+            margin: 2rem 0;
+            padding-left: 0;
+        }
+
+        .selection-list li {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--accent-color);
+            list-style: none;
+            position: relative;
+            padding-left: 3rem;
+        }
+
+        .selection-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 1rem;
+            top: 1.5rem;
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .selection-list strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .impact-list {
+            margin: 2rem 0;
+            padding-left: 0;
+        }
+
+        .impact-list li {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--secondary-color);
+            list-style: none;
+            position: relative;
+            padding-left: 3rem;
+        }
+
+        .impact-list li::before {
+            content: '★';
+            position: absolute;
+            left: 1rem;
+            top: 1.5rem;
+            color: var(--secondary-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .research-highlight {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 3rem;
+            border-radius: var(--border-radius);
+            margin: 3rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .research-highlight::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+            animation: float 30s infinite linear;
+        }
+
+        .research-highlight h2 {
+            position: relative;
+            z-index: 10;
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        .research-highlight h2::after {
+            background: white;
+        }
+
+        .research-highlight p {
+            position: relative;
+            z-index: 10;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1rem;
+        }
+
+        .cta-section {
+            background: var(--card-bg);
+            padding: 3rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            margin: 4rem 0;
+            border: 2px solid var(--accent-color);
+        }
+
+        .cta-section h2 {
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-section h2::after {
+            background: var(--accent-color);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid var(--accent-color);
+            font-size: 1.1rem;
+        }
+
+        .btn:hover {
+            background: transparent;
+            color: var(--accent-color);
+            text-decoration: none;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .about-content {
+                max-width: 100%;
+            }
+
+            .characteristics-list li,
+            .selection-list li,
+            .impact-list li {
+                padding: 1.5rem;
+                padding-left: 2.5rem;
+            }
+
+            .research-highlight,
+            .cta-section {
+                padding: 2rem;
+            }
+
+            .movie-section {
+                margin-bottom: 3rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            main {
+                padding: 2rem 0;
+            }
+
+            .movie-section {
+                margin-bottom: 2.5rem;
+            }
+
+            .characteristics-list li,
+            .selection-list li,
+            .impact-list li {
+                padding: 1.25rem;
+                padding-left: 2.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="hero-content">
+                <a href="index.html" class="back-btn">← Back to Films</a>
+                <div class="hero">
+                    <h1>About Our Mission</h1>
+                    <p>Understanding how we chose these films and what healthy masculinity means in cinema</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="about-content">
+                <section class="movie-section">
+                    <h2>Key Characteristics of Healthy Masculinity</h2>
+                    <p>Our research across film criticism, academic analysis, and cultural perspectives identified consistent themes in films that portray positive male role models. These characteristics transcend cultural boundaries and represent a new understanding of masculine strength.</p>
+                    
+                    <ul class="characteristics-list">
+                        <li>
+                            <strong>Emotional Intelligence & Vulnerability</strong>
+                            <p>Characters who express feelings authentically and aren't afraid to show weakness or uncertainty. They understand that emotional openness leads to deeper connections and personal growth.</p>
+                        </li>
+                        <li>
+                            <strong>Non-Violent Conflict Resolution</strong>
+                            <p>These men use wisdom, empathy, and communication to solve problems rather than resorting to aggression or dominance. They see strength in restraint and understanding.</p>
+                        </li>
+                        <li>
+                            <strong>Respect for Women as Equals</strong>
+                            <p>Female characters are treated as full human beings with agency, not as objects to be won, protected, or controlled. Relationships are built on mutual respect and partnership.</p>
+                        </li>
+                        <li>
+                            <strong>Nurturing Relationships & Mentorship</strong>
+                            <p>These characters invest in others' growth without seeking to dominate or control. They guide through example and support rather than authority.</p>
+                        </li>
+                        <li>
+                            <strong>Acceptance of Diverse Masculinities</strong>
+                            <p>Recognition that there are many ways to be a man, including embracing traditionally "feminine" traits like gentleness, caregiving, and emotional expression.</p>
+                        </li>
+                        <li>
+                            <strong>Courage in Authenticity</strong>
+                            <p>The bravery to be true to oneself even when it challenges social expectations or traditional gender norms. This includes accepting one's sexuality, emotions, and individual path.</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="movie-section">
+                    <h2>Our Selection Process</h2>
+                    <p>We analyzed films from multiple perspectives to ensure a comprehensive and culturally diverse representation of healthy masculinity:</p>
+                    <ul class="selection-list">
+                        <li><strong>Academic Research:</strong> Drawing from masculinity studies and film criticism to understand scholarly perspectives on gender representation</li>
+                        <li><strong>Cultural Diversity:</strong> Including voices from Iranian, Japanese, American, Italian, and British cinema to showcase universal themes</li>
+                        <li><strong>Critical Recognition:</strong> Films that have been acknowledged by critics and scholars for their complex character development</li>
+                        <li><strong>Positive Impact:</strong> Movies that actively challenge harmful stereotypes while providing positive role models</li>
+                        <li><strong>Timeless Relevance:</strong> Stories that remain meaningful across different eras and continue to inspire audiences</li>
+                    </ul>
+                </section>
+
+                <section class="movie-section">
+                    <h2>Why This Matters</h2>
+                    <p>Research shows that media representation significantly influences how young people understand gender roles and identity. By highlighting films that present healthy masculinity, we hope to:</p>
+                    <ul class="impact-list">
+                        <li>Provide positive role models for young men seeking authentic ways to express their identity</li>
+                        <li>Challenge harmful stereotypes that limit both men and women in their personal and professional lives</li>
+                        <li>Celebrate the diversity of human experience across different cultures and backgrounds</li>
+                        <li>Encourage more nuanced storytelling in cinema that reflects real human complexity</li>
+                        <li>Foster discussions about healthy relationships and emotional intelligence in families and schools</li>
+                    </ul>
+                </section>
+
+                <div class="research-highlight">
+                    <h2>The Research Behind Our Choices</h2>
+                    <p>Our selection is informed by extensive research into film criticism, gender studies, and cultural analysis. We examined how different societies define healthy masculinity and identified common themes that transcend cultural boundaries. The films chosen have been recognized by critics and scholars for their complex, nuanced portrayals of male characters who challenge traditional stereotypes while embodying strength, wisdom, and emotional depth.</p>
+                    <p>These movies prove that true masculine strength comes not from dominance or emotional suppression, but from the courage to be vulnerable, the wisdom to seek understanding, and the compassion to nurture meaningful relationships.</p>
+                </div>
+
+                <section class="cta-section">
+                    <h2>Explore the Films</h2>
+                    <p>Ready to discover these powerful stories of healthy masculinity? Each film offers unique insights into what it means to be a man in today's world.</p>
+                    <a href="index.html" class="btn">View All 10 Films</a>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cinema & Character. Celebrating healthy masculinity in film.</p>
+        </div>
+    </footer>
+</body>
+</html>
