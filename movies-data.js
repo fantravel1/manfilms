@@ -9,7 +9,7 @@ const moviesData = [
         shortDescription: 'Asghar Farhadi\'s masterpiece presents complex male characters who navigate moral dilemmas with nuance rather than aggression, showing Iranian men grappling with family responsibilities.',
         description: 'Asghar Farhadi\'s Academy Award-winning masterpiece presents complex male characters who navigate moral dilemmas with nuance rather than aggression. The film depicts masculinity through emotional restraint and ethical consideration, showing Iranian men grappling with family responsibilities and social expectations in ways that challenge traditional patriarchal norms. The story follows a middle-class Iranian couple on the brink of divorce whose lives become entangled with those of a religious working-class family in a series of tragic events.',
         tags: ['Drama', 'Family', 'Moral Complexity', 'Iranian Cinema'],
-        trailer: 'https://www.youtube.com/58Onuy5USTc',
+        trailer: 'https://www.youtube.com/embed/58Onuy5USTc',
         characters: [
             {
                 name: 'Nader',
@@ -49,7 +49,7 @@ const moviesData = [
         shortDescription: 'Miyazaki\'s masterpiece features Haku, who embodies healthy masculinity through protective yet nurturing guidance, helping Chihiro navigate the spirit world with wisdom and care.',
         description: 'Hayao Miyazaki\'s Academy Award-winning animated masterpiece features Haku as an exemplary male character who embodies healthy masculinity through his assertive yet protective nature. Haku is determined, disciplined, and firm, but stands out for his dedication to helping Chihiro/Sen while discovering his own identity. He protects Sen even when wounded and helps her navigate the hostile spirit world. The film demonstrates how masculinity can be expressed through care, guidance, and emotional support rather than dominance.',
         tags: ['Animation', 'Coming of Age', 'Fantasy', 'Japanese Cinema'],
-        trailer: 'https://www.youtube.com/ByXuk9QqQkk',
+        trailer: 'https://www.youtube.com/embed/ByXuk9QqQkk',
         characters: [
             {
                 name: 'Haku',
@@ -89,7 +89,7 @@ const moviesData = [
         shortDescription: 'A groundbreaking film following Chiron\'s journey that challenges traditional masculinity through emotional depth, vulnerability, and the courage to embrace authentic identity.',
         description: 'This groundbreaking film follows Chiron\'s journey from childhood to adulthood, challenging traditional notions of masculinity by showcasing emotional depth and vulnerability. It explores how societal expectations can shape identity while emphasizing the importance of self-acceptance. The film presents masculinity as multifaceted and allows for sexual fluidity and emotional expression, showing a Black man\'s struggle to define himself in a world that demands conformity to harmful stereotypes.',
         tags: ['LGBTQ+', 'Coming of Age', 'Identity', 'American Cinema'],
-        trailer: 'https://www.youtube.com/9NJj12tJzqc',
+        trailer: 'https://www.youtube.com/embed/9NJj12tJzqc',
         characters: [
             {
                 name: 'Chiron (Little/Chiron/Black)',
@@ -129,7 +129,7 @@ const moviesData = [
         shortDescription: 'Luca Guadagnino\'s tender romance challenges gender stereotypes through Elio\'s emotional journey, showing masculinity through vulnerability, first love, and authentic self-expression.',
         description: 'Luca Guadagnino\'s tender and sensual coming-of-age romance challenges gender stereotypes through its portrayal of Elio, who takes control of his masculinity and shows that being a man means being able to love, lose, win, fail, and be proud despite troubling stereotypes. Timothée Chalamet\'s performance fosters vulnerability, queerness, and emotional authenticity. Set in 1980s Italy, the film explores the intense romance between a 17-year-old and a graduate student, presenting love and desire without shame or judgment.',
         tags: ['Romance', 'LGBTQ+', 'Coming of Age', 'Italian Cinema'],
-        trailer: 'https://www.youtube.com/Z9AYPxH5NTM',
+        trailer: 'https://www.youtube.com/embed/Z9AYPxH5NTM',
         characters: [
             {
                 name: 'Elio Perlman',
@@ -169,7 +169,7 @@ const moviesData = [
         shortDescription: 'A powerful story about trauma and healing where Robin Williams\' therapist shows that asking for help is strength, not weakness, through the transformative power of emotional connection.',
         description: 'Good Will Hunting addresses trauma, repression, and the importance of connection through the relationship between Will, a troubled young genius, and his therapist Sean. Robin Williams\' therapist delivers the iconic line "It\'s not your fault," breaking through emotional walls and illustrating that asking for help is not weakness but strength. The film emphasizes that healing begins with connection and trust, showing how men can support each other through emotional honesty and professional guidance.',
         tags: ['Drama', 'Therapy', 'Trauma', 'Mentorship'],
-        trailer: 'https://www.youtube.com/ReIJ7v1ns6c',
+        trailer: 'https://www.youtube.com/embed/ReIJ7v1ns6c',
         characters: [
             {
                 name: 'Will Hunting',
@@ -209,7 +209,7 @@ const moviesData = [
         shortDescription: 'Will Smith portrays a father whose determination to build a better life demonstrates that true masculine strength lies in love, sacrifice, and perseverance through adversity.',
         description: 'Based on a true story, The Pursuit of Happyness follows Chris Gardner\'s struggle to build a better life for himself and his young son while facing homelessness and professional challenges. Chris\'s determination to build a better life for himself and his son exemplifies resilience and dedication—qualities central to positive masculinity. The film serves as a reminder that true strength lies not just in physical prowess but also in love, sacrifice, and perseverance through seemingly impossible circumstances.',
         tags: ['Biography', 'Father-Son', 'Perseverance', 'Inspiration'],
-        trailer: 'https://www.youtube.com/89Kq8SDyvfg',
+        trailer: 'https://www.youtube.com/embed/89Kq8SDyvfg',
         characters: [
             {
                 name: 'Chris Gardner',
@@ -249,7 +249,7 @@ const moviesData = [
         shortDescription: 'Ashitaka represents healthy masculinity through his balanced approach to conflict, seeking understanding rather than dominance while showing respect for nature and women as equals.',
         description: 'Hayao Miyazaki\'s epic animated film features Ashitaka, who represents healthy masculinity through his balanced approach to conflict resolution, respect for nature and women as equals, and his ability to seek understanding rather than dominance. The film presents a protagonist who uses wisdom and compassion to navigate complex moral situations involving environmental destruction and human conflict. Ashitaka\'s journey shows how masculine strength can be expressed through empathy, mediation, and the courage to stand between opposing forces.',
         tags: ['Animation', 'Environmental', 'Epic', 'Japanese Cinema'],
-        trailer: 'https://www.youtube.com/4OiMOHRDs14',
+        trailer: 'https://www.youtube.com/embed/4OiMOHRDs14',
         characters: [
             {
                 name: 'Ashitaka',
@@ -289,7 +289,7 @@ const moviesData = [
         shortDescription: 'This courtroom drama explores masculinity through an all-male jury, showing how reason and empathy can overcome prejudice and demonstrating moral courage in action.',
         description: 'Sidney Lumet\'s classic courtroom drama takes a firm look at masculinity through an all-male jury discussing a murder case. The film is honest about exploring the arrogance, confidence, and sometimes lack of understanding that men may exhibit, while showing how reason and empathy can overcome prejudice. Juror #8, played by Henry Fonda, demonstrates moral courage by standing alone against initial consensus, using logic and compassion to challenge assumptions and seek truth.',
         tags: ['Drama', 'Courtroom', 'Social Justice', 'Classic'],
-        trailer: 'https://www.youtube.com/_13J_9B5jEk',
+        trailer: 'https://www.youtube.com/embed/_13J_9B5jEk',
         characters: [
             {
                 name: 'Juror #8 (Davis)',
@@ -329,7 +329,7 @@ const moviesData = [
         shortDescription: 'Colin Firth\'s portrayal of King George VI shows masculinity through vulnerability and personal growth, demonstrating courage in overcoming internal obstacles rather than external enemies.',
         description: 'Tom Hooper\'s historical drama centers on King George VI\'s struggle with stuttering as he prepares to lead Britain during World War II. The film portrays masculinity through vulnerability, personal growth, and the courage to overcome internal obstacles rather than external enemies. Colin Firth\'s performance shows how true leadership can emerge from facing one\'s fears and accepting help, while the relationship with his speech therapist demonstrates the power of supportive male friendship.',
         tags: ['Biography', 'Historical', 'Disability', 'British Cinema'],
-        trailer: 'https://www.youtube.com/EcxBrTvLbBM',
+        trailer: 'https://www.youtube.com/embed/EcxBrTvLbBM',
         characters: [
             {
                 name: 'King George VI (Bertie)',
@@ -369,7 +369,7 @@ const moviesData = [
         shortDescription: 'Vittorio De Sica\'s neorealist masterpiece explores masculine vulnerability through a father\'s search for his stolen bicycle, presenting masculinity as complex and emotionally rich.',
         description: 'Vittorio De Sica\'s neorealist masterpiece explores masculine subjectivity through the story of a father searching for his stolen bicycle, which he needs for work to support his family. The film represents the emergence of male melodrama in art cinema, presenting masculinity as vulnerable and complex rather than dominating. Antonio\'s desperate search with his young son reveals the emotional weight of economic pressure and paternal responsibility, showing how external circumstances can challenge traditional masculine roles.',
         tags: ['Neorealism', 'Italian Cinema', 'Social Drama', 'Classic'],
-        trailer: 'https://www.youtube.com/8CUIl0fzpfw',
+        trailer: 'https://www.youtube.com/embed/8CUIl0fzpfw',
         characters: [
             {
                 name: 'Antonio Ricci',
