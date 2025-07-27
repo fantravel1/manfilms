@@ -9,7 +9,7 @@ const moviesData = [
         shortDescription: 'Asghar Farhadi\'s masterpiece presents complex male characters who navigate moral dilemmas with nuance rather than aggression, showing Iranian men grappling with family responsibilities.',
         description: 'Asghar Farhadi\'s Academy Award-winning masterpiece presents complex male characters who navigate moral dilemmas with nuance rather than aggression. The film depicts masculinity through emotional restraint and ethical consideration, showing Iranian men grappling with family responsibilities and social expectations in ways that challenge traditional patriarchal norms. The story follows a middle-class Iranian couple on the brink of divorce whose lives become entangled with those of a religious working-class family in a series of tragic events.',
         tags: ['Drama', 'Family', 'Moral Complexity', 'Iranian Cinema'],
-        trailer: 'https://www.youtube.com/embed/58Onuy5USTc',
+        trailer: 'https://www.youtube.com/58Onuy5USTc',
         characters: [
             {
                 name: 'Nader',
