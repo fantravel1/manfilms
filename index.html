@@ -5,24 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top 10 Films Depicting Healthy Masculinity | Cinema & Character</title>
     <meta name="description" content="Discover the top 10 films from around the world that showcase healthy masculinity through compelling characters who embody emotional intelligence, vulnerability, and strength.">
-    <meta name="keywords" content="healthy masculinity, cinema, films, male characters, emotional intelligence, positive role models, international cinema">
+    <meta name="keywords" content="healthy masculinity, cinema, films, male characters, emotional intelligence, positive role models, international cinema, masculine vulnerability, non-toxic masculinity, film analysis">
     <meta name="author" content="Cinema & Character">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.manfilms.com/">
+    
     <!-- Favicon - Movie Emoji -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cinemaandcharacter.com/">
-    <meta property="og:title" content="Top 10 Films Depicting Healthy Masculinity">
+    <meta property="og:url" content="https://www.manfilms.com/">
+    <meta property="og:title" content="Top 10 Films Depicting Healthy Masculinity | Cinema & Character">
     <meta property="og:description" content="Explore films that challenge traditional masculinity through vulnerability, compassion, and emotional depth.">
+    <meta property="og:image" content="https://www.manfilms.com/og-image.jpg">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://cinemaandcharacter.com/">
-    <meta property="twitter:title" content="Top 10 Films Depicting Healthy Masculinity">
+    <meta property="twitter:url" content="https://www.manfilms.com/">
+    <meta property="twitter:title" content="Top 10 Films Depicting Healthy Masculinity | Cinema & Character">
     <meta property="twitter:description" content="Explore films that challenge traditional masculinity through vulnerability, compassion, and emotional depth.">
+    <meta property="twitter:image" content="https://www.manfilms.com/twitter-card.jpg">
     
-    <link rel="canonical" href="https://cinemaandcharacter.com/">
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Cinema & Character",
+        "description": "Discovering films that redefine masculinity through emotional depth, vulnerability, and authentic human connection",
+        "url": "https://www.manfilms.com/",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Cinema & Character"
+        }
+    }
+    </script>
     
     <style>
         :root {
@@ -83,7 +103,6 @@
             position: relative;
             z-index: 10;
             margin-bottom: 2rem;
-            display: none; /* Hidden since we removed nav */
         }
 
         nav ul {
@@ -117,7 +136,7 @@
             transition: width 0.3s ease;
         }
 
-        nav a:hover::after {
+        nav a:hover::after, nav a.active::after {
             width: 100%;
         }
 
@@ -263,6 +282,50 @@
             font-size: 0.8rem;
         }
 
+        .blog-preview {
+            background: var(--card-bg);
+            padding: 3rem;
+            border-radius: var(--border-radius);
+            margin: 4rem 0;
+            box-shadow: var(--shadow);
+        }
+
+        .blog-preview h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .blog-card {
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-3px);
+            text-decoration: none;
+        }
+
+        .blog-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .blog-card p {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
         .cta-section {
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
@@ -293,6 +356,7 @@
             font-weight: 600;
             transition: all 0.3s ease;
             border: 2px solid var(--accent-color);
+            margin: 0 0.5rem;
         }
 
         .btn:hover {
@@ -302,6 +366,16 @@
             text-decoration: none;
         }
 
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary-color);
+        }
+
         footer {
             background: var(--primary-color);
             color: white;
@@ -309,49 +383,13 @@
             padding: 2rem 0;
         }
 
-        /* About Page Styles */
-        .about-content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 4rem 0;
+        footer a {
+            color: white;
+            text-decoration: underline;
         }
 
-        .movie-section {
-            margin-bottom: 3rem;
-        }
-
-        .movie-section h2 {
-            color: var(--primary-color);
-            margin-bottom: 1.5rem;
-            font-size: 1.8rem;
-        }
-
-        .characteristics-list {
-            list-style: none;
-            margin: 2rem 0;
-        }
-
-        .characteristics-list li {
-            background: var(--card-bg);
-            padding: 1.5rem;
-            margin-bottom: 1rem;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-            border-left: 4px solid var(--secondary-color);
-        }
-
-        .characteristics-list strong {
-            color: var(--primary-color);
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-
-        .page {
-            display: none;
-        }
-
-        .current-page {
-            display: block;
+        footer a:hover {
+            color: var(--secondary-color);
         }
 
         /* Responsive Design */
@@ -379,6 +417,10 @@
                 margin: 2rem 0;
                 padding: 2rem 0;
             }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         @media (max-width: 480px) {
@@ -393,48 +435,79 @@
             .hero p {
                 font-size: 1rem;
             }
+
+            .btn {
+                display: block;
+                margin: 0.5rem auto;
+                max-width: 200px;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Homepage -->
-    <div id="homepage" class="current-page">
-        <header>
-            <div class="container">
-                <div class="hero">
-                    <h1>Cinema & Character</h1>
-                    <p>Discovering films that redefine masculinity through emotional depth, vulnerability, and authentic human connection</p>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Films</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="submissions.html">Submit</a></li>
+                </ul>
+            </nav>
+            <div class="hero">
+                <h1>Cinema & Character</h1>
+                <p>Discovering films that redefine masculinity through emotional depth, vulnerability, and authentic human connection</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="intro-section">
+                <h2>Top 10 Films Depicting Healthy Masculinity</h2>
+                <p>These films showcase male characters who find strength in vulnerability, wisdom in compassion, and power in emotional intelligence. From Iranian drama to Japanese animation, these stories transcend cultural boundaries to present a new vision of what it means to be a man.</p>
+            </section>
+
+            <section class="films-grid" id="filmsGrid">
+                <!-- Films will be populated by JavaScript -->
+            </section>
+
+            <section class="blog-preview">
+                <h2>Latest Insights</h2>
+                <p>Explore our analysis of healthy masculinity in cinema and why these representations matter.</p>
+                <div class="blog-grid">
+                    <a href="blog-lack-representation.html" class="blog-card">
+                        <h3>The Crisis of Representation</h3>
+                        <p>Why modern cinema lacks healthy male role models and how this impacts society...</p>
+                    </a>
+                    <a href="blog-violence-vs-values.html" class="blog-card">
+                        <h3>Violence vs Values</h3>
+                        <p>How cinema replaced moral strength with physical dominance in male characters...</p>
+                    </a>
+                    <a href="blog-film-combinations.html" class="blog-card">
+                        <h3>Thematic Connections</h3>
+                        <p>Exploring the common threads that unite our top 10 films...</p>
+                    </a>
                 </div>
-            </div>
-        </header>
+            </section>
 
-        <main>
-            <div class="container">
-                <section class="intro-section">
-                    <h2>Top 10 Films Depicting Healthy Masculinity</h2>
-                    <p>These films showcase male characters who find strength in vulnerability, wisdom in compassion, and power in emotional intelligence. From Iranian drama to Japanese animation, these stories transcend cultural boundaries to present a new vision of what it means to be a man.</p>
-                </section>
+            <section class="cta-section">
+                <div class="container">
+                    <h2>Join the Movement</h2>
+                    <p>Help us celebrate films that present positive masculinity. Share your suggestions or submit your own work for consideration.</p>
+                    <a href="submissions.html" class="btn">Submit a Film</a>
+                    <a href="about.html" class="btn btn-secondary">Learn Our Criteria</a>
+                </div>
+            </section>
+        </div>
+    </main>
 
-                <section class="films-grid" id="filmsGrid">
-                    <!-- Films will be populated by JavaScript -->
-                </section>
-
-                <section class="cta-section">
-                    <div class="container">
-                        <h2>Why These Films Matter</h2>
-                        <p>In a world where traditional masculinity often emphasizes dominance and emotional suppression, these films offer alternative models of manhood that prioritize connection, empathy, and authentic self-expression.</p>
-                        <a href="about.html" class="btn">Learn About Our Criteria</a>
-                    </div>
-                </section>
-            </div>
-        </main>
-
-        <footer>
-            <div class="container">
-                <p>&copy; 2025 Cinema & Character. Celebrating healthy masculinity in film.</p>
-            </div>
-        </footer>
-    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cinema & Character. Celebrating healthy masculinity in film. | <a href="sitemap.xml">Sitemap</a></p>
+        </div>
+    </footer>
 
     <script src="movies-data.js"></script>
     <script>
