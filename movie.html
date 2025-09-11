@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="pageTitle">Movie Title | Cinema & Character</title>
     <meta name="description" id="pageDescription" content="Explore this film's portrayal of healthy masculinity through compelling characters and positive role models.">
-    <meta name="keywords" content="healthy masculinity, cinema, films, male characters, emotional intelligence, positive role models">
+    <meta name="keywords" id="pageKeywords" content="healthy masculinity, cinema, films, male characters, emotional intelligence, positive role models">
     <meta name="author" content="Cinema & Character">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" id="canonicalUrl" href="">
+    
     <!-- Favicon - Movie Emoji -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
     
@@ -15,14 +20,25 @@
     <meta property="og:url" id="ogUrl" content="">
     <meta property="og:title" id="ogTitle" content="">
     <meta property="og:description" id="ogDescription" content="">
+    <meta property="og:image" id="ogImage" content="">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" id="twitterUrl" content="">
     <meta property="twitter:title" id="twitterTitle" content="">
     <meta property="twitter:description" id="twitterDescription" content="">
+    <meta property="twitter:image" id="twitterImage" content="">
     
-    <link rel="canonical" id="canonicalUrl" href="">
+    <!-- Schema.org Movie markup -->
+    <script type="application/ld+json" id="movieSchema">
+    {
+        "@context": "https://schema.org",
+        "@type": "Movie",
+        "name": "",
+        "dateCreated": "",
+        "description": ""
+    }
+    </script>
     
     <style>
         :root {
@@ -55,6 +71,48 @@
             padding: 0 20px;
         }
 
+        nav {
+            background: var(--primary-color);
+            padding: 1rem 0;
+            position: relative;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: #ecf0f1;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: white;
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after, nav a.active::after {
+            width: 100%;
+        }
+
         .movie-hero {
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
@@ -83,25 +141,6 @@
             position: relative;
             z-index: 10;
             text-align: center;
-        }
-
-        .back-btn {
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 25px;
-            display: inline-block;
-            margin-bottom: 2rem;
-            transition: all 0.3s ease;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            font-weight: 500;
-        }
-
-        .back-btn:hover {
-            background: white;
-            color: var(--primary-color);
-            transform: translateY(-2px);
         }
 
         .movie-title {
@@ -344,6 +383,15 @@
             margin-top: 4rem;
         }
 
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            color: var(--secondary-color);
+        }
+
         .loading {
             display: flex;
             justify-content: center;
@@ -366,6 +414,11 @@
         @media (max-width: 768px) {
             .container {
                 padding: 0 15px;
+            }
+
+            nav ul {
+                gap: 1rem;
+                justify-content: space-around;
             }
 
             .characters-grid {
@@ -407,10 +460,20 @@
     </style>
 </head>
 <body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html" class="active">Films</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="submissions.html">Submit</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <header class="movie-hero">
         <div class="container">
             <div class="hero-content">
-                <a href="index.html" class="back-btn">← Back to All Films</a>
                 <div class="movie-rank" id="movieRank">1</div>
                 <h1 class="movie-title" id="movieTitle">Loading...</h1>
                 <p class="movie-meta" id="movieMeta">Year | Country</p>
@@ -426,7 +489,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Cinema & Character. Celebrating healthy masculinity in film.</p>
+            <p>&copy; 2025 Cinema & Character. Celebrating healthy masculinity in film. | <a href="sitemap.xml">Sitemap</a></p>
         </div>
     </footer>
 
@@ -438,27 +501,68 @@
             return urlParams.get('movie');
         }
 
+        // Generate keywords for a movie
+        function generateKeywords(movie) {
+            const baseKeywords = [
+                'healthy masculinity',
+                'positive male characters',
+                'emotional intelligence film',
+                movie.title.toLowerCase(),
+                movie.country.toLowerCase() + ' cinema',
+                movie.year
+            ];
+            
+            // Add tag-based keywords
+            const tagKeywords = movie.tags.map(tag => tag.toLowerCase());
+            
+            return [...baseKeywords, ...tagKeywords].join(', ');
+        }
+
         // Update page metadata for SEO
         function updateMetadata(movie) {
-            const title = `${movie.title} (${movie.year}) | Cinema & Character`;
-            const description = `Explore how ${movie.title} depicts healthy masculinity through ${movie.shortDescription}`;
-            const url = `${window.location.origin}${window.location.pathname}?movie=${movie.id}`;
+            const title = `${movie.title} (${movie.year}) - Healthy Masculinity | Cinema & Character`;
+            const description = `Explore how ${movie.title} depicts healthy masculinity. ${movie.shortDescription}`;
+            const url = `https://www.manfilms.com/movie.html?movie=${movie.id}`;
+            const keywords = generateKeywords(movie);
 
             document.getElementById('pageTitle').textContent = title;
             document.getElementById('pageDescription').setAttribute('content', description);
+            document.getElementById('pageKeywords').setAttribute('content', keywords);
+            
+            // Canonical
+            document.getElementById('canonicalUrl').setAttribute('href', url);
             
             // Open Graph
             document.getElementById('ogUrl').setAttribute('content', url);
             document.getElementById('ogTitle').setAttribute('content', title);
             document.getElementById('ogDescription').setAttribute('content', description);
+            document.getElementById('ogImage').setAttribute('content', `https://www.manfilms.com/images/${movie.id}.jpg`);
             
             // Twitter
             document.getElementById('twitterUrl').setAttribute('content', url);
             document.getElementById('twitterTitle').setAttribute('content', title);
             document.getElementById('twitterDescription').setAttribute('content', description);
+            document.getElementById('twitterImage').setAttribute('content', `https://www.manfilms.com/images/${movie.id}.jpg`);
             
-            // Canonical
-            document.getElementById('canonicalUrl').setAttribute('href', url);
+            // Schema.org
+            const schema = {
+                "@context": "https://schema.org",
+                "@type": "Movie",
+                "name": movie.title,
+                "dateCreated": movie.year,
+                "description": movie.description,
+                "countryOfOrigin": movie.country,
+                "genre": movie.tags.join(", "),
+                "review": {
+                    "@type": "Review",
+                    "reviewBody": movie.whyIncluded,
+                    "author": {
+                        "@type": "Organization",
+                        "name": "Cinema & Character"
+                    }
+                }
+            };
+            document.getElementById('movieSchema').textContent = JSON.stringify(schema);
         }
 
         // Render movie content
