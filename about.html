@@ -3,26 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Our Mission | Cinema & Character</title>
-    <meta name="description" content="Learn how we chose these films and what healthy masculinity means in cinema. Discover our research-backed criteria and the importance of positive male representation.">
-    <meta name="keywords" content="healthy masculinity, film criteria, cinema research, positive role models, gender studies, film analysis">
+    <title>About Our Mission - Healthy Masculinity in Cinema | Cinema & Character</title>
+    <meta name="description" content="Learn how we select films showcasing healthy masculinity through research-backed criteria. Discover why positive male representation in cinema matters for society.">
+    <meta name="keywords" content="healthy masculinity criteria, film selection process, positive male representation, cinema gender studies, masculinity research, emotional intelligence films, non-violent masculinity">
     <meta name="author" content="Cinema & Character">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.manfilms.com/about.html">
+    
     <!-- Favicon - Movie Emoji -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cinemaandcharacter.com/about.html">
-    <meta property="og:title" content="About Our Mission | Cinema & Character">
+    <meta property="og:url" content="https://www.manfilms.com/about.html">
+    <meta property="og:title" content="About Our Mission - Healthy Masculinity in Cinema">
     <meta property="og:description" content="Understanding how we chose these films and what healthy masculinity means in cinema.">
+    <meta property="og:image" content="https://www.manfilms.com/og-about.jpg">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://cinemaandcharacter.com/about.html">
-    <meta property="twitter:title" content="About Our Mission | Cinema & Character">
+    <meta property="twitter:url" content="https://www.manfilms.com/about.html">
+    <meta property="twitter:title" content="About Our Mission - Healthy Masculinity in Cinema">
     <meta property="twitter:description" content="Understanding how we chose these films and what healthy masculinity means in cinema.">
+    <meta property="twitter:image" content="https://www.manfilms.com/twitter-about.jpg">
     
-    <link rel="canonical" href="https://cinemaandcharacter.com/about.html">
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About Cinema & Character",
+        "description": "Our mission to celebrate and promote healthy masculinity in cinema through carefully curated film selections.",
+        "url": "https://www.manfilms.com/about.html",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "Cinema & Character",
+            "description": "A platform dedicated to identifying and celebrating films that showcase healthy masculinity"
+        }
+    }
+    </script>
     
     <style>
         :root {
@@ -79,30 +100,55 @@
             100% { transform: translateY(-100px); }
         }
 
+        nav {
+            position: relative;
+            z-index: 10;
+            margin-bottom: 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: #ecf0f1;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: white;
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after, nav a.active::after {
+            width: 100%;
+        }
+
         .hero-content {
             position: relative;
             z-index: 10;
             text-align: center;
         }
 
-        .back-btn {
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 25px;
-            display: inline-block;
-            margin-bottom: 2rem;
-            transition: all 0.3s ease;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            font-weight: 500;
-        }
-
-        .back-btn:hover {
-            background: white;
-            color: var(--primary-color);
-            transform: translateY(-2px);
-            text-decoration: none;
+        .hero {
+            text-align: center;
         }
 
         .hero h1 {
@@ -336,10 +382,24 @@
             margin-top: 4rem;
         }
 
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            color: var(--secondary-color);
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .container {
                 padding: 0 15px;
+            }
+
+            nav ul {
+                gap: 1rem;
+                justify-content: space-around;
             }
 
             .about-content {
@@ -384,8 +444,15 @@
 <body>
     <header>
         <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Films</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="submissions.html">Submit</a></li>
+                </ul>
+            </nav>
             <div class="hero-content">
-                <a href="index.html" class="back-btn">← Back to Films</a>
                 <div class="hero">
                     <h1>About Our Mission</h1>
                     <p>Understanding how we chose these films and what healthy masculinity means in cinema</p>
@@ -470,7 +537,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Cinema & Character. Celebrating healthy masculinity in film.</p>
+            <p>&copy; 2025 Cinema & Character. Celebrating healthy masculinity in film. | <a href="sitemap.xml">Sitemap</a></p>
         </div>
     </footer>
 </body>
