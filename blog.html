@@ -2,376 +2,154 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Exploring Healthy Masculinity in Cinema | Cinema & Character</title>
-    <meta name="description" content="Read our insights on healthy masculinity in film, the crisis of male representation in modern cinema, and how movies shape our understanding of what it means to be a man.">
-    <meta name="keywords" content="healthy masculinity blog, film criticism, male representation cinema, toxic masculinity movies, positive male role models, film analysis, gender studies cinema">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blog - Insights on Healthy Masculinity in Cinema | Cinema & Character</title>
+    <meta name="description" content="Read our latest analysis and insights on healthy masculinity in film, exploring how cinema shapes our understanding of positive male representation.">
+    <meta name="keywords" content="masculinity blog, film analysis, cinema criticism, healthy masculinity, gender studies, film scholarship">
     <meta name="author" content="Cinema & Character">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Canonical URL -->
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#1a2332">
+
     <link rel="canonical" href="https://www.manfilms.com/blog.html">
-    
-    <!-- Favicon - Movie Emoji -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
-    
-    <!-- Open Graph / Facebook -->
+
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="gamification.js" as="script">
+    <link rel="stylesheet" href="styles.css">
+
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.manfilms.com/blog.html">
-    <meta property="og:title" content="Blog - Exploring Healthy Masculinity in Cinema">
-    <meta property="og:description" content="Insights on how cinema shapes our understanding of masculinity and why representation matters.">
+    <meta property="og:title" content="Blog - Insights on Healthy Masculinity in Cinema">
+    <meta property="og:description" content="Read our latest analysis and insights on healthy masculinity in film.">
     <meta property="og:image" content="https://www.manfilms.com/og-blog.jpg">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.manfilms.com/blog.html">
-    <meta property="twitter:title" content="Blog - Exploring Healthy Masculinity in Cinema">
-    <meta property="twitter:description" content="Insights on how cinema shapes our understanding of masculinity and why representation matters.">
-    <meta property="twitter:image" content="https://www.manfilms.com/twitter-blog.jpg">
-    
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --accent-color: #e74c3c;
-            --text-color: #333;
-            --bg-color: #f8f9fa;
-            --card-bg: #ffffff;
-            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            --border-radius: 12px;
-        }
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Cinema & Character">
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        header {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 2rem 0;
-            position: relative;
-            overflow: hidden;
-        }
-
-        header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
-            animation: float 20s infinite linear;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            100% { transform: translateY(-100px); }
-        }
-
-        nav {
-            position: relative;
-            z-index: 10;
-            margin-bottom: 2rem;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-            position: relative;
-        }
-
-        nav a:hover {
-            color: #ecf0f1;
-        }
-
-        nav a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: white;
-            transition: width 0.3s ease;
-        }
-
-        nav a:hover::after, nav a.active::after {
-            width: 100%;
-        }
-
-        .hero {
-            text-align: center;
-            position: relative;
-            z-index: 10;
-        }
-
-        .hero h1 {
-            font-size: clamp(2rem, 5vw, 3.5rem);
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-
-        .hero p {
-            font-size: clamp(1rem, 2.5vw, 1.25rem);
-            max-width: 600px;
-            margin: 0 auto;
-            opacity: 0.9;
-        }
-
-        main {
-            padding: 4rem 0;
-        }
-
-        .blog-posts {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .blog-post-card {
-            background: var(--card-bg);
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            margin-bottom: 2rem;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-
-        .blog-post-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-            text-decoration: none;
-        }
-
-        .blog-post-card::before {
-            content: '';
-            display: block;
-            height: 4px;
-            background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
-        }
-
-        .blog-post-content {
-            padding: 2rem;
-        }
-
-        .blog-post-card h2 {
-            color: var(--primary-color);
-            margin-bottom: 0.75rem;
-            font-size: 1.8rem;
-        }
-
-        .blog-meta {
-            display: flex;
-            gap: 1.5rem;
-            margin-bottom: 1rem;
-            font-size: 0.9rem;
-            color: #666;
-        }
-
-        .blog-meta span {
-            display: flex;
-            align-items: center;
-            gap: 0.25rem;
-        }
-
-        .blog-excerpt {
-            color: #555;
-            line-height: 1.6;
-            margin-bottom: 1rem;
-        }
-
-        .read-more {
-            color: var(--secondary-color);
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            transition: gap 0.3s ease;
-        }
-
-        .blog-post-card:hover .read-more {
-            gap: 0.75rem;
-        }
-
-        .featured-post {
-            border-left: 5px solid var(--accent-color);
-            margin-bottom: 3rem;
-        }
-
-        .featured-label {
-            background: var(--accent-color);
-            color: white;
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            display: inline-block;
-            margin-bottom: 1rem;
-        }
-
-        .intro-text {
-            max-width: 800px;
-            margin: 0 auto 3rem;
-            text-align: center;
-            color: #666;
-            font-size: 1.1rem;
-        }
-
-        footer {
-            background: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 4rem;
-        }
-
-        footer a {
-            color: white;
-            text-decoration: underline;
-        }
-
-        footer a:hover {
-            color: var(--secondary-color);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .container {
-                padding: 0 15px;
-            }
-
-            nav ul {
-                gap: 1rem;
-                justify-content: space-around;
-            }
-
-            .blog-post-content {
-                padding: 1.5rem;
-            }
-
-            .blog-meta {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-
-            .blog-post-card h2 {
-                font-size: 1.5rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            main {
-                padding: 2rem 0;
-            }
-        }
-    </style>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.manfilms.com/blog.html">
+    <meta name="twitter:title" content="Blog - Insights on Healthy Masculinity in Cinema">
+    <meta name="twitter:description" content="Read our latest analysis and insights on healthy masculinity in film.">
+    <meta name="twitter:image" content="https://www.manfilms.com/twitter-blog.jpg">
 </head>
 <body>
     <header>
         <div class="container">
-            <nav>
+            <div class="header-content">
+                <div class="site-branding">
+                    <div>
+                        <h1 class="site-title"><a href="index.html">Cinema & Character</a></h1>
+                        <p class="tagline">Redefining masculinity through film</p>
+                    </div>
+                </div>
+                <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <nav role="navigation" aria-label="Main navigation">
                 <ul>
                     <li><a href="index.html">Films</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="blog.html" class="active" aria-current="page">Blog</a></li>
                     <li><a href="submissions.html">Submit</a></li>
                 </ul>
             </nav>
-            <div class="hero">
-                <h1>Insights & Analysis</h1>
-                <p>Exploring the evolution of masculinity in cinema and its impact on society</p>
-            </div>
         </div>
     </header>
 
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Insights & Analysis</h2>
+                <p>Exploring how cinema shapes our understanding of healthy masculinity</p>
+            </div>
+        </div>
+    </section>
+
     <main>
         <div class="container">
-            <p class="intro-text">
-                Through critical analysis and thoughtful exploration, we examine how cinema shapes our understanding of masculinity and why positive male representation matters now more than ever.
-            </p>
+            <section class="films-section">
+                <div class="section-header">
+                    <h2>Latest Articles</h2>
+                    <p class="section-subtitle">Deep dives into masculinity, film criticism, and cultural representation</p>
+                </div>
 
-            <div class="blog-posts">
-                <a href="blog-lack-representation.html" class="blog-post-card featured-post">
-                    <div class="blog-post-content">
-                        <span class="featured-label">Featured</span>
-                        <h2>The Crisis of Healthy Male Representation in Modern Cinema</h2>
-                        <div class="blog-meta">
-                            <span>📅 January 15, 2025</span>
-                            <span>⏱ 8 min read</span>
-                            <span>✍️ Cinema & Character Editorial</span>
+                <div class="articles-grid">
+                    <article class="article-card">
+                        <img src="blog-representation.jpg" alt="Film representation analysis" class="article-image" loading="lazy">
+                        <div class="article-content">
+                            <h3 class="article-title">The Crisis of Representation</h3>
+                            <p class="article-excerpt">Modern cinema has failed to provide young men with healthy role models. This article explores the cultural shift away from emotionally intelligent male characters and examines why traditional masculinity dominates mainstream media...</p>
+                            <a href="blog-lack-representation.html" class="read-more">Read Full Article →</a>
                         </div>
-                        <p class="blog-excerpt">
-                            In an era dominated by superhero franchises and action spectacles, the nuanced portrayal of masculinity has become increasingly rare. We explore why modern cinema struggles to present complex male characters who embody emotional intelligence and moral strength...
-                        </p>
-                        <span class="read-more">Read full article →</span>
-                    </div>
-                </a>
+                    </article>
 
-                <a href="blog-violence-vs-values.html" class="blog-post-card">
-                    <div class="blog-post-content">
-                        <h2>Violence vs Values: The Troubling Shift in Male Character Attributes</h2>
-                        <div class="blog-meta">
-                            <span>📅 January 12, 2025</span>
-                            <span>⏱ 10 min read</span>
-                            <span>✍️ Cinema & Character Editorial</span>
+                    <article class="article-card">
+                        <img src="blog-violence-values.jpg" alt="Violence vs values in cinema" class="article-image" loading="lazy">
+                        <div class="article-content">
+                            <h3 class="article-title">Violence vs Values</h3>
+                            <p class="article-excerpt">How did cinema replace moral strength with physical dominance? We trace the evolution of the male hero from wise mentor to violent avenger, and explore what was lost in this transition...</p>
+                            <a href="blog-violence-vs-values.html" class="read-more">Read Full Article →</a>
                         </div>
-                        <p class="blog-excerpt">
-                            How did physical dominance and sexual conquest replace moral strength and emotional intelligence as markers of masculinity in film? We trace this troubling evolution and its impact on audiences, particularly young men seeking role models...
-                        </p>
-                        <span class="read-more">Read full article →</span>
-                    </div>
-                </a>
+                    </article>
 
-                <a href="blog-film-combinations.html" class="blog-post-card">
-                    <div class="blog-post-content">
-                        <h2>Common Threads: What Our Top 10 Films Teach Us About Healthy Masculinity</h2>
-                        <div class="blog-meta">
-                            <span>📅 January 10, 2025</span>
-                            <span>⏱ 12 min read</span>
-                            <span>✍️ Cinema & Character Editorial</span>
+                    <article class="article-card">
+                        <img src="blog-combinations.jpg" alt="Thematic film analysis" class="article-image" loading="lazy">
+                        <div class="article-content">
+                            <h3 class="article-title">Thematic Connections</h3>
+                            <p class="article-excerpt">What common threads unite our top 10 films? Discover the patterns of positive masculinity that emerge across cultures, genres, and decades—from Iranian social drama to Japanese animation...</p>
+                            <a href="blog-film-combinations.html" class="read-more">Read Full Article →</a>
                         </div>
-                        <p class="blog-excerpt">
-                            From A Separation to Bicycle Thieves, our chosen films span decades and continents, yet they share profound insights about what it means to be a man. We analyze the thematic connections that unite these cinematic masterpieces...
-                        </p>
-                        <span class="read-more">Read full article →</span>
-                    </div>
-                </a>
-            </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="cta-section" style="margin-top: 3rem;">
+                <h2>Explore the Films</h2>
+                <p>Ready to discover these powerful stories of healthy masculinity?</p>
+                <a href="index.html" class="cta-button">View All 10 Films</a>
+            </section>
         </div>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Cinema & Character. Celebrating healthy masculinity in film. | <a href="sitemap.xml">Sitemap</a></p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Cinema & Character</h3>
+                    <p>Discovering films that redefine masculinity through emotional depth, vulnerability, and authentic human connection.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Films</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="submissions.html">Submit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="sitemap.xml">Sitemap</a></li>
+                        <li><a href="robots.txt">Robots.txt</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cinema & Character. Celebrating healthy masculinity in film.</p>
+            </div>
         </div>
     </footer>
+
+    <script src="gamification.js"></script>
+    <script>
+        if (window.gamification) {
+            window.gamification.trackPageVisit('blog');
+        }
+    </script>
 </body>
 </html>
