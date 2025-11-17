@@ -2,615 +2,367 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Submit Films & Suggestions | Cinema & Character</title>
     <meta name="description" content="Share your suggestions for films that showcase healthy masculinity or submit your own work for consideration. Join our mission to celebrate positive male representation in cinema.">
     <meta name="keywords" content="submit films, healthy masculinity movies, suggest films, film submissions, positive male characters, cinema contributions, independent films masculinity">
     <meta name="author" content="Cinema & Character">
-    <meta name="robots" content="index, follow">
-    
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#1a2332">
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.manfilms.com/submissions.html">
-    
+
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
-    
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="gamification.js" as="script">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.manfilms.com/submissions.html">
     <meta property="og:title" content="Submit Films & Suggestions | Cinema & Character">
     <meta property="og:description" content="Share films that showcase healthy masculinity or submit your own work for consideration.">
     <meta property="og:image" content="https://www.manfilms.com/og-submissions.jpg">
-    
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Cinema & Character">
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.manfilms.com/submissions.html">
     <meta property="twitter:title" content="Submit Films & Suggestions">
     <meta property="twitter:description" content="Share films that showcase healthy masculinity or submit your own work for consideration.">
     <meta property="twitter:image" content="https://www.manfilms.com/twitter-submissions.jpg">
-    
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --accent-color: #e74c3c;
-            --text-color: #333;
-            --bg-color: #f8f9fa;
-            --card-bg: #ffffff;
-            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            --border-radius: 12px;
-        }
+    <meta property="twitter:image:alt" content="Cinema & Character submissions page">
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        header {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 2rem 0;
-            position: relative;
-            overflow: hidden;
-        }
-
-        header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
-            animation: float 20s infinite linear;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            100% { transform: translateY(-100px); }
-        }
-
-        nav {
-            position: relative;
-            z-index: 10;
-            margin-bottom: 2rem;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-            position: relative;
-        }
-
-        nav a:hover {
-            color: #ecf0f1;
-        }
-
-        nav a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: white;
-            transition: width 0.3s ease;
-        }
-
-        nav a:hover::after, nav a.active::after {
-            width: 100%;
-        }
-
-        .hero {
-            text-align: center;
-            position: relative;
-            z-index: 10;
-        }
-
-        .hero h1 {
-            font-size: clamp(2rem, 5vw, 3.5rem);
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-
-        .hero p {
-            font-size: clamp(1rem, 2.5vw, 1.25rem);
-            max-width: 600px;
-            margin: 0 auto;
-            opacity: 0.9;
-        }
-
-        main {
-            padding: 4rem 0;
-        }
-
-        .submission-intro {
-            max-width: 800px;
-            margin: 0 auto 4rem;
-            text-align: center;
-        }
-
-        .submission-intro h2 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            font-size: 2rem;
-        }
-
-        .submission-intro p {
-            font-size: 1.1rem;
-            color: #666;
-            line-height: 1.8;
-        }
-
-        .submission-types {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-bottom: 4rem;
-        }
-
-        .submission-card {
-            background: var(--card-bg);
-            padding: 2rem;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border-top: 4px solid var(--secondary-color);
-        }
-
-        .submission-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-        }
-
-        .submission-card h3 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-
-        .submission-card p {
-            color: #555;
-            line-height: 1.6;
-            margin-bottom: 1rem;
-        }
-
-        .submission-card ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .submission-card li {
-            padding: 0.5rem 0;
-            padding-left: 1.5rem;
-            position: relative;
-            color: #666;
-        }
-
-        .submission-card li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--secondary-color);
-            font-weight: bold;
-        }
-
-        .criteria-section {
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            padding: 3rem;
-            border-radius: var(--border-radius);
-            margin-bottom: 4rem;
-        }
-
-        .criteria-section h2 {
-            color: var(--primary-color);
-            margin-bottom: 2rem;
-            text-align: center;
-            font-size: 2rem;
-        }
-
-        .criteria-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .criteria-item {
-            background: var(--card-bg);
-            padding: 1.5rem;
-            border-radius: var(--border-radius);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        .criteria-item h4 {
-            color: var(--secondary-color);
-            margin-bottom: 0.5rem;
-        }
-
-        .criteria-item p {
-            font-size: 0.9rem;
-            color: #666;
-        }
-
-        .form-section {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .form-section h2 {
-            color: var(--primary-color);
-            margin-bottom: 2rem;
-            text-align: center;
-            font-size: 2rem;
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            color: var(--primary-color);
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            border: 2px solid #e9ecef;
-            border-radius: 8px;
-            font-size: 1rem;
-            transition: border-color 0.3s ease;
-        }
-
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--secondary-color);
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 150px;
-        }
-
-        .form-note {
-            background: #f0f8ff;
-            padding: 1rem;
-            border-radius: 8px;
-            margin-bottom: 1.5rem;
-            font-size: 0.9rem;
-            color: #666;
-            text-align: center;
-        }
-
-        .submit-btn {
-            background: var(--accent-color);
-            color: white;
-            padding: 15px 40px;
-            border: none;
-            border-radius: 25px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: block;
-            margin: 2rem auto 0;
-        }
-
-        .submit-btn:hover {
-            background: #c0392b;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .faq-section {
-            max-width: 800px;
-            margin: 4rem auto 0;
-            background: var(--card-bg);
-            padding: 3rem;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-        }
-
-        .faq-section h2 {
-            color: var(--primary-color);
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-
-        .faq-item {
-            margin-bottom: 1.5rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid #e9ecef;
-        }
-
-        .faq-item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-
-        .faq-item h3 {
-            color: var(--secondary-color);
-            margin-bottom: 0.5rem;
-            font-size: 1.2rem;
-        }
-
-        .faq-item p {
-            color: #666;
-            line-height: 1.6;
-        }
-
-        footer {
-            background: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 4rem;
-        }
-
-        footer a {
-            color: white;
-            text-decoration: underline;
-        }
-
-        footer a:hover {
-            color: var(--secondary-color);
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .container {
-                padding: 0 15px;
-            }
-
-            nav ul {
-                gap: 1rem;
-                justify-content: space-around;
-            }
-
-            .submission-types {
-                grid-template-columns: 1fr;
-            }
-
-            .criteria-section {
-                padding: 2rem 1rem;
-            }
-
-            .faq-section {
-                padding: 2rem;
-            }
-        }
-    </style>
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.manfilms.com/"
+        }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Submit",
+            "item": "https://www.manfilms.com/submissions.html"
+        }]
+    }
+    </script>
 </head>
 <body>
     <header>
         <div class="container">
-            <nav>
+            <div class="header-content">
+                <div class="site-branding">
+                    <div>
+                        <h1 class="site-title"><a href="index.html">Cinema & Character</a></h1>
+                        <p class="tagline">Redefining masculinity through film</p>
+                    </div>
+                </div>
+
+                <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <nav role="navigation" aria-label="Main navigation">
                 <ul>
                     <li><a href="index.html">Films</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="submissions.html" class="active">Submit</a></li>
+                    <li><a href="submissions.html" class="active" aria-current="page">Submit</a></li>
                 </ul>
             </nav>
-            <div class="hero">
-                <h1>Share Your Vision</h1>
-                <p>Help us expand the conversation about healthy masculinity in cinema</p>
-            </div>
         </div>
     </header>
 
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Share Your Vision</h2>
+                <p>Help us expand the conversation about healthy masculinity in cinema</p>
+            </div>
+        </div>
+    </section>
+
     <main>
         <div class="container">
-            <section class="submission-intro">
-                <h2>Join Our Mission</h2>
-                <p>
-                    Cinema & Character is a collaborative effort to identify and celebrate films that present positive models of masculinity. Whether you have suggestions for existing films we should consider or you're a filmmaker creating work that challenges traditional gender stereotypes, we want to hear from you.
-                </p>
-            </section>
-
-            <section class="submission-types">
-                <div class="submission-card">
-                    <h3>Film Suggestions</h3>
-                    <p>
-                        Know a film that showcases healthy masculinity? We're always looking to expand our understanding and discover hidden gems from around the world.
+            <article class="article-detail">
+                <section class="content-section" style="text-align: center;">
+                    <h2>✨ Join Our Mission</h2>
+                    <p style="font-size: 1.125rem; max-width: 800px; margin: 0 auto;">
+                        Cinema & Character is a collaborative effort to identify and celebrate films that present positive models of masculinity. Whether you have suggestions for existing films we should consider or you're a filmmaker creating work that challenges traditional gender stereotypes, we want to hear from you.
                     </p>
-                    <ul>
-                        <li>International cinema welcome</li>
-                        <li>All genres considered</li>
-                        <li>Classic or contemporary</li>
-                        <li>Mainstream or independent</li>
-                    </ul>
-                </div>
+                </section>
 
-                <div class="submission-card">
-                    <h3>Your Own Work</h3>
-                    <p>
-                        Are you a filmmaker, documentarian, or content creator exploring themes of healthy masculinity? Submit your work for potential feature consideration.
-                    </p>
-                    <ul>
-                        <li>Feature films</li>
-                        <li>Documentaries</li>
-                        <li>Short films</li>
-                        <li>Web series</li>
-                    </ul>
-                </div>
+                <section style="margin: 3rem 0;">
+                    <div class="articles-grid">
+                        <div class="article-card">
+                            <div class="article-content">
+                                <h3 class="article-title">🎬 Film Suggestions</h3>
+                                <p class="article-excerpt">Know a film that showcases healthy masculinity? We're always looking to expand our understanding and discover hidden gems from around the world.</p>
+                                <ul style="list-style: none; padding: 0; margin: 1rem 0;">
+                                    <li style="margin-bottom: 0.5rem;">✓ International cinema welcome</li>
+                                    <li style="margin-bottom: 0.5rem;">✓ All genres considered</li>
+                                    <li style="margin-bottom: 0.5rem;">✓ Classic or contemporary</li>
+                                    <li style="margin-bottom: 0.5rem;">✓ Mainstream or independent</li>
+                                </ul>
+                            </div>
+                        </div>
 
-                <div class="submission-card">
-                    <h3>Critical Analysis</h3>
-                    <p>
-                        Have you written analysis or scholarship about masculinity in cinema? Share your insights to help deepen the conversation.
-                    </p>
-                    <ul>
-                        <li>Academic papers</li>
-                        <li>Film criticism</li>
-                        <li>Video essays</li>
-                        <li>Blog posts</li>
-                    </ul>
-                </div>
-            </section>
+                        <div class="article-card">
+                            <div class="article-content">
+                                <h3 class="article-title">🎥 Your Own Work</h3>
+                                <p class="article-excerpt">Are you a filmmaker, documentarian, or content creator exploring themes of healthy masculinity? Submit your work for potential feature consideration.</p>
+                                <ul style="list-style: none; padding: 0; margin: 1rem 0;">
+                                    <li style="margin-bottom: 0.5rem;">✓ Feature films</li>
+                                    <li style="margin-bottom: 0.5rem;">✓ Documentaries</li>
+                                    <li style="margin-bottom: 0.5rem;">✓ Short films</li>
+                                    <li style="margin-bottom: 0.5rem;">✓ Web series</li>
+                                </ul>
+                            </div>
+                        </div>
 
-            <section class="criteria-section">
-                <h2>What We Look For</h2>
-                <div class="criteria-grid">
-                    <div class="criteria-item">
-                        <h4>Emotional Depth</h4>
-                        <p>Characters who express the full range of human emotions authentically</p>
+                        <div class="article-card">
+                            <div class="article-content">
+                                <h3 class="article-title">📝 Critical Analysis</h3>
+                                <p class="article-excerpt">Have you written analysis or scholarship about masculinity in cinema? Share your insights to help deepen the conversation.</p>
+                                <ul style="list-style: none; padding: 0; margin: 1rem 0;">
+                                    <li style="margin-bottom: 0.5rem;">✓ Academic papers</li>
+                                    <li style="margin-bottom: 0.5rem;">✓ Film criticism</li>
+                                    <li style="margin-bottom: 0.5rem;">✓ Video essays</li>
+                                    <li style="margin-bottom: 0.5rem;">✓ Blog posts</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="criteria-item">
-                        <h4>Non-Violent Resolution</h4>
-                        <p>Stories that solve conflicts through wisdom and understanding</p>
-                    </div>
-                    <div class="criteria-item">
-                        <h4>Healthy Relationships</h4>
-                        <p>Men who treat others as equals and build meaningful connections</p>
-                    </div>
-                    <div class="criteria-item">
-                        <h4>Growth & Vulnerability</h4>
-                        <p>Characters who learn, change, and aren't afraid to show weakness</p>
-                    </div>
-                    <div class="criteria-item">
-                        <h4>Diverse Perspectives</h4>
-                        <p>Stories that challenge traditional stereotypes across cultures</p>
-                    </div>
-                    <div class="criteria-item">
-                        <h4>Positive Impact</h4>
-                        <p>Films that inspire and provide healthy role models</p>
-                    </div>
-                </div>
-            </section>
+                </section>
 
-            <section class="form-section">
-                <h2>Submit Your Suggestion</h2>
-                <div class="form-note">
-                    Please note: This is a demonstration form. In a live site, this would submit to a backend service.
-                </div>
-                
-                <form id="submissionForm" onsubmit="handleSubmit(event)">
-                    <div class="form-group">
-                        <label for="submitterName">Your Name *</label>
-                        <input type="text" id="submitterName" name="submitterName" required>
+                <section class="content-section" style="margin-top: 3rem; background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));">
+                    <h2>🎯 What We Look For</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                        <div>
+                            <h4 style="color: var(--secondary-color); margin-bottom: 0.75rem;">💙 Emotional Depth</h4>
+                            <p style="margin: 0;">Characters who express the full range of human emotions authentically</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--secondary-color); margin-bottom: 0.75rem;">🕊️ Non-Violent Resolution</h4>
+                            <p style="margin: 0;">Stories that solve conflicts through wisdom and understanding</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--secondary-color); margin-bottom: 0.75rem;">🤝 Healthy Relationships</h4>
+                            <p style="margin: 0;">Men who treat others as equals and build meaningful connections</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--secondary-color); margin-bottom: 0.75rem;">✨ Authentic Representation</h4>
+                            <p style="margin: 0;">Diverse portrayals that challenge stereotypes</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--secondary-color); margin-bottom: 0.75rem;">🌱 Personal Growth</h4>
+                            <p style="margin: 0;">Character development through vulnerability and self-reflection</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--secondary-color); margin-bottom: 0.75rem;">🎭 Compelling Storytelling</h4>
+                            <p style="margin: 0;">Engaging narratives that entertain while inspiring</p>
+                        </div>
                     </div>
-                    
-                    <div class="form-group">
-                        <label for="submitterEmail">Email Address *</label>
-                        <input type="email" id="submitterEmail" name="submitterEmail" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="submissionType">Submission Type *</label>
-                        <select id="submissionType" name="submissionType" required>
-                            <option value="">Select a type</option>
-                            <option value="suggestion">Film Suggestion</option>
-                            <option value="own-work">My Own Work</option>
-                            <option value="analysis">Critical Analysis</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="filmTitle">Film/Work Title *</label>
-                        <input type="text" id="filmTitle" name="filmTitle" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="filmYear">Year</label>
-                        <input type="number" id="filmYear" name="filmYear" min="1900" max="2025" placeholder="e.g., 2023">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="filmDirector">Director/Creator</label>
-                        <input type="text" id="filmDirector" name="filmDirector">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="description">Why This Film/Work Exemplifies Healthy Masculinity *</label>
-                        <textarea id="description" name="description" required placeholder="Tell us about the characters, themes, and why this work belongs in the conversation about healthy masculinity..."></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="link">Link to Film/Work (if available)</label>
-                        <input type="url" id="link" name="link" placeholder="https://...">
-                    </div>
-                    
-                    <button type="submit" class="submit-btn">Submit Your Suggestion</button>
-                </form>
-            </section>
+                </section>
 
-            <section class="faq-section">
-                <h2>Frequently Asked Questions</h2>
-                
-                <div class="faq-item">
-                    <h3>What happens after I submit?</h3>
-                    <p>We review all submissions carefully. While we can't respond to every submission individually, we deeply appreciate your contribution to this important conversation. Selected submissions may be featured in future blog posts or added to our curated lists.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>Can I submit multiple films?</h3>
-                    <p>Absolutely! Feel free to submit as many suggestions as you'd like. Each film should be submitted separately so we can give each one proper consideration.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>Do you only accept English-language films?</h3>
-                    <p>Not at all! We celebrate cinema from around the world. Films in any language are welcome, as healthy masculinity is a universal theme that transcends cultural and linguistic boundaries.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>What if my film is still in production?</h3>
-                    <p>We're happy to hear about works in progress. Please indicate in your submission that the film is still in production and provide an estimated completion date if possible.</p>
-                </div>
-            </section>
+                <section class="content-section" style="margin-top: 3rem;">
+                    <h2>📬 Submission Form</h2>
+                    <p style="margin-bottom: 2rem;">Fill out the form below to share your suggestion or work. We review all submissions carefully and appreciate your contribution to our mission.</p>
+
+                    <form id="submissionForm">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="submissionType">Submission Type *</label>
+                            <select id="submissionType" name="submissionType" required>
+                                <option value="">-- Select Type --</option>
+                                <option value="film-suggestion">Film Suggestion</option>
+                                <option value="original-work">Your Own Work</option>
+                                <option value="critical-analysis">Critical Analysis</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="filmTitle">Film/Work Title *</label>
+                            <input type="text" id="filmTitle" name="filmTitle" required placeholder="Enter film or work title">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="director">Director/Creator</label>
+                            <input type="text" id="director" name="director" placeholder="Director or creator name">
+                            <span class="form-hint">Optional: Include director/creator information</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="year">Release Year</label>
+                            <input type="text" id="year" name="year" placeholder="e.g., 2023">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="country">Country of Origin</label>
+                            <input type="text" id="country" name="country" placeholder="e.g., USA, Japan, Iran">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="url">Link (Trailer, IMDb, or Project Page)</label>
+                            <input type="url" id="url" name="url" placeholder="https://...">
+                            <span class="form-hint">Optional: Provide a link for us to learn more</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Why This Film/Work Matters *</label>
+                            <textarea id="description" name="description" required placeholder="Explain how this film showcases healthy masculinity. What specific characters, themes, or scenes exemplify positive male representation? (Minimum 100 characters)" rows="6"></textarea>
+                            <span class="form-hint">Please provide detailed reasoning (minimum 100 characters)</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="additionalInfo">Additional Information</label>
+                            <textarea id="additionalInfo" name="additionalInfo" placeholder="Any other relevant details you'd like to share..." rows="4"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Submit for Review</button>
+                    </form>
+
+                    <div id="formSuccess" style="display: none; margin-top: 2rem; padding: 1.5rem; background: var(--success-color); color: white; border-radius: var(--radius-md); text-align: center;">
+                        <h3 style="color: white; margin-bottom: 0.5rem;">✓ Submission Received!</h3>
+                        <p style="margin: 0;">Thank you for contributing to our mission. We'll review your submission and be in touch if we have questions.</p>
+                    </div>
+                </section>
+
+                <section class="content-section" style="margin-top: 3rem; background: var(--bg-secondary);">
+                    <h2>❓ Frequently Asked Questions</h2>
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem;">
+                        <div>
+                            <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">How long does the review process take?</h4>
+                            <p style="margin: 0; color: var(--text-secondary);">We review all submissions within 2-4 weeks. Due to volume, we may not be able to respond to every submission individually, but we carefully consider each one.</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">What if my film doesn't fit perfectly?</h4>
+                            <p style="margin: 0; color: var(--text-secondary);">We appreciate nuanced portrayals. Even if a film has some problematic elements, if it offers valuable positive representation in meaningful ways, we want to hear about it.</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Can I suggest multiple films?</h4>
+                            <p style="margin: 0; color: var(--text-secondary);">Absolutely! Feel free to submit multiple suggestions. We're building a comprehensive resource and value your expertise.</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Do you accept animated films?</h4>
+                            <p style="margin: 0; color: var(--text-secondary);">Yes! As evidenced by our inclusion of Spirited Away and Princess Mononoke, animation can powerfully convey positive masculinity.</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">How do you handle disagreements?</h4>
+                            <p style="margin: 0; color: var(--text-secondary);">We welcome constructive critique and diverse perspectives. If you disagree with our analysis of a film, we'd love to hear your viewpoint.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="cta-section" style="margin-top: 3rem; text-align: center;">
+                    <h2>🎬 Explore Our Current Selections</h2>
+                    <p>Before submitting, check out our current top 10 films to understand our criteria and approach.</p>
+                    <a href="index.html" class="cta-button">View All 10 Films</a>
+                </section>
+            </article>
         </div>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Cinema & Character. Celebrating healthy masculinity in film. | <a href="sitemap.xml">Sitemap</a></p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Cinema & Character</h3>
+                    <p>Discovering films that redefine masculinity through emotional depth, vulnerability, and authentic human connection.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Films</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="submissions.html">Submit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="sitemap.xml">Sitemap</a></li>
+                        <li><a href="robots.txt">Robots.txt</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cinema & Character. Celebrating healthy masculinity in film.</p>
+            </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script src="gamification.js"></script>
     <script>
-        function handleSubmit(event) {
-            event.preventDefault();
-            
-            // In a real implementation, this would send data to a backend
-            alert('Thank you for your submission! This is a demonstration form. In a live site, your submission would be sent for review.');
-            
-            // Reset form
-            document.getElementById('submissionForm').reset();
+        // Track page visit for achievements
+        if (window.gamification) {
+            window.gamification.trackPageVisit('submissions');
         }
+
+        // Form submission handling
+        document.getElementById('submissionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Basic validation
+            const description = document.getElementById('description').value;
+            if (description.length < 100) {
+                alert('Please provide a more detailed explanation (minimum 100 characters).');
+                return;
+            }
+
+            // Show success message
+            const form = document.getElementById('submissionForm');
+            const successMessage = document.getElementById('formSuccess');
+
+            form.style.display = 'none';
+            successMessage.style.display = 'block';
+
+            // Scroll to success message
+            successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            // In a real implementation, you would send this data to a server
+            console.log('Form submitted:', {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                type: document.getElementById('submissionType').value,
+                title: document.getElementById('filmTitle').value,
+                director: document.getElementById('director').value,
+                year: document.getElementById('year').value,
+                country: document.getElementById('country').value,
+                url: document.getElementById('url').value,
+                description: description,
+                additionalInfo: document.getElementById('additionalInfo').value
+            });
+        });
     </script>
 </body>
 </html>
