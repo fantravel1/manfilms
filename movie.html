@@ -2,33 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title id="pageTitle">Movie Title | Cinema & Character</title>
     <meta name="description" id="pageDescription" content="Explore this film's portrayal of healthy masculinity through compelling characters and positive role models.">
     <meta name="keywords" id="pageKeywords" content="healthy masculinity, cinema, films, male characters, emotional intelligence, positive role models">
     <meta name="author" content="Cinema & Character">
-    <meta name="robots" content="index, follow">
-    
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#1a2332">
+
     <!-- Canonical URL -->
     <link rel="canonical" id="canonicalUrl" href="">
-    
+
     <!-- Favicon - Movie Emoji -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
-    
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="gamification.js" as="script">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
     <meta property="og:url" id="ogUrl" content="">
     <meta property="og:title" id="ogTitle" content="">
     <meta property="og:description" id="ogDescription" content="">
     <meta property="og:image" id="ogImage" content="">
-    
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Cinema & Character">
+
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" id="twitterUrl" content="">
-    <meta property="twitter:title" id="twitterTitle" content="">
-    <meta property="twitter:description" id="twitterDescription" content="">
-    <meta property="twitter:image" id="twitterImage" content="">
-    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" id="twitterUrl" content="">
+    <meta name="twitter:title" id="twitterTitle" content="">
+    <meta name="twitter:description" id="twitterDescription" content="">
+    <meta name="twitter:image" id="twitterImage" content="">
+    <meta name="twitter:image:alt" id="twitterImageAlt" content="">
+
     <!-- Schema.org Movie markup -->
     <script type="application/ld+json" id="movieSchema">
     {
@@ -39,461 +52,146 @@
         "description": ""
     }
     </script>
-    
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --accent-color: #e74c3c;
-            --text-color: #333;
-            --bg-color: #f8f9fa;
-            --card-bg: #ffffff;
-            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            --border-radius: 12px;
-        }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        nav {
-            background: var(--primary-color);
-            padding: 1rem 0;
-            position: relative;
-            z-index: 100;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-            position: relative;
-        }
-
-        nav a:hover {
-            color: #ecf0f1;
-        }
-
-        nav a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: white;
-            transition: width 0.3s ease;
-        }
-
-        nav a:hover::after, nav a.active::after {
-            width: 100%;
-        }
-
-        .movie-hero {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 3rem 0;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .movie-hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
-            animation: float 20s infinite linear;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            100% { transform: translateY(-100px); }
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 10;
-            text-align: center;
-        }
-
-        .movie-title {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-
-        .movie-meta {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            margin-bottom: 1rem;
-        }
-
-        .movie-rank {
-            background: var(--accent-color);
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-        }
-
-        .movie-content {
-            padding: 4rem 0;
-        }
-
-        .movie-section {
-            margin-bottom: 4rem;
-        }
-
-        .movie-section h2 {
-            color: var(--primary-color);
-            margin-bottom: 2rem;
-            font-size: clamp(1.8rem, 4vw, 2.5rem);
-            position: relative;
-        }
-
-        .movie-section h2::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            width: 60px;
-            height: 3px;
-            background: var(--secondary-color);
-            border-radius: 2px;
-        }
-
-        .movie-description {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #555;
-            max-width: 800px;
-        }
-
-        .characters-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .character-card {
-            background: var(--card-bg);
-            padding: 2rem;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border-left: 4px solid var(--secondary-color);
-        }
-
-        .character-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-        }
-
-        .character-name {
-            font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-        }
-
-        .character-description {
-            color: #555;
-            line-height: 1.6;
-        }
-
-        .video-container {
-            position: relative;
-            width: 100%;
-            height: 0;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            margin-bottom: 2rem;
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            box-shadow: var(--shadow);
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .reviews-container {
-            display: grid;
-            gap: 2rem;
-        }
-
-        .review-card {
-            background: var(--card-bg);
-            padding: 2rem;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-            border-left: 4px solid var(--accent-color);
-            transition: transform 0.3s ease;
-        }
-
-        .review-card:hover {
-            transform: translateX(5px);
-        }
-
-        .review-quote {
-            font-style: italic;
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-            color: #555;
-            line-height: 1.6;
-        }
-
-        .review-quote::before {
-            content: '"';
-            font-size: 2rem;
-            color: var(--accent-color);
-            line-height: 0;
-        }
-
-        .review-quote::after {
-            content: '"';
-            font-size: 2rem;
-            color: var(--accent-color);
-            line-height: 0;
-        }
-
-        .review-source {
-            font-weight: 600;
-            color: var(--primary-color);
-        }
-
-        .why-included {
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            padding: 3rem;
-            border-radius: var(--border-radius);
-            border-left: 6px solid var(--accent-color);
-            position: relative;
-        }
-
-        .why-included::before {
-            content: '★';
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            font-size: 2rem;
-            color: var(--accent-color);
-            opacity: 0.3;
-        }
-
-        .why-included h2 {
-            color: var(--accent-color);
-            margin-bottom: 1.5rem;
-        }
-
-        .why-included p {
-            font-size: 1.1rem;
-            line-height: 1.7;
-            color: #444;
-        }
-
-        .tags-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 1.5rem;
-        }
-
-        .tag {
-            background: var(--secondary-color);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
-        .nav-buttons {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 3rem;
-            gap: 1rem;
-        }
-
-        .nav-btn {
-            background: var(--primary-color);
-            color: white;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 25px;
-            transition: all 0.3s ease;
-            font-weight: 500;
-            flex: 1;
-            text-align: center;
-            max-width: 200px;
-        }
-
-        .nav-btn:hover {
-            background: var(--secondary-color);
-            transform: translateY(-2px);
-        }
-
-        .nav-btn.disabled {
-            background: #ccc;
-            cursor: not-allowed;
-            transform: none;
-        }
-
-        footer {
-            background: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 4rem;
-        }
-
-        footer a {
-            color: white;
-            text-decoration: underline;
-        }
-
-        footer a:hover {
-            color: var(--secondary-color);
-        }
-
-        .loading {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 200px;
-            font-size: 1.2rem;
-            color: var(--secondary-color);
-        }
-
-        .error {
-            text-align: center;
-            padding: 2rem;
-            background: #ffe6e6;
-            border: 1px solid #ffcccc;
-            border-radius: var(--border-radius);
-            color: #cc0000;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .container {
-                padding: 0 15px;
-            }
-
-            nav ul {
-                gap: 1rem;
-                justify-content: space-around;
-            }
-
-            .characters-grid {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-
-            .character-card {
-                padding: 1.5rem;
-            }
-
-            .why-included {
-                padding: 2rem;
-            }
-
-            .nav-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .nav-btn {
-                max-width: 100%;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .movie-content {
-                padding: 2rem 0;
-            }
-
-            .movie-section {
-                margin-bottom: 2.5rem;
-            }
-
-            .review-card, .character-card {
-                padding: 1.5rem;
-            }
-        }
-    </style>
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json" id="breadcrumbSchema">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.manfilms.com/"
+        }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Movie",
+            "item": ""
+        }]
+    }
+    </script>
 </head>
 <body>
-    <nav>
+    <header>
         <div class="container">
-            <ul>
-                <li><a href="index.html" class="active">Films</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="submissions.html">Submit</a></li>
-            </ul>
-        </div>
-    </nav>
+            <div class="header-content">
+                <div class="site-branding">
+                    <div>
+                        <h1 class="site-title"><a href="index.html">Cinema & Character</a></h1>
+                        <p class="tagline">Redefining masculinity through film</p>
+                    </div>
+                </div>
 
-    <header class="movie-hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="movie-rank" id="movieRank">1</div>
-                <h1 class="movie-title" id="movieTitle">Loading...</h1>
-                <p class="movie-meta" id="movieMeta">Year | Country</p>
+                <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
+
+            <nav role="navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Films</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="submissions.html">Submit</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <main class="movie-content">
-        <div class="container" id="mainContent">
-            <div class="loading">Loading movie details...</div>
+    <div class="movie-detail">
+        <div class="movie-header">
+            <div class="container">
+                <div class="movie-title-section">
+                    <div class="movie-rank-large" id="movieRank">1</div>
+                    <div class="movie-info">
+                        <h2 class="movie-title-main" id="movieTitle">Loading...</h2>
+                        <div class="movie-meta-detail" id="movieMeta">
+                            <span>Year</span>
+                            <span>•</span>
+                            <span>Country</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </main>
+
+        <div class="movie-content-grid">
+            <div class="movie-main-content" id="mainContent">
+                <div class="loading">Loading movie details...</div>
+            </div>
+
+            <aside class="movie-sidebar">
+                <!-- User Interaction Card -->
+                <div class="content-section">
+                    <h3>📊 Your Progress</h3>
+                    <div class="user-rating" id="movieRating" data-film-id="">
+                        <div style="margin-bottom: 1rem;">
+                            <strong>Rate this film:</strong>
+                        </div>
+                        <div style="display: flex; gap: 0.5rem; justify-content: center; margin-bottom: 1rem;">
+                            <span class="star" data-rating="1">⭐</span>
+                            <span class="star" data-rating="2">⭐</span>
+                            <span class="star" data-rating="3">⭐</span>
+                            <span class="star" data-rating="4">⭐</span>
+                            <span class="star" data-rating="5">⭐</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-watch-toggle btn-outline" id="watchButton" data-film-id="" style="width: 100%;">
+                        👁️ Mark as Watched
+                    </button>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="content-section">
+                    <h3>🎬 Film Details</h3>
+                    <div id="filmStats"></div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="content-section">
+                    <h3>🧭 Navigation</h3>
+                    <div id="navButtons" style="display: flex; flex-direction: column; gap: 1rem;"></div>
+                </div>
+            </aside>
+        </div>
+    </div>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Cinema & Character. Celebrating healthy masculinity in film. | <a href="sitemap.xml">Sitemap</a></p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Cinema & Character</h3>
+                    <p>Discovering films that redefine masculinity through emotional depth, vulnerability, and authentic human connection.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Films</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="submissions.html">Submit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="sitemap.xml">Sitemap</a></li>
+                        <li><a href="robots.txt">Robots.txt</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cinema & Character. Celebrating healthy masculinity in film.</p>
+            </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="movies-data.js"></script>
+    <script src="gamification.js"></script>
     <script>
         // Get movie ID from URL parameter
         function getMovieIdFromUrl() {
@@ -511,10 +209,8 @@
                 movie.country.toLowerCase() + ' cinema',
                 movie.year
             ];
-            
-            // Add tag-based keywords
+
             const tagKeywords = movie.tags.map(tag => tag.toLowerCase());
-            
             return [...baseKeywords, ...tagKeywords].join(', ');
         }
 
@@ -525,25 +221,27 @@
             const url = `https://www.manfilms.com/movie.html?movie=${movie.id}`;
             const keywords = generateKeywords(movie);
 
+            document.title = title;
             document.getElementById('pageTitle').textContent = title;
             document.getElementById('pageDescription').setAttribute('content', description);
             document.getElementById('pageKeywords').setAttribute('content', keywords);
-            
+
             // Canonical
             document.getElementById('canonicalUrl').setAttribute('href', url);
-            
+
             // Open Graph
             document.getElementById('ogUrl').setAttribute('content', url);
             document.getElementById('ogTitle').setAttribute('content', title);
             document.getElementById('ogDescription').setAttribute('content', description);
             document.getElementById('ogImage').setAttribute('content', `https://www.manfilms.com/images/${movie.id}.jpg`);
-            
+
             // Twitter
             document.getElementById('twitterUrl').setAttribute('content', url);
             document.getElementById('twitterTitle').setAttribute('content', title);
             document.getElementById('twitterDescription').setAttribute('content', description);
             document.getElementById('twitterImage').setAttribute('content', `https://www.manfilms.com/images/${movie.id}.jpg`);
-            
+            document.getElementById('twitterImageAlt').setAttribute('content', `${movie.title} movie poster`);
+
             // Schema.org
             const schema = {
                 "@context": "https://schema.org",
@@ -553,6 +251,12 @@
                 "description": movie.description,
                 "countryOfOrigin": movie.country,
                 "genre": movie.tags.join(", "),
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "5",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                },
                 "review": {
                     "@type": "Review",
                     "reviewBody": movie.whyIncluded,
@@ -563,124 +267,199 @@
                 }
             };
             document.getElementById('movieSchema').textContent = JSON.stringify(schema);
+
+            // Breadcrumb
+            const breadcrumb = {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [{
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.manfilms.com/"
+                }, {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": movie.title,
+                    "item": url
+                }]
+            };
+            document.getElementById('breadcrumbSchema').textContent = JSON.stringify(breadcrumb);
         }
 
         // Render movie content
         function renderMovie(movie) {
             const mainContent = document.getElementById('mainContent');
-            
-            // Update hero section
+
+            // Update header
             document.getElementById('movieRank').textContent = movie.rank;
             document.getElementById('movieTitle').textContent = movie.title;
-            document.getElementById('movieMeta').textContent = `${movie.year} | ${movie.country}`;
-            
+            document.getElementById('movieMeta').innerHTML = `
+                <span>📅 ${movie.year}</span>
+                <span>•</span>
+                <span>🌍 ${movie.country}</span>
+            `;
+
+            // Setup watch button and rating
+            const watchButton = document.getElementById('watchButton');
+            const ratingContainer = document.getElementById('movieRating');
+            watchButton.dataset.filmId = movie.id;
+            ratingContainer.dataset.filmId = movie.id;
+
+            // Update button state if gamification is loaded
+            if (window.gamification) {
+                const isWatched = window.gamification.isWatched(movie.id);
+                const rating = window.gamification.getFilmRating(movie.id);
+
+                if (isWatched) {
+                    watchButton.textContent = '✓ Watched';
+                    watchButton.classList.remove('btn-outline');
+                    watchButton.classList.add('btn-success');
+                }
+
+                // Update stars
+                const stars = ratingContainer.querySelectorAll('.star');
+                stars.forEach((star, index) => {
+                    if (index < rating) {
+                        star.classList.add('filled');
+                    }
+                });
+            }
+
             // Create main content
             mainContent.innerHTML = `
-                <section class="movie-section">
-                    <h2>About the Film</h2>
-                    <p class="movie-description">${movie.description}</p>
-                    <div class="tags-container">
+                <section class="content-section">
+                    <h3>📖 About the Film</h3>
+                    <p style="font-size: 1.125rem; line-height: 1.8;">${movie.description}</p>
+                    <div class="film-tags" style="margin-top: 1.5rem;">
                         ${movie.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
                     </div>
                 </section>
 
-                <section class="movie-section">
-                    <h2>Key Characters</h2>
+                <section class="content-section">
+                    <h3>🎭 Key Characters</h3>
                     <div class="characters-grid">
                         ${movie.characters.map(char => `
                             <div class="character-card">
                                 <div class="character-name">${char.name}</div>
-                                <p class="character-description">${char.description}</p>
+                                <p style="color: var(--text-secondary); line-height: 1.7;">${char.description}</p>
                             </div>
                         `).join('')}
                     </div>
                 </section>
 
-                <section class="movie-section">
-                    <h2>Watch the Trailer</h2>
+                <section class="content-section">
+                    <h3>🎬 Watch the Trailer</h3>
                     <div class="video-container">
-                        <iframe src="${movie.trailer}" frameborder="0" allowfullscreen title="${movie.title} Trailer"></iframe>
+                        <iframe src="${movie.trailer}"
+                                frameborder="0"
+                                allowfullscreen
+                                title="${movie.title} Trailer"
+                                loading="lazy"></iframe>
                     </div>
                 </section>
 
-                <section class="movie-section">
-                    <h2>What Critics Say</h2>
-                    <div class="reviews-container">
+                <section class="content-section">
+                    <h3>⭐ What Critics Say</h3>
+                    <div class="reviews-list">
                         ${movie.reviews.map(review => `
-                            <div class="review-card">
-                                <p class="review-quote">${review.quote}</p>
+                            <div class="review-item">
+                                <p class="review-text">${review.quote}</p>
                                 <p class="review-source">— ${review.source}</p>
                             </div>
                         `).join('')}
                     </div>
                 </section>
 
-                <section class="movie-section">
-                    <div class="why-included">
-                        <h2>Why This Film Makes Our List</h2>
-                        <p>${movie.whyIncluded}</p>
-                    </div>
+                <section class="content-section" style="background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary)); border-left: 4px solid var(--accent-color);">
+                    <h3 style="color: var(--accent-color);">🏆 Why This Film Makes Our List</h3>
+                    <p style="font-size: 1.125rem; line-height: 1.8;">${movie.whyIncluded}</p>
                 </section>
+            `;
 
-                <div class="nav-buttons">
-                    ${getPreviousMovieButton(movie)}
-                    <a href="index.html" class="nav-btn">Back to All Films</a>
-                    ${getNextMovieButton(movie)}
+            // Render sidebar stats
+            renderFilmStats(movie);
+            renderNavigation(movie);
+        }
+
+        // Render film stats in sidebar
+        function renderFilmStats(movie) {
+            const statsContainer = document.getElementById('filmStats');
+            statsContainer.innerHTML = `
+                <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                    <div><strong>Rank:</strong> #${movie.rank}</div>
+                    <div><strong>Year:</strong> ${movie.year}</div>
+                    <div><strong>Country:</strong> ${movie.country}</div>
+                    <div><strong>Themes:</strong> ${movie.tags.slice(0, 3).join(', ')}</div>
                 </div>
             `;
         }
 
-        // Get navigation buttons
-        function getPreviousMovieButton(currentMovie) {
+        // Render navigation buttons
+        function renderNavigation(currentMovie) {
+            const navContainer = document.getElementById('navButtons');
             const prevMovie = moviesData.find(m => m.rank === currentMovie.rank - 1);
-            if (prevMovie) {
-                return `<a href="movie.html?movie=${prevMovie.id}" class="nav-btn">← Previous Film</a>`;
-            }
-            return `<span class="nav-btn disabled">← Previous Film</span>`;
-        }
-
-        function getNextMovieButton(currentMovie) {
             const nextMovie = moviesData.find(m => m.rank === currentMovie.rank + 1);
-            if (nextMovie) {
-                return `<a href="movie.html?movie=${nextMovie.id}" class="nav-btn">Next Film →</a>`;
-            }
-            return `<span class="nav-btn disabled">Next Film →</span>`;
+
+            navContainer.innerHTML = `
+                ${prevMovie ?
+                    `<a href="movie.html?movie=${prevMovie.id}" class="btn btn-outline" style="width: 100%;">← ${prevMovie.title}</a>` :
+                    `<button class="btn" disabled style="width: 100%; opacity: 0.5; cursor: not-allowed;">← No Previous</button>`
+                }
+                <a href="index.html" class="btn btn-primary" style="width: 100%;">🏠 All Films</a>
+                ${nextMovie ?
+                    `<a href="movie.html?movie=${nextMovie.id}" class="btn btn-outline" style="width: 100%;">${nextMovie.title} →</a>` :
+                    `<button class="btn" disabled style="width: 100%; opacity: 0.5; cursor: not-allowed;">No Next →</button>`
+                }
+            `;
         }
 
         // Show error message
         function showError(message) {
             const mainContent = document.getElementById('mainContent');
             mainContent.innerHTML = `
-                <div class="error">
-                    <h2>Error</h2>
-                    <p>${message}</p>
-                    <p><a href="index.html">Return to homepage</a></p>
+                <div style="text-align: center; padding: 3rem; background: #ffe6e6; border-radius: 12px; border: 2px solid var(--danger-color);">
+                    <h2 style="color: var(--danger-color); margin-bottom: 1rem;">⚠️ Error</h2>
+                    <p style="margin-bottom: 1.5rem;">${message}</p>
+                    <a href="index.html" class="btn btn-primary">Return to Homepage</a>
                 </div>
             `;
+        }
+
+        // Track page visit for achievements
+        function trackPageVisit(movie) {
+            if (window.gamification) {
+                window.gamification.trackPageVisit(`movie_${movie.id}`);
+            }
         }
 
         // Initialize page
         function initializePage() {
             const movieId = getMovieIdFromUrl();
-            
+
             if (!movieId) {
-                showError('No movie specified. Please select a movie from the homepage.');
+                showError('No movie specified. Please select a film from the homepage.');
                 return;
             }
-            
+
             const movie = moviesData.find(m => m.id === movieId);
-            
+
             if (!movie) {
-                showError('Movie not found. Please check the URL or return to the homepage.');
+                showError('Film not found. Please check the URL or return to the homepage.');
                 return;
             }
-            
+
             updateMetadata(movie);
             renderMovie(movie);
+            trackPageVisit(movie);
         }
 
         // Load when DOM is ready
-        document.addEventListener('DOMContentLoaded', initializePage);
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializePage);
+        } else {
+            initializePage();
+        }
     </script>
 </body>
 </html>
