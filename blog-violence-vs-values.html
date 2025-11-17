@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Violence vs Values: The Troubling Shift in Male Character Attributes | Cinema & Character</title>
     <meta name="description" content="How cinema replaced moral strength with physical dominance in male characters, and why this shift from values to violence damages our understanding of healthy masculinity.">
     <meta name="keywords" content="violence in cinema, toxic masculinity movies, male values films, action movies impact, moral strength characters, physical dominance films, cinema gender stereotypes">
     <meta name="author" content="Cinema & Character Editorial">
+    <meta name="theme-color" content="#1a2332">
+
     <meta name="robots" content="index, follow">
     
     <!-- Canonical URL -->
@@ -14,6 +17,13 @@
     
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="gamification.js" as="script">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
     
     <!-- Open Graph -->
     <meta property="og:type" content="article">
@@ -578,5 +588,13 @@
             <p>&copy; 2025 Cinema & Character. Celebrating healthy masculinity in film. | <a href="sitemap.xml">Sitemap</a></p>
         </div>
     </footer>
+    <!-- Scripts -->
+    <script src="gamification.js"></script>
+    <script>
+        if (window.gamification) {
+            window.gamification.trackPageVisit("blog-violence-vs-values");
+            window.gamification.trackArticleRead("blog-violence-vs-values");
+        }
+    </script>
 </body>
 </html>

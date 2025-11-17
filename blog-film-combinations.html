@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Common Threads: What Our Top 10 Films Teach Us About Healthy Masculinity | Cinema & Character</title>
     <meta name="description" content="Analyzing the thematic connections between films from different cultures and eras that all showcase healthy masculinity through vulnerability, compassion, and emotional intelligence.">
     <meta name="keywords" content="healthy masculinity themes, film analysis masculinity, cinema gender studies, international films masculinity, emotional intelligence movies, positive male role models cinema, cross-cultural masculinity">
     <meta name="author" content="Cinema & Character Editorial">
+    <meta name="theme-color" content="#1a2332">
+
     <meta name="robots" content="index, follow">
     
     <!-- Canonical URL -->
@@ -14,6 +17,13 @@
     
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="gamification.js" as="script">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
     
     <!-- Open Graph -->
     <meta property="og:type" content="article">
@@ -620,5 +630,13 @@
             <p>&copy; 2025 Cinema & Character. Celebrating healthy masculinity in film. | <a href="sitemap.xml">Sitemap</a></p>
         </div>
     </footer>
+    <!-- Scripts -->
+    <script src="gamification.js"></script>
+    <script>
+        if (window.gamification) {
+            window.gamification.trackPageVisit("blog-film-combinations");
+            window.gamification.trackArticleRead("blog-film-combinations");
+        }
+    </script>
 </body>
 </html>
