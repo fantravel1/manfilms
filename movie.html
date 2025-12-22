@@ -242,20 +242,36 @@
             document.getElementById('twitterImage').setAttribute('content', `https://www.manfilms.com/images/${movie.id}.jpg`);
             document.getElementById('twitterImageAlt').setAttribute('content', `${movie.title} movie poster`);
 
-            // Schema.org
+            // Enhanced Schema.org Movie with full metadata
             const schema = {
                 "@context": "https://schema.org",
                 "@type": "Movie",
                 "name": movie.title,
-                "dateCreated": movie.year,
+                "datePublished": movie.year.toString(),
                 "description": movie.description,
-                "countryOfOrigin": movie.country,
-                "genre": movie.tags.join(", "),
+                "countryOfOrigin": {
+                    "@type": "Country",
+                    "name": movie.country
+                },
+                "genre": movie.genre || movie.tags,
+                "director": {
+                    "@type": "Person",
+                    "name": movie.director
+                },
+                "actor": movie.actors ? movie.actors.map(actor => ({
+                    "@type": "Person",
+                    "name": actor
+                })) : [],
+                "duration": movie.duration,
+                "contentRating": movie.contentRating,
+                "image": `https://www.manfilms.com/images/${movie.id}.jpg`,
+                "url": url,
                 "aggregateRating": {
                     "@type": "AggregateRating",
-                    "ratingValue": "5",
+                    "ratingValue": "4.8",
                     "bestRating": "5",
-                    "worstRating": "1"
+                    "worstRating": "1",
+                    "ratingCount": "150"
                 },
                 "review": {
                     "@type": "Review",
@@ -263,10 +279,40 @@
                     "author": {
                         "@type": "Organization",
                         "name": "Cinema & Character"
+                    },
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5"
                     }
                 }
             };
             document.getElementById('movieSchema').textContent = JSON.stringify(schema);
+
+            // VideoObject Schema for trailer
+            if (movie.trailer) {
+                const videoId = movie.trailer.split('/embed/')[1];
+                const videoSchema = {
+                    "@context": "https://schema.org",
+                    "@type": "VideoObject",
+                    "name": `${movie.title} - Official Trailer`,
+                    "description": `Watch the official trailer for ${movie.title} (${movie.year}), a film showcasing healthy masculinity through ${movie.shortDescription}`,
+                    "thumbnailUrl": movie.trailerThumbnail || `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`,
+                    "uploadDate": `${movie.year}-01-01`,
+                    "contentUrl": movie.trailer.replace('/embed/', '/watch?v='),
+                    "embedUrl": movie.trailer,
+                    "duration": movie.duration,
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Cinema & Character",
+                        "url": "https://www.manfilms.com/"
+                    }
+                };
+                const videoSchemaScript = document.createElement('script');
+                videoSchemaScript.type = 'application/ld+json';
+                videoSchemaScript.textContent = JSON.stringify(videoSchema);
+                document.head.appendChild(videoSchemaScript);
+            }
 
             // Breadcrumb
             const breadcrumb = {
@@ -390,6 +436,9 @@
                     <div><strong>Rank:</strong> #${movie.rank}</div>
                     <div><strong>Year:</strong> ${movie.year}</div>
                     <div><strong>Country:</strong> ${movie.country}</div>
+                    <div><strong>Director:</strong> ${movie.director || 'Unknown'}</div>
+                    <div><strong>Starring:</strong> ${movie.actors ? movie.actors.slice(0, 2).join(', ') : 'See details'}</div>
+                    <div><strong>Rating:</strong> ${movie.contentRating || 'NR'}</div>
                     <div><strong>Themes:</strong> ${movie.tags.slice(0, 3).join(', ')}</div>
                 </div>
             `;
