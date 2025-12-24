@@ -788,21 +788,68 @@ nav a.active {
     z-index: 2;
 }
 
-.film-thumbnail {
-    width: 100%;
-    height: 250px;
-    background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--border-color) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 4rem;
+.film-thumbnail-link {
+    display: block;
+    text-decoration: none;
     position: relative;
     overflow: hidden;
 }
 
-.film-thumbnail::after {
+.film-thumbnail {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--bg-tertiary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform var(--transition-base);
+}
+
+.film-thumbnail-link:hover .film-thumbnail {
+    transform: scale(1.05);
+}
+
+.film-thumbnail-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity var(--transition-base);
+}
+
+.film-thumbnail-link:hover .film-thumbnail-overlay {
+    opacity: 1;
+}
+
+.play-icon {
+    width: 60px;
+    height: 60px;
+    color: white;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
+    transition: transform var(--transition-fast);
+}
+
+.film-thumbnail-link:hover .play-icon {
+    transform: scale(1.1);
+}
+
+/* Fallback for missing thumbnails */
+.film-thumbnail:empty::after,
+.film-thumbnail[style*="undefined"]::after {
     content: '🎬';
-    opacity: 0.2;
+    font-size: 4rem;
+    opacity: 0.3;
 }
 
 .film-content {
