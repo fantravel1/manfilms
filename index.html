@@ -345,7 +345,15 @@
                 return `
                 <article class="film-card ${isWatched ? 'watched' : ''}" data-film-id="${movie.id}">
                     <div class="film-rank">${movie.rank}</div>
-                    <div class="film-thumbnail"></div>
+                    <a href="movie.html?movie=${movie.id}" class="film-thumbnail-link">
+                        <div class="film-thumbnail" style="background-image: url('${movie.trailerThumbnail}');">
+                            <div class="film-thumbnail-overlay">
+                                <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
                     <div class="film-content">
                         <h3 class="film-title">${movie.title}</h3>
                         <div class="film-meta">
