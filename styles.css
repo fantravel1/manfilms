@@ -2041,3 +2041,327 @@ select:focus-visible {
 .skeleton-image {
     height: 200px;
 }
+
+/* ============================================
+   COMPREHENSIVE MOBILE OPTIMIZATION
+   All devices from 320px to 1024px
+   ============================================ */
+
+/* Extra small devices (phones, 320px - 480px) */
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 0 var(--space-md);
+    }
+
+    /* Hero section mobile */
+    .hero {
+        padding: var(--space-xl) 0;
+        background-attachment: scroll; /* Better performance on mobile */
+    }
+
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Film thumbnails mobile */
+    .film-thumbnail {
+        height: 180px;
+    }
+
+    .play-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .film-rank {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .film-content {
+        padding: var(--space-md);
+    }
+
+    .film-title {
+        font-size: 1.25rem;
+    }
+
+    .film-description {
+        font-size: 0.9rem;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    /* Touch-friendly buttons (min 44px) */
+    .btn {
+        min-height: 44px;
+        padding: var(--space-sm) var(--space-md);
+        font-size: 0.875rem;
+    }
+
+    .film-actions {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+
+    .film-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Tags smaller on mobile */
+    .tag {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.5rem;
+    }
+
+    /* Movie detail page mobile */
+    .movie-poster {
+        height: 220px !important;
+    }
+
+    .movie-title-main {
+        font-size: 1.5rem;
+    }
+
+    .movie-rank-large {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+    }
+
+    /* Social share buttons mobile */
+    .share-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .share-btn svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .social-share {
+        justify-content: center;
+    }
+
+    .social-share-label {
+        width: 100%;
+        text-align: center;
+        margin-bottom: var(--space-sm);
+    }
+
+    /* Footer mobile */
+    .footer-content {
+        flex-direction: column;
+        gap: var(--space-xl);
+    }
+
+    .footer-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    /* Reading progress thinner on mobile */
+    .reading-progress {
+        height: 2px;
+    }
+
+    /* Article mobile */
+    article h1 {
+        font-size: 1.5rem;
+    }
+
+    article h2 {
+        font-size: 1.25rem;
+    }
+
+    article p {
+        font-size: 1rem;
+    }
+
+    .article-meta {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-sm);
+    }
+
+    /* CTA box mobile */
+    .cta-box, .cta-section {
+        padding: var(--space-lg);
+    }
+
+    /* Video container mobile */
+    .video-container {
+        margin: var(--space-md) calc(-1 * var(--space-md));
+        border-radius: 0;
+    }
+}
+
+/* Small devices (large phones, 481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .film-thumbnail {
+        height: 200px;
+    }
+
+    .movie-poster {
+        height: 280px !important;
+    }
+
+    .films-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-md);
+    }
+
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Medium devices (tablets, 769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .films-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .movie-content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .movie-sidebar {
+        order: -1;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-md);
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    /* Remove hover effects that don't work well on touch */
+    .film-card:hover {
+        transform: none;
+    }
+
+    .film-thumbnail-link:hover .film-thumbnail {
+        transform: none;
+    }
+
+    .film-thumbnail-overlay {
+        opacity: 0.5; /* Always show play button on touch devices */
+    }
+
+    .share-btn:hover {
+        transform: none;
+    }
+
+    /* Larger touch targets */
+    .btn, .share-btn, .star {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    nav a {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* Landscape phone optimization */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        padding: var(--space-lg) 0;
+    }
+
+    .hero h2 {
+        font-size: 1.25rem;
+        margin-bottom: var(--space-sm);
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+        margin-bottom: var(--space-md);
+    }
+
+    .movie-poster {
+        height: 200px !important;
+    }
+}
+
+/* Safe area insets for notched devices */
+@supports (padding: max(0px)) {
+    .container {
+        padding-left: max(var(--space-lg), env(safe-area-inset-left));
+        padding-right: max(var(--space-lg), env(safe-area-inset-right));
+    }
+
+    footer {
+        padding-bottom: max(var(--space-xl), env(safe-area-inset-bottom));
+    }
+
+    .share-floating {
+        left: max(var(--space-lg), env(safe-area-inset-left));
+    }
+
+    .toast {
+        right: max(var(--space-xl), env(safe-area-inset-right));
+        bottom: max(var(--space-xl), env(safe-area-inset-bottom));
+    }
+}
+
+/* Improve text readability on mobile */
+@media (max-width: 768px) {
+    body {
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+    }
+
+    /* Prevent zoom on input focus on iOS */
+    input, select, textarea {
+        font-size: 16px;
+    }
+
+    /* Better line height for readability */
+    p, li {
+        line-height: 1.8;
+    }
+
+    /* Prevent horizontal scroll */
+    html, body {
+        overflow-x: hidden;
+    }
+
+    /* Make images responsive */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* High resolution displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Sharper borders and shadows */
+    .film-card {
+        border-width: 1px;
+    }
+
+    .share-btn {
+        border-width: 1px;
+    }
+}
