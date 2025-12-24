@@ -663,6 +663,12 @@
                     <a href="submissions.html" class="btn">Submit Your Suggestions</a>
                 </div>
 
+                <!-- Social Share Section -->
+                <div class="social-share share-inline" style="margin-top: 2rem; padding-top: 2rem; border-top: 2px solid #e1e8ed;">
+                    <span class="social-share-label">Share this article</span>
+                    <div class="social-share-buttons" id="articleShare"></div>
+                </div>
+
                 <h2>Conclusion</h2>
 
                 <p>
@@ -685,13 +691,41 @@
             <p>&copy; 2025 Cinema & Character. Celebrating healthy masculinity in film. | <a href="sitemap.xml">Sitemap</a></p>
         </div>
     </footer>
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress" id="readingProgress"></div>
+
     <!-- Scripts -->
     <script src="gamification.js"></script>
+    <script src="social-share.js"></script>
     <script>
         if (window.gamification) {
             window.gamification.trackPageVisit("blog-violence-vs-values");
             window.gamification.trackArticleRead("blog-violence-vs-values");
         }
+
+        // Reading progress bar
+        window.addEventListener('scroll', function() {
+            const article = document.querySelector('article');
+            const progressBar = document.getElementById('readingProgress');
+            if (article && progressBar) {
+                const articleTop = article.offsetTop;
+                const articleHeight = article.offsetHeight;
+                const scrolled = window.scrollY - articleTop;
+                const progress = Math.min(Math.max(scrolled / articleHeight * 100, 0), 100);
+                progressBar.style.width = progress + '%';
+            }
+        });
+
+        // Add floating share bar
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.SocialShare) {
+                SocialShare.addFloatingBar({
+                    url: 'https://www.manfilms.com/blog-violence-vs-values.html',
+                    title: 'Violence vs Values: The Troubling Shift in Male Character Attributes',
+                    description: 'How cinema replaced moral strength with physical dominance in male characters.'
+                });
+            }
+        });
     </script>
 </body>
 </html>

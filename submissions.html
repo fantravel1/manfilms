@@ -379,6 +379,11 @@
                         <li><a href="robots.txt">Robots.txt</a></li>
                     </ul>
                 </div>
+                <div class="footer-section">
+                    <h3>Share This Page</h3>
+                    <p>Know someone who'd want to contribute?</p>
+                    <div class="footer-social" id="footerShare"></div>
+                </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Cinema & Character. Celebrating healthy masculinity in film.</p>
@@ -388,11 +393,27 @@
 
     <!-- Scripts -->
     <script src="gamification.js"></script>
+    <script src="social-share.js"></script>
     <script>
         // Track page visit for achievements
         if (window.gamification) {
             window.gamification.trackPageVisit('submissions');
         }
+
+        // Initialize footer social sharing
+        document.addEventListener('DOMContentLoaded', function() {
+            const footerShare = document.getElementById('footerShare');
+            if (footerShare && window.SocialShare) {
+                const shareComponent = SocialShare.createShareComponent({
+                    url: 'https://www.manfilms.com/submissions.html',
+                    title: 'Submit Films & Suggestions | Cinema & Character',
+                    description: 'Share your suggestions for films that showcase healthy masculinity.',
+                    platforms: ['twitter', 'facebook', 'whatsapp', 'linkedin', 'email'],
+                    showLabels: false
+                });
+                footerShare.innerHTML = shareComponent.querySelector('.social-share-buttons').innerHTML;
+            }
+        });
 
         // Form submission handling
         document.getElementById('submissionForm').addEventListener('submit', function(e) {

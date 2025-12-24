@@ -182,6 +182,11 @@
                         <li><a href="robots.txt">Robots.txt</a></li>
                     </ul>
                 </div>
+                <div class="footer-section">
+                    <h3>Share This Film</h3>
+                    <p>Recommend this film to others!</p>
+                    <div class="footer-social" id="footerShare"></div>
+                </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Cinema & Character. Celebrating healthy masculinity in film.</p>
@@ -192,6 +197,7 @@
     <!-- Scripts -->
     <script src="movies-data.js"></script>
     <script src="gamification.js"></script>
+    <script src="social-share.js"></script>
     <script>
         // Get movie ID from URL parameter
         function getMovieIdFromUrl() {
@@ -503,11 +509,39 @@
             trackPageVisit(movie);
         }
 
+        // Initialize footer social sharing
+        function initFooterShare(movie) {
+            const footerShare = document.getElementById('footerShare');
+            if (footerShare && window.SocialShare) {
+                const url = `https://www.manfilms.com/movie.html?movie=${movie.id}`;
+                const shareComponent = SocialShare.createShareComponent({
+                    url: url,
+                    title: `${movie.title} - Healthy Masculinity in Cinema | Cinema & Character`,
+                    description: movie.shortDescription,
+                    platforms: ['twitter', 'facebook', 'whatsapp', 'linkedin', 'email'],
+                    showLabels: false
+                });
+                footerShare.innerHTML = shareComponent.querySelector('.social-share-buttons').innerHTML;
+            }
+        }
+
         // Load when DOM is ready
         if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initializePage);
+            document.addEventListener('DOMContentLoaded', function() {
+                initializePage();
+                const movieId = getMovieIdFromUrl();
+                const movie = moviesData.find(m => m.id === movieId);
+                if (movie) {
+                    initFooterShare(movie);
+                }
+            });
         } else {
             initializePage();
+            const movieId = getMovieIdFromUrl();
+            const movie = moviesData.find(m => m.id === movieId);
+            if (movie) {
+                initFooterShare(movie);
+            }
         }
     </script>
 </body>

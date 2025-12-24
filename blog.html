@@ -222,6 +222,11 @@
                         <li><a href="robots.txt">Robots.txt</a></li>
                     </ul>
                 </div>
+                <div class="footer-section">
+                    <h3>Share Our Blog</h3>
+                    <p>Spread the word about healthy masculinity!</p>
+                    <div class="footer-social" id="footerShare"></div>
+                </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Cinema & Character. Celebrating healthy masculinity in film.</p>
@@ -230,10 +235,26 @@
     </footer>
 
     <script src="gamification.js"></script>
+    <script src="social-share.js"></script>
     <script>
         if (window.gamification) {
             window.gamification.trackPageVisit('blog');
         }
+
+        // Initialize footer social sharing
+        document.addEventListener('DOMContentLoaded', function() {
+            const footerShare = document.getElementById('footerShare');
+            if (footerShare && window.SocialShare) {
+                const shareComponent = SocialShare.createShareComponent({
+                    url: 'https://www.manfilms.com/blog.html',
+                    title: 'Blog - Insights on Healthy Masculinity in Cinema',
+                    description: 'Read our latest analysis and insights on healthy masculinity in film.',
+                    platforms: ['twitter', 'facebook', 'whatsapp', 'linkedin', 'email'],
+                    showLabels: false
+                });
+                footerShare.innerHTML = shareComponent.querySelector('.social-share-buttons').innerHTML;
+            }
+        });
     </script>
 </body>
 </html>
