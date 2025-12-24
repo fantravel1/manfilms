@@ -316,6 +316,11 @@
                         <li><a href="robots.txt">Robots.txt</a></li>
                     </ul>
                 </div>
+                <div class="footer-section">
+                    <h3>Share This Site</h3>
+                    <p>Know someone who'd love these films?</p>
+                    <div class="footer-social" id="footerShare"></div>
+                </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Cinema & Character. Celebrating healthy masculinity in film.</p>
@@ -326,6 +331,7 @@
     <!-- Scripts -->
     <script src="movies-data.js"></script>
     <script src="gamification.js"></script>
+    <script src="social-share.js"></script>
     <script>
         // Populate films grid with interactive features
         function populateFilmsGrid() {
@@ -402,6 +408,21 @@
         window.addEventListener('storage', function(e) {
             if (e.key && e.key.startsWith('cinema_')) {
                 populateFilmsGrid();
+            }
+        });
+
+        // Initialize footer social sharing
+        document.addEventListener('DOMContentLoaded', function() {
+            const footerShare = document.getElementById('footerShare');
+            if (footerShare && window.SocialShare) {
+                const shareComponent = SocialShare.createShareComponent({
+                    url: 'https://www.manfilms.com/',
+                    title: 'Cinema & Character - Top 10 Films Depicting Healthy Masculinity',
+                    description: 'Discover films that showcase emotional intelligence, vulnerability, and authentic human connection.',
+                    platforms: ['twitter', 'facebook', 'whatsapp', 'linkedin', 'email'],
+                    showLabels: false
+                });
+                footerShare.innerHTML = shareComponent.querySelector('.social-share-buttons').innerHTML;
             }
         });
     </script>
