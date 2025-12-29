@@ -504,6 +504,146 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* Extra small screens (360px and below) */
+        @media (max-width: 360px) {
+            .container {
+                padding: 0 12px;
+            }
+
+            article h1 {
+                font-size: 1.5rem;
+            }
+
+            article h2 {
+                font-size: 1.25rem;
+            }
+
+            article p {
+                font-size: 1rem;
+            }
+
+            .article-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: center;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+            }
+
+            .back-to-blog {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+
+            .theme-box {
+                padding: 1rem;
+            }
+
+            .theme-box h3 {
+                font-size: 1.1rem;
+            }
+
+            .theme-box li {
+                font-size: 0.9rem;
+            }
+
+            .quote-highlight {
+                padding: 1.5rem;
+            }
+
+            .quote-highlight p {
+                font-size: 1.1rem;
+            }
+
+            .insight-box {
+                padding: 1rem;
+            }
+
+            .cta-box {
+                padding: 1.5rem;
+            }
+
+            .cta-box h3 {
+                font-size: 1.25rem;
+            }
+
+            .btn {
+                padding: 10px 24px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Small screens (480px and below) */
+        @media (max-width: 480px) {
+            header {
+                padding: 1.5rem 0;
+            }
+
+            nav ul {
+                gap: 1.5rem;
+            }
+
+            article {
+                padding: 1.5rem 0;
+            }
+
+            .theme-box h4 {
+                font-size: 1rem;
+            }
+
+            .connection-card {
+                padding: 1rem;
+            }
+
+            .connection-card h4 {
+                font-size: 1rem;
+            }
+
+            .connection-card p {
+                font-size: 0.9rem;
+            }
+
+            article ul,
+            article ol {
+                padding-left: 1.25rem;
+            }
+
+            article li {
+                font-size: 0.95rem;
+            }
+
+            .social-share {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .social-share-label {
+                text-align: center;
+                width: 100%;
+            }
+        }
+
+        /* Prevent horizontal overflow */
+        html, body {
+            overflow-x: hidden;
+            max-width: 100vw;
+        }
+
+        * {
+            max-width: 100%;
+        }
+
+        p, li, span, a {
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+        }
     </style>
 </head>
 <body>
