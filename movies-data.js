@@ -30,6 +30,24 @@ const moviesData = [
                 description: 'Their teenage daughter caught between her parents\' separation, displaying wisdom beyond her years.'
             }
         ],
+        characterAnalysis: {
+            title: 'What Makes These Performances Extraordinary',
+            writingHighlights: [
+                'Farhadi\'s screenplay never clearly identifies a villain—every character operates from understandable motivations, creating genuine moral ambiguity',
+                'Nader\'s dialogue reveals his inner conflict through what he doesn\'t say, using silence and hesitation as powerful storytelling tools',
+                'The script structures each revelation as a moral puzzle, forcing viewers to constantly reassess their judgments alongside the characters'
+            ],
+            actingHighlights: [
+                'Peyman Moaadi\'s portrayal of Nader earned him international acclaim for embodying quiet desperation—his face reveals layers of guilt, love, and stubborn pride simultaneously',
+                'The ensemble cast was largely unknown internationally, lending raw authenticity to their performances as ordinary people facing extraordinary moral dilemmas',
+                'Shahab Hosseini brings devastating vulnerability to Hodjat, transforming what could be an antagonist into a sympathetic figure torn by faith and desperation'
+            ],
+            specialMoments: [
+                'The courtroom scenes where Nader must choose between truth and protecting his family showcase Moaadi\'s masterful restraint',
+                'Termeh\'s final choice, delivered without dialogue through Sarina Farhadi\'s expressive performance, carries the weight of the entire film',
+                'The opening scene where the couple addresses the camera directly breaks the fourth wall, establishing immediate intimacy with the audience'
+            ]
+        },
         reviews: [
             {
                 quote: 'Farhadi provides a useful portrait of Iran today... this film portrays a more nuanced nation, and its decent characters are trying to do the right thing.',
@@ -76,6 +94,24 @@ const moviesData = [
                 description: 'A wise witch who teaches Chihiro about the power of love and genuine friendship, representing nurturing wisdom.'
             }
         ],
+        characterAnalysis: {
+            title: 'The Art Behind Miyazaki\'s Characters',
+            writingHighlights: [
+                'Miyazaki wrote Haku as deliberately mysterious—his true identity as a river spirit is revealed gradually, allowing his protective nature to transcend typical male hero tropes',
+                'Chihiro\'s character arc is revolutionary: she doesn\'t become powerful through training montages but through work, empathy, and genuine care for others',
+                'The screenplay subverts expectations by making the dragon (Haku) someone who needs saving, reversing traditional masculine rescue narratives'
+            ],
+            actingHighlights: [
+                'Miyu Irino\'s voice performance as Haku balances authority with vulnerability—his gentle tone when guiding Chihiro contrasts with his fierce determination in dragon form',
+                'Rumi Hiiragi\'s Chihiro captures authentic child fear and confusion, avoiding the precocious child actress trap common in animated films',
+                'The Japanese voice cast brings subtle emotional layers that distinguish Ghibli films from Western animation approaches'
+            ],
+            specialMoments: [
+                'Haku remembering his true name while falling creates one of cinema\'s most emotionally resonant reveals, voiced with heartbreaking tenderness',
+                'The moment Haku tells Chihiro not to look back echoes Orpheus mythology while establishing his protective-but-trusting relationship',
+                'No-Face\'s wordless performance demonstrates how Miyazaki uses character animation to convey complex emotions without dialogue'
+            ]
+        },
         reviews: [
             {
                 quote: 'Spirited Away is a dazzling, enchanting, and gorgeously drawn fairy tale that will leave viewers a little more curious and fascinated by the world around them.',
@@ -122,6 +158,24 @@ const moviesData = [
                 description: 'Chiron\'s childhood friend and later love interest, representing both the pain and possibility of authentic connection.'
             }
         ],
+        characterAnalysis: {
+            title: 'Three Actors, One Soul: The Miracle of Moonlight',
+            writingHighlights: [
+                'Barry Jenkins adapted Tarell Alvin McCraney\'s play with deeply personal additions—both creators grew up in Miami\'s Liberty City with mothers who struggled with addiction',
+                'The screenplay uses minimal dialogue, trusting the audience to understand Chiron\'s interior world through behavior rather than explanation',
+                'Each act mirrors the previous ones with deliberate callbacks, showing how trauma echoes across a lifetime while leaving room for growth'
+            ],
+            actingHighlights: [
+                'Three actors (Alex Hibbert, Ashton Sanders, Trevante Rhodes) maintain perfect continuity of soul—their physical gestures, eye movements, and posture create one continuous character',
+                'Mahershala Ali\'s Juan won the Oscar for just 20 minutes of screen time, proving that presence and tenderness speak louder than runtime',
+                'Trevante Rhodes\' final act performance uses his muscular exterior as armor, making the vulnerability beneath devastatingly powerful when it emerges'
+            ],
+            specialMoments: [
+                'Juan teaching Little to swim becomes a baptism scene—Ali\'s gentle instruction shows Black fatherhood rarely depicted in cinema',
+                'The diner scene where adult Chiron and Kevin reunite is almost wordless, yet André Holland and Rhodes convey decades of longing through glances',
+                'The final image of Little standing in moonlight, rendered in deep blue, creates a visual motif that ties all three acts together through color and light'
+            ]
+        },
         reviews: [
             {
                 quote: 'A potent and poetic coming-of-age story that uses its protagonist\'s journey to explore themes of identity, family, love and acceptance.',
@@ -168,6 +222,24 @@ const moviesData = [
                 description: 'Elio\'s father who delivers one of cinema\'s most compassionate speeches about love and acceptance, representing ideal supportive masculinity.'
             }
         ],
+        characterAnalysis: {
+            title: 'The Poetry of First Love: Writing and Performance',
+            writingHighlights: [
+                'James Ivory\'s Oscar-winning screenplay distills André Aciman\'s novel into sensory details—the screenplay reads like poetry, each exchange loaded with subtext',
+                'The "call me by your name" concept transforms identity and intimacy into something sacred, showing how love can dissolve boundaries between self and other',
+                'Professor Perlman\'s final monologue was written to subvert expected parental reactions, offering acceptance where cinema typically delivers judgment'
+            ],
+            actingHighlights: [
+                'Timothée Chalamet\'s Elio became a generational performance—his face registers every micro-emotion of desire, jealousy, and heartbreak with devastating precision',
+                'Armie Hammer embodies Oliver\'s casual confidence while revealing the character\'s own vulnerability beneath the "Later!" catchphrase',
+                'Michael Stuhlbarg\'s delivery of the father\'s speech required multiple takes not because of difficulty, but because the crew kept crying'
+            ],
+            specialMoments: [
+                'The final shot of Elio crying by the fireplace, held for minutes as Sufjan Stevens plays, trusts Chalamet\'s face to carry the entire weight of loss',
+                'The foot massage scene uses touch as language—the actors choreographed this intimacy to show desire that cannot yet be spoken',
+                'Elio\'s nosebleed scene reveals how the screenplay uses the body to express emotion when words fail'
+            ]
+        },
         reviews: [
             {
                 quote: 'A sensual and emotional tour de force that captures the intensity and pain of first love with remarkable authenticity.',
@@ -214,6 +286,24 @@ const moviesData = [
                 description: 'Will\'s best friend who shows loyalty and tough love, representing authentic working-class friendship and support.'
             }
         ],
+        characterAnalysis: {
+            title: 'Genius in Pain: How Writing Met Lightning Performance',
+            writingHighlights: [
+                'Matt Damon and Ben Affleck wrote Will specifically to subvert the "genius" trope—his intelligence becomes a wall against intimacy rather than a superpower',
+                'Sean\'s monologue about his wife\'s imperfections was written to show that real love embraces flaws, countering Will\'s fear of being truly known',
+                'Chuckie\'s speech about hoping Will leaves their neighborhood forever reveals working-class wisdom about recognizing potential in others'
+            ],
+            actingHighlights: [
+                'Robin Williams improvised his most famous lines, including the story about his wife\'s gas—director Gus Van Sant kept the camera shaking because the crew was laughing',
+                'The "It\'s not your fault" scene required over 100 takes—Williams\' patience in repeating the line with increasing tenderness until Damon broke down was legendary',
+                'Williams drew on his own therapy experiences, bringing authenticity to Sean that elevated the entire film beyond a typical mentor story'
+            ],
+            specialMoments: [
+                'Williams\' park bench monologue was delivered in one take—his stillness and controlled emotion showed mastery of dramatic performance from a comedian',
+                'The scene where Will describes his foster father\'s abuse uses Damon\'s own nervous mannerisms, creating uncomfortable authenticity',
+                'Affleck\'s "I\'d do anything to have what you got" scene demonstrates how male friendship can express love without sentimentality'
+            ]
+        },
         reviews: [
             {
                 quote: 'Robin Williams delivers a career-defining performance that perfectly balances humor and heartbreak.',
@@ -260,6 +350,24 @@ const moviesData = [
                 description: 'A stockbroker who gives Chris a chance, representing the importance of recognizing potential and offering opportunities.'
             }
         ],
+        characterAnalysis: {
+            title: 'A Father\'s Love: Will Smith\'s Career-Defining Role',
+            writingHighlights: [
+                'Steve Conrad\'s screenplay strips away Hollywood embellishment—the real Chris Gardner reviewed the script to ensure authentic portrayal of his struggles',
+                'The film deliberately avoids villainizing Linda (Chris\'s wife) as an easy antagonist, showing how poverty breaks relationships without assigning simple blame',
+                'The screenplay uses the deliberate misspelling of "Happyness" from a real daycare sign Chris saw, turning a typo into a metaphor for imperfect but genuine striving'
+            ],
+            actingHighlights: [
+                'Will Smith transformed his star persona for this role—gone is the Fresh Prince charm, replaced by desperate determination that earned his second Oscar nomination',
+                'Casting real-life father and son creates electric authenticity—when Jaden looks at Will with trust, it\'s not acting but genuine belief in his father',
+                'Smith spent time with the real Chris Gardner, adopting his specific walk, speech patterns, and the way he looked at his son with fierce protectiveness'
+            ],
+            specialMoments: [
+                'The bathroom scene where Chris holds his son in a subway station restroom while homeless people pound on the door—Smith\'s silent tears were partially unscripted',
+                'Chris running to make his interview while looking disheveled forced Smith to convey dignity and desperation simultaneously',
+                'The ending moment where Chris learns he got the job—Smith held back tears until the take was done, then collapsed crying for real'
+            ]
+        },
         reviews: [
             {
                 quote: 'Will Smith delivers his most powerful performance as a man determined to overcome impossible odds.',
@@ -306,6 +414,24 @@ const moviesData = [
                 description: 'The leader of Iron Town who represents complex antagonism, showing that even opponents can have understandable motivations.'
             }
         ],
+        characterAnalysis: {
+            title: 'Miyazaki\'s Moral Compass: Characters Beyond Good and Evil',
+            writingHighlights: [
+                'Miyazaki wrote Ashitaka specifically to counter the typical revenge hero—despite being cursed, he seeks understanding rather than vengeance',
+                'Lady Eboshi is never framed as a villain despite destroying the forest—she protects lepers and former prostitutes, showing moral complexity',
+                'The script refuses resolution through violence—Ashitaka\'s greatest act is stepping between combatants, taking bullets to force peace'
+            ],
+            actingHighlights: [
+                'Yoji Matsuda voices Ashitaka with unusual calmness for an action hero—his measured delivery emphasizes wisdom over aggression',
+                'Yuriko Ishida\'s San expresses feral rage and vulnerability in equal measure, creating a character who is both terrifying and sympathetic',
+                'The voice cast maintains dignity even during action sequences, refusing to indulge in typical anime shouting that could undermine the film\'s themes'
+            ],
+            specialMoments: [
+                'Ashitaka\'s arrow removing a samurai\'s arms demonstrates the curse\'s power, but his horrified reaction shows violence as tragedy, not triumph',
+                'The scene where Ashitaka feeds San rice from his mouth inverts typical masculine/feminine dynamics—he nurtures while she is the warrior',
+                'San declaring "I hate humans" while Ashitaka responds "I love you" shows the screenplay\'s refusal to let romance resolve ideological conflict'
+            ]
+        },
         reviews: [
             {
                 quote: 'A sweeping epic that successfully balances spectacular action with deep environmental and social themes.',
@@ -352,6 +478,24 @@ const moviesData = [
                 description: 'A logical stockbroker who shows how rational thinking can evolve when presented with new evidence.'
             }
         ],
+        characterAnalysis: {
+            title: 'Twelve Men, Twelve Masks: Ensemble Acting Perfection',
+            writingHighlights: [
+                'Reginald Rose\'s teleplay-turned-screenplay gives each juror distinct psychology—their votes reveal character rather than just plot progression',
+                'The script deliberately withholds names until the final scene, forcing audiences to judge characters by their actions rather than identities',
+                'Rose embedded class commentary throughout—the old man, the immigrant, and the working-class jurors represent America\'s overlooked voices'
+            ],
+            actingHighlights: [
+                'Henry Fonda\'s Juror #8 demonstrates leadership through listening—his power comes from asking questions rather than making declarations',
+                'Lee J. Cobb\'s breakdown as Juror #3 reveals the personal father-son wound driving his rage, performed with volcanic intensity that never becomes cartoonish',
+                'The ensemble required precise timing as a theatrical piece—director Sidney Lumet rehearsed for two weeks before shooting to achieve seamless interaction'
+            ],
+            specialMoments: [
+                'The moment Juror #8 produces an identical switchblade shatters the prosecution\'s "unique weapon" argument—Fonda\'s quiet placement of the knife speaks volumes',
+                'Juror #3\'s final vote, delivered while tearing up his son\'s photo, transforms villain into victim in seconds through Cobb\'s devastating performance',
+                'The progressive use of longer lenses as the film continues creates claustrophobic tension, making the actors\' performances increasingly intimate'
+            ]
+        },
         reviews: [
             {
                 quote: 'A masterpiece of tight, economical filmmaking that explores the American justice system with intelligence and passion.',
@@ -398,6 +542,24 @@ const moviesData = [
                 description: 'The supportive wife who encourages her husband\'s growth while maintaining her own strength and dignity.'
             }
         ],
+        characterAnalysis: {
+            title: 'Finding One\'s Voice: Firth\'s Oscar-Winning Transformation',
+            writingHighlights: [
+                'David Seidler waited over 30 years to write this screenplay—he had a childhood stammer and promised the real Queen Mother to wait until after her death',
+                'The script treats the stammer as both literal impediment and metaphor for finding authentic voice, layering personal and national crisis',
+                'Dialogue between Bertie and Lionel reverses expected power dynamics—the commoner leads while the king follows, subverting class expectations'
+            ],
+            actingHighlights: [
+                'Colin Firth trained with a speech therapist for months to authentically portray stammering—he didn\'t simply pause, he embodied the physical struggle',
+                'Geoffrey Rush brings warmth and irreverence to Lionel without sacrificing professional dignity, creating a mentor who heals through humanity, not technique',
+                'The chemistry between Firth and Rush makes their unconventional friendship feel earned—their improvisational moments were kept in the final cut'
+            ],
+            specialMoments: [
+                'The climactic wartime speech intercuts between the recording booth and the nation listening—Firth\'s concentration and fear create unbearable tension',
+                'Bertie\'s confession about his childhood abuse was performed in a single take—Firth\'s tears were unexpected, capturing the character\'s breakthrough',
+                'The scene where Lionel sits in the coronation throne demonstrates Rush\'s ability to provoke genuine anger from Firth, creating the film\'s turning point'
+            ]
+        },
         reviews: [
             {
                 quote: 'Colin Firth delivers a masterful performance that transforms a speech impediment into a metaphor for finding one\'s voice.',
@@ -444,6 +606,24 @@ const moviesData = [
                 description: 'Antonio\'s wife who supports the family through domestic work while encouraging her husband\'s efforts to find employment.'
             }
         ],
+        characterAnalysis: {
+            title: 'Non-Actors as Truth-Tellers: Italian Neorealism\'s Heart',
+            writingHighlights: [
+                'Cesare Zavattini\'s screenplay strips storytelling to its essence—a father, a son, a bicycle, and the indifferent city that swallows their hope',
+                'The script deliberately avoids melodrama—Antonio\'s moral fall (attempting theft himself) happens without judgment or redemption arcs',
+                'De Sica and Zavattini created neorealism\'s manifesto: "Everyday life is the source of drama itself, not manufactured plots"'
+            ],
+            actingHighlights: [
+                'Lamberto Maggiorani was actually a factory worker when cast—his untrained performance brings documentary truth impossible for professional actors to replicate',
+                'Enzo Staiola, age 8, delivers one of cinema\'s great child performances—his final look at his shamed father conveys understanding beyond his years',
+                'De Sica directed non-actors by having them live their roles—Maggiorani didn\'t "act" desperate, he genuinely feared for his new film career during production'
+            ],
+            specialMoments: [
+                'The final scene where Bruno takes his father\'s hand after watching him humiliated—Staiola\'s gesture forgives without words, creating cinema\'s most tender father-son moment',
+                'Antonio slapping Bruno, then immediately regretting it, shows Maggiorani\'s instinctive understanding of shame\'s explosive release',
+                'The closing shot of father and son disappearing into the crowd demonstrates neorealism\'s thesis: individual tragedy dissolves into collective struggle'
+            ]
+        },
         reviews: [
             {
                 quote: 'A perfect example of neorealism that finds profound drama in everyday struggles and human dignity.',

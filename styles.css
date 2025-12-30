@@ -2980,3 +2980,77 @@ html, body {
         padding: var(--space-md);
     }
 }
+
+/* Character Analysis Section Styles */
+.character-analysis-section {
+    margin-top: var(--space-xl);
+}
+
+.character-analysis-section h3 {
+    font-size: 1.5rem;
+}
+
+.character-analysis-section h4 {
+    font-size: 1.15rem;
+}
+
+.analysis-block {
+    padding: var(--space-md);
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: var(--radius-md);
+}
+
+.analysis-block li {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .character-analysis-section {
+        padding: var(--space-lg) !important;
+    }
+
+    .character-analysis-section h3 {
+        font-size: 1.25rem;
+    }
+
+    .character-analysis-section h4 {
+        font-size: 1.05rem;
+    }
+
+    .analysis-block {
+        padding: var(--space-sm);
+    }
+
+    .analysis-block li {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .character-analysis-section {
+        padding: var(--space-md) !important;
+    }
+
+    .character-analysis-section h3 {
+        font-size: 1.1rem;
+        margin-bottom: var(--space-lg) !important;
+    }
+
+    .character-analysis-section h4 {
+        font-size: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .character-analysis-section h4 span {
+        font-size: 1.25rem !important;
+    }
+
+    .analysis-block li {
+        font-size: 0.9rem;
+        padding-left: var(--space-md) !important;
+    }
+
+    .analysis-grid {
+        gap: var(--space-lg) !important;
+    }
+}

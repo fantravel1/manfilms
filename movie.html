@@ -431,6 +431,56 @@
                     </div>
                 </section>
 
+                ${movie.characterAnalysis ? `
+                <section class="content-section character-analysis-section" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); border-left: 4px solid var(--secondary-color);">
+                    <h3 style="color: var(--secondary-color); margin-bottom: var(--space-xl);">✨ ${movie.characterAnalysis.title}</h3>
+
+                    <div class="analysis-grid" style="display: grid; gap: var(--space-xl);">
+                        <div class="analysis-block">
+                            <h4 style="color: var(--primary-color); margin-bottom: var(--space-md); display: flex; align-items: center; gap: var(--space-sm);">
+                                <span style="font-size: 1.5rem;">📝</span> The Writing
+                            </h4>
+                            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--space-md);">
+                                ${movie.characterAnalysis.writingHighlights.map(point => `
+                                    <li style="padding-left: var(--space-lg); position: relative; line-height: 1.7; color: var(--text-secondary);">
+                                        <span style="position: absolute; left: 0; color: var(--secondary-color);">→</span>
+                                        ${point}
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+
+                        <div class="analysis-block">
+                            <h4 style="color: var(--primary-color); margin-bottom: var(--space-md); display: flex; align-items: center; gap: var(--space-sm);">
+                                <span style="font-size: 1.5rem;">🎬</span> The Acting
+                            </h4>
+                            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--space-md);">
+                                ${movie.characterAnalysis.actingHighlights.map(point => `
+                                    <li style="padding-left: var(--space-lg); position: relative; line-height: 1.7; color: var(--text-secondary);">
+                                        <span style="position: absolute; left: 0; color: var(--secondary-color);">→</span>
+                                        ${point}
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+
+                        <div class="analysis-block" style="background: white; padding: var(--space-lg); border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                            <h4 style="color: var(--accent-color); margin-bottom: var(--space-md); display: flex; align-items: center; gap: var(--space-sm);">
+                                <span style="font-size: 1.5rem;">🌟</span> Standout Moments
+                            </h4>
+                            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--space-md);">
+                                ${movie.characterAnalysis.specialMoments.map(point => `
+                                    <li style="padding-left: var(--space-lg); position: relative; line-height: 1.7; color: var(--text-secondary);">
+                                        <span style="position: absolute; left: 0; color: var(--accent-color);">★</span>
+                                        ${point}
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                ` : ''}
+
                 <section class="content-section">
                     <h3>🎬 Watch the Trailer</h3>
                     <div class="video-container">
