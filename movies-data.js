@@ -649,6 +649,656 @@ const moviesData = [
         ],
         whyIncluded: 'Bicycle Thieves presents masculinity through economic vulnerability and emotional complexity rather than traditional strength. Antonio\'s journey shows how external pressures can challenge masculine identity while revealing deeper truths about fatherhood, dignity, and human connection. The film demonstrates that authentic masculinity includes the full range of human emotions and struggles, particularly the vulnerability that comes with caring for others.',
         seoKeywords: ['Antonio Ricci positive male role model', 'Bruno Ricci father-son relationship', 'fatherhood vulnerability film', 'Lamberto Maggiorani emotional performance', 'Italian neorealism masculinity', 'working class father dignity', 'paternal responsibility cinema', 'male economic vulnerability', 'Bicycle Thieves emotional depth', 'Vittorio De Sica male characters']
+    },
+    {
+        id: 'life-is-beautiful',
+        rank: 11,
+        title: 'Life is Beautiful',
+        year: 1997,
+        country: 'Italy',
+        director: 'Roberto Benigni',
+        actors: ['Roberto Benigni', 'Nicoletta Braschi', 'Giorgio Cantarini', 'Giustino Durano'],
+        duration: 'PT1H56M',
+        contentRating: 'PG-13',
+        genre: ['Comedy', 'Drama', 'War'],
+        shortDescription: 'Roberto Benigni\'s Oscar-winning masterpiece shows a father using humor and imagination to protect his son\'s innocence during the Holocaust, demonstrating sacrificial love as the ultimate expression of masculinity.',
+        description: 'Roberto Benigni\'s Academy Award-winning film tells the story of Guido, a Jewish Italian bookshop owner who uses his fertile imagination to shield his son from the horrors of a Nazi concentration camp. By convincing his son that the camp is an elaborate game with a tank as the grand prize, Guido demonstrates that fatherly love can transcend even the darkest circumstances. The film shows how humor, creativity, and unwavering devotion can protect innocence and maintain hope.',
+        tags: ['Holocaust', 'Father-Son', 'Sacrifice', 'Italian Cinema', 'Comedy-Drama'],
+        trailer: 'https://www.youtube.com/embed/pAYEQP8gx3w',
+        trailerThumbnail: 'https://img.youtube.com/vi/pAYEQP8gx3w/maxresdefault.jpg',
+        characters: [
+            {
+                name: 'Guido Orefice',
+                description: 'A charismatic Jewish-Italian man who uses humor and imagination to protect his son from the horrors of the Holocaust, showing that fatherly love knows no bounds.'
+            },
+            {
+                name: 'Giosué Orefice',
+                description: 'Guido\'s young son who believes his father\'s elaborate game, representing innocence preserved through parental sacrifice.'
+            },
+            {
+                name: 'Dora',
+                description: 'Guido\'s wife who voluntarily joins her family in the concentration camp, showing love and solidarity.'
+            }
+        ],
+        characterAnalysis: {
+            title: 'Comedy as Shield: Benigni\'s Revolutionary Performance',
+            writingHighlights: [
+                'Benigni co-wrote a screenplay that dares to find humor in humanity\'s darkest chapter—not mocking the Holocaust but showing how love can create light in darkness',
+                'The script\'s first half establishes Guido\'s comedic worldview so thoroughly that his later "game" feels like a natural extension of his character rather than a plot device',
+                'The screenplay never shows violence directly to Giosué, mirroring how Guido shields his son—the audience experiences the camp through the child\'s protected perspective'
+            ],
+            actingHighlights: [
+                'Benigni won the Oscar for a performance that required him to be genuinely funny while conveying underlying terror—his eyes betray fear that his body language conceals from his son',
+                'Giorgio Cantarini as Giosué delivers one of cinema\'s great child performances, his trust in his father creating unbearable tension for the audience who knows the truth',
+                'Benigni\'s physical comedy draws from silent film masters like Chaplin and Keaton, using pratfalls and gestures to maintain his son\'s belief in the "game"'
+            ],
+            specialMoments: [
+                'Guido\'s march to execution, performed as a comedic goose-step to make his hidden son laugh one last time, is devastatingly heroic',
+                'The tank scene where Giosué believes he\'s won transforms tragedy into triumph through a child\'s innocent perspective',
+                'The waiter scene where Guido pretends to translate the camp rules as game instructions showcases Benigni\'s improvisational brilliance'
+            ]
+        },
+        reviews: [
+            {
+                quote: 'Benigni has made an extraordinary film that manages to be both heartbreaking and life-affirming.',
+                source: 'Roger Ebert'
+            },
+            {
+                quote: 'A testament to the power of imagination and the lengths a parent will go to protect their child.',
+                source: 'The New York Times'
+            },
+            {
+                quote: 'One of the most daring and successful films about the Holocaust ever made.',
+                source: 'Variety'
+            }
+        ],
+        whyIncluded: 'Life is Beautiful exemplifies healthy masculinity through Guido\'s sacrificial love and protective creativity. Rather than using physical strength, he shields his son through imagination, humor, and unwavering emotional presence. The film shows that the ultimate expression of masculine strength is the willingness to sacrifice everything for one\'s child while maintaining hope and joy even in the darkest circumstances.',
+        seoKeywords: ['Guido Orefice positive male role model', 'Roberto Benigni father figure', 'sacrificial fatherhood film', 'Life is Beautiful masculinity', 'protecting innocence father', 'Holocaust father son story', 'humor as protection', 'Italian father positive portrayal', 'creative fatherhood cinema', 'Guido sacrifice love']
+    },
+    {
+        id: 'cinema-paradiso',
+        rank: 12,
+        title: 'Cinema Paradiso',
+        year: 1988,
+        country: 'Italy',
+        director: 'Giuseppe Tornatore',
+        actors: ['Philippe Noiret', 'Salvatore Cascio', 'Marco Leonardi', 'Jacques Perrin'],
+        duration: 'PT2H35M',
+        contentRating: 'PG',
+        genre: ['Drama', 'Romance'],
+        shortDescription: 'Giuseppe Tornatore\'s nostalgic masterpiece features Alfredo, a cinema projectionist who becomes a surrogate father and mentor, shaping a boy\'s life through wisdom, love, and the magic of movies.',
+        description: 'Cinema Paradiso tells the story of Salvatore "Totò" Di Vita, a successful film director who returns to his Sicilian village after learning of the death of Alfredo, the old projectionist who shaped his childhood. Through flashbacks, we see how Alfredo became a father figure to the fatherless boy, teaching him about cinema, life, and love. Their bond transcends the typical mentor relationship, showing how men can nurture and guide the next generation through patience, wisdom, and unconditional support.',
+        tags: ['Mentorship', 'Coming of Age', 'Nostalgia', 'Italian Cinema', 'Father Figure'],
+        trailer: 'https://www.youtube.com/embed/C0yVes4LmMg',
+        trailerThumbnail: 'https://img.youtube.com/vi/C0yVes4LmMg/maxresdefault.jpg',
+        characters: [
+            {
+                name: 'Alfredo',
+                description: 'The wise cinema projectionist who becomes a surrogate father to young Totò, teaching him about film, life, and the importance of following dreams.'
+            },
+            {
+                name: 'Salvatore "Totò" Di Vita',
+                description: 'A fatherless boy who finds guidance and love in Alfredo, growing up to become a renowned film director shaped by his mentor\'s wisdom.'
+            },
+            {
+                name: 'Young Totò',
+                description: 'The curious, persistent child whose love of cinema leads him to form a life-changing bond with Alfredo.'
+            }
+        ],
+        characterAnalysis: {
+            title: 'The Projectionist as Father: Philippe Noiret\'s Tender Wisdom',
+            writingHighlights: [
+                'Tornatore wrote Alfredo as the father he wished he had—a man who gives wisdom without judgment and love without conditions',
+                'The screenplay uses the projection booth as a sacred space where masculine mentorship occurs away from the outside world\'s expectations',
+                'Alfredo\'s advice to leave the village and never return seems cruel but reveals the script\'s deepest truth: sometimes love means pushing someone toward their potential'
+            ],
+            actingHighlights: [
+                'Philippe Noiret brings grandfatherly warmth to Alfredo while maintaining the authority of someone who has learned hard lessons—his advice carries weight because we sense his own regrets',
+                'Young Salvatore Cascio\'s chemistry with Noiret creates one of cinema\'s most believable surrogate father-son relationships',
+                'Jacques Perrin as adult Salvatore conveys a lifetime of gratitude and loss in the final scenes through minimal dialogue'
+            ],
+            specialMoments: [
+                'The final montage of kissing scenes that Alfredo saved creates cinema\'s most moving tribute to a mentor\'s understanding of what his student needed',
+                'Alfredo going blind while saving Totò from the fire shows sacrifice without sentimentality—Noiret plays the aftermath with dignity rather than self-pity',
+                'The confession scene where Alfredo admits he chased away Totò\'s love reveals the moral complexity of protective mentorship'
+            ]
+        },
+        reviews: [
+            {
+                quote: 'A love letter to cinema and to the mentors who shape our lives.',
+                source: 'The Guardian'
+            },
+            {
+                quote: 'Noiret gives one of the great performances as the projectionist who becomes father, teacher, and friend.',
+                source: 'Chicago Sun-Times'
+            },
+            {
+                quote: 'Tornatore has created an emotional masterpiece about memory, loss, and the bonds that shape us.',
+                source: 'Empire'
+            }
+        ],
+        whyIncluded: 'Cinema Paradiso showcases healthy masculinity through Alfredo\'s mentorship of Totò. As a surrogate father, Alfredo demonstrates patience, wisdom, and unconditional love. He teaches by example, shares his knowledge generously, and ultimately makes the difficult decision to push Totò toward his dreams even at the cost of their daily relationship. The film shows that masculine strength includes the nurturing of the next generation.',
+        seoKeywords: ['Alfredo positive male role model', 'Philippe Noiret mentor figure', 'Cinema Paradiso fatherhood', 'surrogate father film', 'mentor masculinity cinema', 'Alfredo Toto relationship', 'Italian cinema father figure', 'projectionist mentor', 'masculine mentorship film', 'nurturing male character']
+    },
+    {
+        id: 'hunt-for-the-wilderpeople',
+        rank: 13,
+        title: 'Hunt for the Wilderpeople',
+        year: 2016,
+        country: 'New Zealand',
+        director: 'Taika Waititi',
+        actors: ['Sam Neill', 'Julian Dennison', 'Rima Te Wiata', 'Rachel House'],
+        duration: 'PT1H41M',
+        contentRating: 'PG-13',
+        genre: ['Adventure', 'Comedy', 'Drama'],
+        shortDescription: 'Taika Waititi\'s heartwarming adventure follows a grumpy bushman who transforms from reluctant guardian to devoted protector of a troubled foster child, showing that family is what you make it.',
+        description: 'Hunt for the Wilderpeople follows Ricky Baker, a rebellious foster kid from the city, and his cantankerous foster uncle Hec as they become the subjects of a nationwide manhunt in the New Zealand bush. What begins as an unlikely pairing evolves into a genuine father-son bond as Hec learns to open his heart to the grieving boy. The film uses humor and adventure to explore themes of found family, grief, and the transformative power of connection.',
+        tags: ['Found Family', 'Adventure', 'New Zealand Cinema', 'Comedy', 'Foster Care'],
+        trailer: 'https://www.youtube.com/embed/dPaU4Gymt6c',
+        trailerThumbnail: 'https://img.youtube.com/vi/dPaU4Gymt6c/maxresdefault.jpg',
+        characters: [
+            {
+                name: 'Hector "Hec" Faulkner',
+                description: 'A gruff bushman who reluctantly becomes a father figure to Ricky, learning to open his heart and show affection despite his rough exterior.'
+            },
+            {
+                name: 'Ricky Baker',
+                description: 'A troubled foster kid who finds belonging and purpose through his relationship with Hec, transforming from delinquent to devoted son.'
+            },
+            {
+                name: 'Bella',
+                description: 'Hec\'s warm-hearted wife whose brief presence establishes the loving home that Ricky needs and Hec must learn to provide alone.'
+            }
+        ],
+        characterAnalysis: {
+            title: 'The Reluctant Father: Sam Neill\'s Gruff Tenderness',
+            writingHighlights: [
+                'Waititi adapts Barry Crump\'s novel with his signature humor while adding emotional depth—Hec\'s transformation feels earned rather than forced',
+                'The screenplay uses the manhunt as extended metaphor: Hec is literally running from responsibility until he realizes Ricky is worth fighting for',
+                'Ricky\'s haikus throughout the film provide poetic counterpoint to the adventure, showing the sensitive soul beneath his tough exterior'
+            ],
+            actingHighlights: [
+                'Sam Neill subverts his usual refined persona with a performance of grunts, reluctant smiles, and finally, open love—his "Son" at the film\'s end carries enormous weight',
+                'Julian Dennison matches Neill beat for beat, his Ricky combining street-smart toughness with desperate need for belonging',
+                'The chemistry between Neill and Dennison developed during filming—Waititi encouraged improvisation that created authentic bonding moments'
+            ],
+            specialMoments: [
+                'Hec\'s birthday present to Ricky—a carved tiki—shows masculine affection expressed through action rather than words',
+                'The "Skux Life" conversation where Hec tries to understand Ricky\'s slang demonstrates his effort to connect across generational and cultural divides',
+                'Hec choosing prison over letting Ricky return to foster care shows the ultimate transformation from reluctant guardian to devoted father'
+            ]
+        },
+        reviews: [
+            {
+                quote: 'Waititi has crafted a film that is both hilarious and deeply moving, anchored by Neill\'s wonderful performance.',
+                source: 'The Hollywood Reporter'
+            },
+            {
+                quote: 'A beautiful story about found family that never sacrifices humor for sentiment.',
+                source: 'IndieWire'
+            },
+            {
+                quote: 'Sam Neill gives the performance of his career as the reluctant father figure.',
+                source: 'RogerEbert.com'
+            }
+        ],
+        whyIncluded: 'Hunt for the Wilderpeople demonstrates healthy masculinity through Hec\'s transformation from closed-off loner to loving father figure. The film shows that masculine care can be expressed through action, protection, and eventually verbal affirmation. Hec learns that strength includes vulnerability, and that opening one\'s heart to a child in need is the most courageous thing a man can do.',
+        seoKeywords: ['Hec Faulkner positive male role model', 'Sam Neill father figure', 'Hunt for the Wilderpeople masculinity', 'reluctant father film', 'found family masculinity', 'Taika Waititi male characters', 'foster father positive portrayal', 'gruff tender father cinema', 'New Zealand fatherhood film', 'Hec Ricky relationship']
+    },
+    {
+        id: 'the-intouchables',
+        rank: 14,
+        title: 'The Intouchables',
+        year: 2011,
+        country: 'France',
+        director: 'Olivier Nakache, Éric Toledano',
+        actors: ['François Cluzet', 'Omar Sy', 'Anne Le Ny', 'Audrey Fleurot'],
+        duration: 'PT1H52M',
+        contentRating: 'R',
+        genre: ['Biography', 'Comedy', 'Drama'],
+        shortDescription: 'This French phenomenon depicts an unlikely friendship between a wealthy quadriplegic and his caregiver from the projects, showing that masculine connection transcends class, race, and physical ability.',
+        description: 'Based on a true story, The Intouchables follows the developing friendship between Philippe, a wealthy aristocrat left quadriplegic after a paragliding accident, and Driss, a young man from the Parisian projects hired as his caretaker. Their unlikely bond challenges both men to grow—Philippe learns to embrace life again while Driss discovers purpose and responsibility. The film celebrates male friendship that allows for vulnerability, joy, and genuine emotional connection.',
+        tags: ['Friendship', 'Biography', 'French Cinema', 'Disability', 'Class'],
+        trailer: 'https://www.youtube.com/embed/34WIbmXkewU',
+        trailerThumbnail: 'https://img.youtube.com/vi/34WIbmXkewU/maxresdefault.jpg',
+        characters: [
+            {
+                name: 'Philippe',
+                description: 'A wealthy quadriplegic who rediscovers joy through his friendship with Driss, learning that vulnerability can lead to genuine connection.'
+            },
+            {
+                name: 'Driss',
+                description: 'A young man from the projects who becomes Philippe\'s caregiver, discovering his capacity for responsibility, loyalty, and emotional depth.'
+            },
+            {
+                name: 'Yvonne',
+                description: 'Philippe\'s dedicated assistant who initially doubts Driss but comes to appreciate his positive impact on Philippe\'s life.'
+            }
+        ],
+        characterAnalysis: {
+            title: 'Breaking Barriers: The Chemistry of Cluzet and Sy',
+            writingHighlights: [
+                'The screenplay never treats Philippe\'s disability as his defining characteristic—he\'s presented first as a man with wit, desires, and flaws',
+                'Driss\'s humor isn\'t mocking but liberating—the script shows how refusing to treat Philippe as fragile actually respects his dignity',
+                'The directors based dialogue on the real Philippe Pozzo di Borgo\'s memoir, ensuring the friendship\'s development felt authentic rather than Hollywood-manufactured'
+            ],
+            actingHighlights: [
+                'François Cluzet conveys a full emotional range using only his face—his eyes communicate joy, despair, and eventually hope with remarkable precision',
+                'Omar Sy\'s infectious energy earned him a César Award, but his subtle moments of caring for Philippe reveal the depth beneath the humor',
+                'The actors developed genuine friendship during filming, with Sy visiting Cluzet at home to build the intimacy their characters share'
+            ],
+            specialMoments: [
+                'Driss shaving Philippe becomes a scene of intimate trust—two men comfortable with physical closeness without any awkwardness',
+                'The birthday paragliding sequence shows Philippe reclaiming his adventurous spirit through Driss\'s encouragement',
+                'The art gallery scene where Driss critiques modern art provides humor while showing Philippe valuing Driss\'s honest perspective over cultured pretension'
+            ]
+        },
+        reviews: [
+            {
+                quote: 'A feel-good film that earns every emotional beat through genuine chemistry and sharp writing.',
+                source: 'Le Monde'
+            },
+            {
+                quote: 'Omar Sy is a revelation, bringing joy and depth to a role that could have been one-dimensional.',
+                source: 'The Telegraph'
+            },
+            {
+                quote: 'The Intouchables proves that the best buddy films are about mutual transformation.',
+                source: 'Time Out'
+            }
+        ],
+        whyIncluded: 'The Intouchables showcases healthy masculinity through a friendship that allows both men to be vulnerable, joyful, and emotionally honest. Philippe shows that needing help doesn\'t diminish masculinity, while Driss demonstrates that care work and emotional availability are masculine strengths. Their relationship proves that male friendship can include physical care, emotional intimacy, and mutual growth.',
+        seoKeywords: ['Philippe Driss friendship', 'Omar Sy positive male role model', 'The Intouchables masculinity', 'male friendship film', 'caregiver masculinity cinema', 'French male friendship movie', 'vulnerability male friendship', 'François Cluzet emotional performance', 'men caring for men film', 'disability friendship positive']
+    },
+    {
+        id: 'departures',
+        rank: 15,
+        title: 'Departures',
+        year: 2008,
+        country: 'Japan',
+        director: 'Yojiro Takita',
+        actors: ['Masahiro Motoki', 'Tsutomu Yamazaki', 'Ryoko Hirosue', 'Kazuko Yoshiyuki'],
+        duration: 'PT2H10M',
+        contentRating: 'PG-13',
+        genre: ['Drama', 'Music'],
+        shortDescription: 'This Oscar-winning Japanese film follows a cellist who becomes a mortician, discovering dignity, purpose, and reconciliation with his absent father through the sacred art of preparing the dead.',
+        description: 'Departures tells the story of Daigo Kobayashi, a cellist whose orchestra disbands, forcing him to return to his hometown and accidentally take a job as a "nokanshi"—a traditional Japanese mortician who prepares bodies for cremation. Initially ashamed of his work, Daigo comes to see it as a profound calling that brings peace to the grieving. Through his work, he confronts his own feelings about his father who abandoned him as a child, ultimately finding understanding and forgiveness.',
+        tags: ['Death', 'Redemption', 'Japanese Cinema', 'Father-Son', 'Career Change'],
+        trailer: 'https://www.youtube.com/embed/PBycijMCYjs',
+        trailerThumbnail: 'https://img.youtube.com/vi/PBycijMCYjs/maxresdefault.jpg',
+        characters: [
+            {
+                name: 'Daigo Kobayashi',
+                description: 'A cellist-turned-mortician who discovers meaning in caring for the dead and ultimately reconciles with memories of his absent father.'
+            },
+            {
+                name: 'Sasaki',
+                description: 'The experienced mortician who mentors Daigo, teaching him that preparing bodies is a sacred act of love and respect.'
+            },
+            {
+                name: 'Mika',
+                description: 'Daigo\'s supportive wife who struggles to accept his profession but ultimately recognizes its profound importance.'
+            }
+        ],
+        characterAnalysis: {
+            title: 'Finding Dignity in Death: Motoki\'s Transformative Journey',
+            writingHighlights: [
+                'Screenwriter Kundo Koyama created Daigo\'s journey as a meditation on how caring for others transforms the caregiver',
+                'The script parallels Daigo\'s work with the dead to his emotional processing of his father\'s abandonment—both require gentle handling of what remains',
+                'Each encoffinment ceremony in the screenplay teaches Daigo something new about life, loss, and the love that persists after death'
+            ],
+            actingHighlights: [
+                'Masahiro Motoki trained with real nokanshi for months, and his precise, reverent movements in the ceremonies carry authentic spiritual weight',
+                'Tsutomu Yamazaki as Sasaki demonstrates mentorship through action rather than words—his silent expertise speaks volumes about masculine teaching',
+                'Motoki\'s face during the final ceremony with his father\'s body conveys forgiveness, grief, and love simultaneously'
+            ],
+            specialMoments: [
+                'The first encoffinment Daigo witnesses transforms his disgust into awe as he watches Sasaki work with reverent precision',
+                'Daigo playing cello for the dead in the crematorium creates the film\'s most transcendent moment of art honoring mortality',
+                'Finding the stone letter in his father\'s hand provides wordless reconciliation—Motoki\'s reaction earned the film\'s emotional climax'
+            ]
+        },
+        reviews: [
+            {
+                quote: 'A profound meditation on death that is somehow deeply life-affirming.',
+                source: 'Variety'
+            },
+            {
+                quote: 'Motoki gives a performance of extraordinary grace and sensitivity.',
+                source: 'The Japan Times'
+            },
+            {
+                quote: 'Departures finds beauty in the most unlikely of places and professions.',
+                source: 'The Hollywood Reporter'
+            }
+        ],
+        whyIncluded: 'Departures presents healthy masculinity through Daigo\'s journey from shame to pride in caring for others. His work as a mortician requires gentleness, respect, and emotional presence—qualities traditionally undervalued in men. The film shows that masculine strength includes caring for the vulnerable (even in death), processing grief honestly, and finding the courage to forgive. Sasaki models quiet mentorship and dignity in service.',
+        seoKeywords: ['Daigo Kobayashi positive male role model', 'Departures masculinity film', 'mortician caring profession', 'Japanese father son reconciliation', 'Masahiro Motoki emotional performance', 'Sasaki mentor figure', 'men in caring professions', 'dignity in death cinema', 'masculine caregiving film', 'forgiveness father abandonment']
+    },
+    {
+        id: 'shoplifters',
+        rank: 16,
+        title: 'Shoplifters',
+        year: 2018,
+        country: 'Japan',
+        director: 'Hirokazu Kore-eda',
+        actors: ['Lily Franky', 'Sakura Ando', 'Kirin Kiki', 'Jyo Kairi'],
+        duration: 'PT2H1M',
+        contentRating: 'R',
+        genre: ['Crime', 'Drama', 'Family'],
+        shortDescription: 'Kore-eda\'s Palme d\'Or winner explores an unconventional family of misfits bound by choice rather than blood, with Osamu showing that fatherhood is defined by love and presence, not biology.',
+        description: 'Shoplifters follows a family living on the margins of Tokyo society, surviving through petty theft and pooling their meager incomes. When they take in a neglected young girl from their neighborhood, we see how this found family—bound by choice rather than blood—provides love and belonging. Osamu, the patriarch, may teach questionable survival skills, but his genuine affection and attention to the children reveals what fatherhood truly means: being present, protective, and loving.',
+        tags: ['Found Family', 'Poverty', 'Japanese Cinema', 'Palme d\'Or', 'Social Drama'],
+        trailer: 'https://www.youtube.com/embed/9382rwoMiRc',
+        trailerThumbnail: 'https://img.youtube.com/vi/9382rwoMiRc/maxresdefault.jpg',
+        characters: [
+            {
+                name: 'Osamu Shibata',
+                description: 'A day laborer who becomes a father through choice, showing genuine love and attention to children abandoned by their biological parents.'
+            },
+            {
+                name: 'Shota',
+                description: 'A young boy taught to shoplift by Osamu who gradually questions their lifestyle, showing moral development nurtured by unconventional love.'
+            },
+            {
+                name: 'Yuri/Lin',
+                description: 'An abused girl taken in by the family, who experiences parental love perhaps for the first time.'
+            }
+        ],
+        characterAnalysis: {
+            title: 'Chosen Family: Kore-eda\'s Meditation on What Makes a Father',
+            writingHighlights: [
+                'Kore-eda wrote Osamu to challenge definitions of fatherhood—he teaches his children to steal but also how to feel loved and valued',
+                'The screenplay never judges the family\'s poverty or methods; instead, it asks whether love and presence matter more than legality and blood',
+                'Shota\'s moral crisis becomes the film\'s heart—his conscience, nurtured by Osamu\'s genuine care, leads him to question what he\'s been taught'
+            ],
+            actingHighlights: [
+                'Lily Franky plays Osamu with shambling warmth—his physical affection with the children feels completely natural and unforced',
+                'Young Jyo Kairi delivers a remarkable performance as Shota, his face registering the conflict between love for Osamu and growing moral awareness',
+                'The ensemble\'s lived-in intimacy came from Kore-eda\'s signature method of extensive rehearsals that blur the line between acting and being'
+            ],
+            specialMoments: [
+                'Osamu teaching Shota to shoplift is shot like a father teaching his son to fish—Kore-eda deliberately invokes warm family memories',
+                'The beach trip where the family experiences simple joy together creates an idyllic memory that makes the later tragedy more devastating',
+                'Osamu\'s confession that he only knew how to be a father this way—not through biology but through choosing to love—redefines fatherhood'
+            ]
+        },
+        reviews: [
+            {
+                quote: 'Kore-eda has made his masterpiece—a film that asks profound questions about family with no easy answers.',
+                source: 'The Guardian'
+            },
+            {
+                quote: 'Lily Franky is extraordinary as a father defined by love rather than convention.',
+                source: 'Sight & Sound'
+            },
+            {
+                quote: 'A tender, heartbreaking examination of what it means to be family.',
+                source: 'The New York Times'
+            }
+        ],
+        whyIncluded: 'Shoplifters challenges conventional ideas of fatherhood and masculinity by showing Osamu as a devoted parent whose methods may be questionable but whose love is genuine. The film demonstrates that masculine care is about presence, attention, and emotional availability rather than financial provision or biological connection. Osamu shows that choosing to love a child is the most important act of fatherhood.',
+        seoKeywords: ['Osamu Shibata positive male role model', 'Shoplifters fatherhood', 'chosen family masculinity', 'Hirokazu Kore-eda father figures', 'Lily Franky emotional performance', 'unconventional father film', 'found family Japanese cinema', 'fatherhood through choice', 'poverty and love cinema', 'Osamu Shota relationship']
+    },
+    {
+        id: 'kramer-vs-kramer',
+        rank: 17,
+        title: 'Kramer vs. Kramer',
+        year: 1979,
+        country: 'USA',
+        director: 'Robert Benton',
+        actors: ['Dustin Hoffman', 'Meryl Streep', 'Justin Henry', 'Jane Alexander'],
+        duration: 'PT1H45M',
+        contentRating: 'PG',
+        genre: ['Drama'],
+        shortDescription: 'Dustin Hoffman\'s Oscar-winning performance depicts a workaholic father who learns to become a present, nurturing parent when his wife leaves, revolutionizing cinema\'s portrayal of fatherhood.',
+        description: 'Kramer vs. Kramer follows Ted Kramer, a workaholic advertising executive whose wife Joanna leaves him and their young son Billy. Forced to become the primary parent for the first time, Ted transforms from an absent father into a devoted one, learning to make French toast, attend school events, and prioritize his son over his career. When Joanna returns to fight for custody, Ted must prove that fathers can be nurturing caregivers too.',
+        tags: ['Divorce', 'Fatherhood', 'Custody', 'American Cinema', 'Family Drama'],
+        trailer: 'https://www.youtube.com/embed/5Dy2bhSCjiU',
+        trailerThumbnail: 'https://img.youtube.com/vi/5Dy2bhSCjiU/maxresdefault.jpg',
+        characters: [
+            {
+                name: 'Ted Kramer',
+                description: 'A workaholic father who transforms into a devoted, nurturing parent, proving that men can be primary caregivers.'
+            },
+            {
+                name: 'Billy Kramer',
+                description: 'Ted\'s young son whose bond with his father deepens through their time alone together, showing children\'s need for paternal presence.'
+            },
+            {
+                name: 'Joanna Kramer',
+                description: 'Ted\'s wife whose departure forces his transformation, representing women\'s struggle for identity beyond motherhood.'
+            }
+        ],
+        characterAnalysis: {
+            title: 'Learning to Father: Hoffman\'s Career-Defining Transformation',
+            writingHighlights: [
+                'Robert Benton\'s screenplay was revolutionary for 1979—showing a father learning domestic skills that films had always assigned to mothers',
+                'The script doesn\'t vilify Joanna for leaving; instead, it suggests that Ted\'s absence forced her to choose between self and family',
+                'The French toast scenes bookend Ted\'s transformation—from disaster to competence—using a simple domestic task as metaphor for parenting growth'
+            ],
+            actingHighlights: [
+                'Hoffman insisted on using real emotions—when Billy falls in the playground, Hoffman\'s panic is genuine as he genuinely worried about young Justin Henry',
+                'Justin Henry became the youngest Oscar nominee ever; Hoffman treated him as a collaborator, building authentic father-son chemistry',
+                'The custody hearing scene required Hoffman to convey Ted\'s love for Billy while maintaining courtroom composure—his restrained tears are masterful'
+            ],
+            specialMoments: [
+                'The first morning French toast disaster establishes Ted\'s incompetence in ways that make his later competence meaningful',
+                'Ted rushing Billy to the hospital after the playground fall shows a father\'s protective instinct fully awakened',
+                'The final scene where Ted tells Billy that Joanna wants him back, promising "I\'m not going anywhere," redefines paternal commitment'
+            ]
+        },
+        reviews: [
+            {
+                quote: 'Hoffman gives the performance of his career as a man discovering what it means to be a father.',
+                source: 'Time Magazine'
+            },
+            {
+                quote: 'A landmark film that challenged assumptions about parenting and gender roles.',
+                source: 'The New York Times'
+            },
+            {
+                quote: 'Benton has created a deeply affecting portrait of a father learning to love.',
+                source: 'Variety'
+            }
+        ],
+        whyIncluded: 'Kramer vs. Kramer was groundbreaking in showing that fathers can be nurturing, domestic, and emotionally present caregivers. Ted\'s transformation from absent workaholic to devoted parent demonstrates that masculine identity can and should include caregiving. The film shows that learning to parent is a journey available to men, and that prioritizing a child over career is an act of masculine strength.',
+        seoKeywords: ['Ted Kramer positive male role model', 'Dustin Hoffman father role', 'Kramer vs Kramer fatherhood', 'single father film', 'learning to parent father', 'male caregiver cinema', 'workaholic father transforms', 'father custody film', '1970s fatherhood movie', 'Ted Billy relationship']
+    },
+    {
+        id: 'big-fish',
+        rank: 18,
+        title: 'Big Fish',
+        year: 2003,
+        country: 'USA',
+        director: 'Tim Burton',
+        actors: ['Ewan McGregor', 'Albert Finney', 'Billy Crudup', 'Jessica Lange'],
+        duration: 'PT2H5M',
+        contentRating: 'PG-13',
+        genre: ['Adventure', 'Drama', 'Fantasy'],
+        shortDescription: 'Tim Burton\'s fantastical tale explores father-son reconciliation as a dying man\'s tall tales reveal deeper truths about love, legacy, and how we become our fathers\' storytellers.',
+        description: 'Big Fish tells the story of William Bloom, who returns home to be with his dying father Edward, a man known for telling fantastical stories about his life. Frustrated by never knowing the truth behind the myths, William seeks to understand his father before it\'s too late. As he investigates Edward\'s stories, he discovers that the emotional truth within the tall tales matters more than literal facts, and that his father\'s storytelling was his way of processing and sharing his extraordinary love for life.',
+        tags: ['Father-Son', 'Fantasy', 'Storytelling', 'Reconciliation', 'American Cinema'],
+        trailer: 'https://www.youtube.com/embed/M2AqXi-ArpQ',
+        trailerThumbnail: 'https://img.youtube.com/vi/M2AqXi-ArpQ/maxresdefault.jpg',
+        characters: [
+            {
+                name: 'Edward Bloom',
+                description: 'A father whose fantastical stories frustrate his son but ultimately reveal deep truths about love, adventure, and the meaning of a life well-lived.'
+            },
+            {
+                name: 'Will Bloom',
+                description: 'Edward\'s son who must learn to understand his father\'s language of storytelling before it\'s too late.'
+            },
+            {
+                name: 'Young Edward Bloom',
+                description: 'The adventurous young man in Edward\'s stories, representing how we mythologize our lives and loves.'
+            }
+        ],
+        characterAnalysis: {
+            title: 'The Story of Stories: Fathers and the Myths They Tell',
+            writingHighlights: [
+                'John August\'s screenplay asks whether emotional truth matters more than factual accuracy—and decides definitively that it does',
+                'The script parallels Will\'s investigation of his father\'s life with his impending fatherhood, suggesting he\'ll need to understand before he can pass on wisdom',
+                'Edward\'s stories are revealed to have kernels of truth, showing that his "lies" were actually poetry—a father\'s way of making sense of an extraordinary ordinary life'
+            ],
+            actingHighlights: [
+                'Albert Finney brings warmth and frustrating charm to dying Edward—we understand why Will is exasperated while also loving this irrepressible man',
+                'Ewan McGregor as young Edward embodies pure optimism and adventure, creating the myth that makes the older Edward\'s claims believable',
+                'Billy Crudup conveys Will\'s journey from resentment to understanding through subtle shifts in how he listens to his father\'s stories'
+            ],
+            specialMoments: [
+                'Will finally telling his father a story—becoming Edward\'s narrator as he dies—is the ultimate act of filial love and reconciliation',
+                'The funeral scene where all of Edward\'s "characters" appear reveals that the stories were more true than false, just told in his own language',
+                'Edward becoming the big fish in the river transforms death into transcendence through the power of narrative'
+            ]
+        },
+        reviews: [
+            {
+                quote: 'Burton\'s most personal and emotionally resonant film, a meditation on fathers and sons.',
+                source: 'Roger Ebert'
+            },
+            {
+                quote: 'A beautiful exploration of how we understand our parents and eventually become them.',
+                source: 'The Guardian'
+            },
+            {
+                quote: 'Finney and McGregor create a seamless portrait of a man worth knowing.',
+                source: 'Entertainment Weekly'
+            }
+        ],
+        whyIncluded: 'Big Fish explores healthy masculinity through the lens of father-son reconciliation and storytelling. Edward shows that masculine expression can include fantasy, emotional truth, and the vulnerability of sharing one\'s inner life. Will\'s journey to understand his father—and finally speak his language—demonstrates that sons must accept their fathers\' humanity. The film shows that becoming a storyteller for your father is an act of love.',
+        seoKeywords: ['Edward Bloom positive male role model', 'Big Fish fatherhood', 'father son reconciliation film', 'Tim Burton father story', 'Albert Finney father role', 'storytelling masculinity cinema', 'Ewan McGregor young father', 'father son understanding movie', 'deathbed reconciliation film', 'mythologizing father cinema']
+    },
+    {
+        id: 'coco',
+        rank: 19,
+        title: 'Coco',
+        year: 2017,
+        country: 'Mexico/USA',
+        director: 'Lee Unkrich, Adrian Molina',
+        actors: ['Anthony Gonzalez', 'Gael García Bernal', 'Benjamin Bratt', 'Alanna Ubach'],
+        duration: 'PT1H45M',
+        contentRating: 'PG',
+        genre: ['Animation', 'Adventure', 'Family'],
+        shortDescription: 'Pixar\'s celebration of Mexican culture reveals a story of fathers and sons across generations, showing that family legacy is built on love, forgiveness, and remembering those who came before.',
+        description: 'Coco follows Miguel, a young boy who dreams of being a musician despite his family\'s generations-old ban on music. On Día de los Muertos, Miguel accidentally enters the Land of the Dead, where he meets his ancestors and uncovers the truth about his great-great-grandfather Héctor, who was not the villain the family believed but a devoted father desperate to return home to his daughter. The film celebrates family across generations and the importance of remembering and forgiving our ancestors.',
+        tags: ['Animation', 'Mexican Culture', 'Family Legacy', 'Pixar', 'Día de los Muertos'],
+        trailer: 'https://www.youtube.com/embed/Ga6RYejo6Hk',
+        trailerThumbnail: 'https://img.youtube.com/vi/Ga6RYejo6Hk/maxresdefault.jpg',
+        characters: [
+            {
+                name: 'Héctor',
+                description: 'Miguel\'s great-great-grandfather who was murdered trying to return home to his daughter, representing a father\'s love that transcends death.'
+            },
+            {
+                name: 'Miguel Rivera',
+                description: 'A young boy whose journey to the Land of the Dead teaches him about family legacy, forgiveness, and the fathers who shaped his lineage.'
+            },
+            {
+                name: 'Mamá Coco',
+                description: 'Héctor\'s elderly daughter whose fading memories threaten her father\'s existence, representing the importance of remembrance.'
+            }
+        ],
+        characterAnalysis: {
+            title: 'Remember Me: Fatherhood Beyond the Grave',
+            writingHighlights: [
+                'The screenplay redefines villainy—the true antagonist is forgetting, while the hero is a father whose only crime was trying to come home',
+                'Héctor\'s story inverts expectations: the "deadbeat dad" who abandoned his family was actually murdered while trying to return to them',
+                'The script uses the Día de los Muertos tradition to literalize how parents live on through their children\'s memories'
+            ],
+            actingHighlights: [
+                'Gael García Bernal voices Héctor with desperate charm—a trickster whose schemes are all aimed at seeing his daughter one more time',
+                'The Spanish and English voice casts worked together to ensure cultural authenticity in emotional delivery',
+                'Anthony Gonzalez brings genuine wonder and determination to Miguel, making his journey feel personal rather than just adventurous'
+            ],
+            specialMoments: [
+                'Héctor singing "Remember Me" as a lullaby to baby Coco—revealed to be a gentle father\'s song, not a performer\'s anthem—recontextualizes the entire film',
+                'Miguel singing to Mamá Coco and watching her remember her papá is Pixar\'s most emotionally devastating scene',
+                'Héctor\'s near-dissolution as he\'s forgotten makes the stakes of remembrance viscerally real'
+            ]
+        },
+        reviews: [
+            {
+                quote: 'Pixar\'s most emotionally powerful film, a celebration of family that transcends death.',
+                source: 'The Hollywood Reporter'
+            },
+            {
+                quote: 'Coco finds universal truth in specific cultural tradition, making Día de los Muertos meaningful to all audiences.',
+                source: 'IndieWire'
+            },
+            {
+                quote: 'A gorgeous, heartfelt film about the fathers we inherit and the legacies we carry.',
+                source: 'RogerEbert.com'
+            }
+        ],
+        whyIncluded: 'Coco presents healthy masculinity through Héctor, whose defining characteristic is his love for his daughter and his desperate desire to be remembered as her father. The film shows that a man\'s legacy is not fame or fortune but the love he leaves behind. Miguel learns that honoring one\'s ancestors—including understanding and forgiving the fathers who came before—is essential to becoming a good man himself.',
+        seoKeywords: ['Héctor Coco positive male role model', 'Pixar fatherhood film', 'Coco father daughter story', 'Mexican father representation', 'Gael García Bernal Héctor', 'Remember Me father song', 'Día de los Muertos father', 'family legacy masculinity', 'ancestors fatherhood cinema', 'Héctor Rivera father love']
+    },
+    {
+        id: 'dead-poets-society',
+        rank: 20,
+        title: 'Dead Poets Society',
+        year: 1989,
+        country: 'USA',
+        director: 'Peter Weir',
+        actors: ['Robin Williams', 'Robert Sean Leonard', 'Ethan Hawke', 'Josh Charles'],
+        duration: 'PT2H8M',
+        contentRating: 'PG',
+        genre: ['Drama'],
+        shortDescription: 'Robin Williams\' iconic role as an English teacher who inspires his students to seize the day demonstrates that masculine mentorship means awakening passion, authenticity, and the courage to think independently.',
+        description: 'Dead Poets Society follows John Keating, an unconventional English teacher at an elite boarding school who inspires his students to embrace poetry, passion, and independent thinking. Using unorthodox methods, Keating encourages his students to "seize the day" and find their own voices rather than conforming to expectations. His mentorship transforms several students, particularly the shy Todd and the conflicted Neil, though the film also shows the tragic consequences when youthful passion collides with rigid authority.',
+        tags: ['Education', 'Mentorship', 'Poetry', 'Coming of Age', 'Inspiration'],
+        trailer: 'https://www.youtube.com/embed/mRfS0GCkMrk',
+        trailerThumbnail: 'https://img.youtube.com/vi/mRfS0GCkMrk/maxresdefault.jpg',
+        characters: [
+            {
+                name: 'John Keating',
+                description: 'An English teacher who inspires students to think independently and embrace life fully, showing that mentorship means awakening passion and authenticity.'
+            },
+            {
+                name: 'Todd Anderson',
+                description: 'A shy student who finds his voice through Keating\'s encouragement, demonstrating the transformative power of believing in someone.'
+            },
+            {
+                name: 'Neil Perry',
+                description: 'A passionate student whose conflict between his dreams and his father\'s expectations ends in tragedy, showing the cost of suppressed authenticity.'
+            }
+        ],
+        characterAnalysis: {
+            title: 'O Captain, My Captain: Williams as the Teacher We Needed',
+            writingHighlights: [
+                'Tom Schulman\'s Oscar-winning screenplay presents Keating as an anti-conformist hero without making him infallible—his methods have real consequences',
+                'The script uses poetry as a vehicle for masculine emotional expression, showing boys that great men have always felt deeply',
+                'Neil\'s tragedy isn\'t Keating\'s failure but the inevitable collision between awakened passion and a father who refuses to see his son'
+            ],
+            actingHighlights: [
+                'Robin Williams restrains his comedic instincts to play Keating with gentle authority—his quiet moments are as powerful as his performances',
+                'Ethan Hawke\'s Todd transforms from frozen silence to passionate declaration in the "barbaric yawp" scene, one of cinema\'s great moments of emergence',
+                'Robert Sean Leonard makes Neil\'s desperation heartbreaking—we understand his choice even as we wish he\'d found another way'
+            ],
+            specialMoments: [
+                'Keating standing on his desk to see the world differently teaches through action rather than lecture',
+                'Todd\'s forced poetry improvisation—"a sweaty-toothed madman"—shows Keating drawing out what the student didn\'t know he had',
+                'The final "O Captain, My Captain" standing ovation demonstrates that Keating\'s teaching will live on through his students despite his dismissal'
+            ]
+        },
+        reviews: [
+            {
+                quote: 'Williams gives a performance of extraordinary warmth and inspiration.',
+                source: 'Roger Ebert'
+            },
+            {
+                quote: 'A powerful reminder of the teachers who change our lives.',
+                source: 'The New York Times'
+            },
+            {
+                quote: 'Weir has created a film that celebrates thinking for oneself while acknowledging its costs.',
+                source: 'Variety'
+            }
+        ],
+        whyIncluded: 'Dead Poets Society presents healthy masculinity through Keating\'s approach to mentoring young men. He teaches them that poetry, emotion, and passion are not contrary to masculinity but essential to a full life. His methods—standing on desks, ripping out textbook introductions, whispering "carpe diem"—show that masculine teaching can be creative, subversive, and deeply caring. He awakens his students to their own potential without imposing his answers on them.',
+        seoKeywords: ['John Keating positive male role model', 'Robin Williams teacher mentor', 'Dead Poets Society masculinity', 'carpe diem mentor', 'male teacher positive portrayal', 'poetry masculinity cinema', 'O Captain My Captain teacher', 'inspiring male teacher film', 'Todd Anderson transformation', 'awakening passion mentor']
     }
 ];
 
