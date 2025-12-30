@@ -205,19 +205,50 @@
             return urlParams.get('movie');
         }
 
+        // Generate character-focused keywords for SEO
+        function generateCharacterKeywords(movie) {
+            const characterNames = movie.characters ? movie.characters.map(c => c.name) : [];
+            const keywords = [
+                ...characterNames,
+                movie.title,
+                movie.director,
+                'positive male role model',
+                'healthy masculinity',
+                'emotional intelligence',
+                'vulnerability in men',
+                'non-toxic masculinity',
+                movie.country + ' cinema',
+                ...movie.tags
+            ];
+            return keywords.join(', ');
+        }
+
         // Generate keywords for a movie
         function generateKeywords(movie) {
             const baseKeywords = [
                 'healthy masculinity',
                 'positive male characters',
+                'positive male role models',
                 'emotional intelligence film',
+                'non-toxic masculinity',
+                'male vulnerability',
                 movie.title.toLowerCase(),
                 movie.country.toLowerCase() + ' cinema',
                 movie.year
             ];
 
+            // Add character names as keywords
+            const characterNames = movie.characters ? movie.characters.map(c => c.name.toLowerCase()) : [];
+
+            // Add actor names as keywords
+            const actorNames = movie.actors ? movie.actors.map(a => a.toLowerCase()) : [];
+
             const tagKeywords = movie.tags.map(tag => tag.toLowerCase());
-            return [...baseKeywords, ...tagKeywords].join(', ');
+
+            // Add SEO keywords if available
+            const seoKw = movie.seoKeywords ? movie.seoKeywords.map(k => k.toLowerCase()) : [];
+
+            return [...baseKeywords, ...characterNames, ...actorNames, ...tagKeywords, ...seoKw].join(', ');
         }
 
         // Update page metadata for SEO
@@ -248,7 +279,7 @@
             document.getElementById('twitterImage').setAttribute('content', `https://www.manfilms.com/images/${movie.id}.jpg`);
             document.getElementById('twitterImageAlt').setAttribute('content', `${movie.title} movie poster`);
 
-            // Enhanced Schema.org Movie with full metadata
+            // Enhanced Schema.org Movie with full metadata and characters as positive role models
             const schema = {
                 "@context": "https://schema.org",
                 "@type": "Movie",
@@ -268,10 +299,24 @@
                     "@type": "Person",
                     "name": actor
                 })) : [],
+                "character": movie.characters ? movie.characters.map(char => ({
+                    "@type": "Person",
+                    "name": char.name,
+                    "description": char.description,
+                    "additionalType": "https://schema.org/FictionalCharacter",
+                    "knowsAbout": ["healthy masculinity", "positive male role model", "emotional intelligence"]
+                })) : [],
                 "duration": movie.duration,
                 "contentRating": movie.contentRating,
                 "image": `https://www.manfilms.com/images/${movie.id}.jpg`,
                 "url": url,
+                "keywords": generateCharacterKeywords(movie),
+                "about": [
+                    {"@type": "Thing", "name": "healthy masculinity"},
+                    {"@type": "Thing", "name": "positive male role models"},
+                    {"@type": "Thing", "name": "emotional intelligence in men"},
+                    {"@type": "Thing", "name": "non-toxic masculinity"}
+                ],
                 "aggregateRating": {
                     "@type": "AggregateRating",
                     "ratingValue": "4.8",
@@ -294,6 +339,61 @@
                 }
             };
             document.getElementById('movieSchema').textContent = JSON.stringify(schema);
+
+            // Add Character FAQ Schema for AEO (Answer Engine Optimization)
+            const characterFAQ = {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": movie.characters ? movie.characters.slice(0, 3).map(char => ({
+                    "@type": "Question",
+                    "name": `Who is ${char.name} in ${movie.title} and why is this character a positive male role model?`,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": `${char.name} is a character in ${movie.title} (${movie.year}). ${char.description} This character exemplifies healthy masculinity through emotional intelligence, vulnerability, and authentic human connection.`
+                    }
+                })).concat([
+                    {
+                        "@type": "Question",
+                        "name": `Why is ${movie.title} a good example of healthy masculinity in film?`,
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": movie.whyIncluded
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": `What makes the male characters in ${movie.title} positive role models?`,
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": `The male characters in ${movie.title} demonstrate positive masculinity through: ${movie.characters ? movie.characters.map(c => c.name + ' - ' + c.description.split('.')[0]).join('; ') : 'emotional depth and authentic human connection'}. These characters show that true masculine strength comes from vulnerability, emotional intelligence, and caring for others.`
+                        }
+                    }
+                ]) : []
+            };
+            const faqSchemaScript = document.createElement('script');
+            faqSchemaScript.type = 'application/ld+json';
+            faqSchemaScript.textContent = JSON.stringify(characterFAQ);
+            document.head.appendChild(faqSchemaScript);
+
+            // Add Speakable Schema for Voice Search (AEO)
+            const speakableSchema = {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "name": `${movie.title} - Healthy Masculinity in Cinema`,
+                "speakable": {
+                    "@type": "SpeakableSpecification",
+                    "cssSelector": [".movie-title-main", ".content-section h3", ".content-section p", ".character-card"]
+                },
+                "about": {
+                    "@type": "Movie",
+                    "name": movie.title,
+                    "description": `${movie.title} is a film that portrays healthy masculinity and positive male role models. ${movie.shortDescription}`
+                }
+            };
+            const speakableSchemaScript = document.createElement('script');
+            speakableSchemaScript.type = 'application/ld+json';
+            speakableSchemaScript.textContent = JSON.stringify(speakableSchema);
+            document.head.appendChild(speakableSchemaScript);
 
             // VideoObject Schema for trailer
             if (movie.trailer) {

@@ -62,7 +62,8 @@ const moviesData = [
                 source: 'The Guardian'
             }
         ],
-        whyIncluded: 'A Separation exemplifies healthy masculinity through its male characters who face complex moral situations without resorting to violence or dominance. Nader shows emotional vulnerability while maintaining his principles, demonstrating that true strength comes from ethical consideration and emotional honesty. The film presents masculinity as compatible with caregiving, moral reflection, and emotional depth.'
+        whyIncluded: 'A Separation exemplifies healthy masculinity through its male characters who face complex moral situations without resorting to violence or dominance. Nader shows emotional vulnerability while maintaining his principles, demonstrating that true strength comes from ethical consideration and emotional honesty. The film presents masculinity as compatible with caregiving, moral reflection, and emotional depth.',
+        seoKeywords: ['Nader positive male role model', 'Peyman Moaadi healthy masculinity', 'Iranian film male characters', 'A Separation emotional intelligence', 'Nader caregiving father', 'Hodjat vulnerability', 'ethical masculinity cinema', 'Asghar Farhadi male characters', 'non-toxic masculinity Iranian cinema', 'moral complexity male protagonist']
     },
     {
         id: 'spirited-away',
@@ -126,7 +127,8 @@ const moviesData = [
                 source: 'The New York Times'
             }
         ],
-        whyIncluded: 'Spirited Away makes our list because Haku represents a new model of masculine strength - one based on emotional intelligence, protective care without possessiveness, and the courage to be vulnerable. He guides Chihiro not through dominance but through wisdom and support, showing that true masculine power lies in helping others discover their own strength. His relationship with Chihiro is built on mutual respect and emotional honesty.'
+        whyIncluded: 'Spirited Away makes our list because Haku represents a new model of masculine strength - one based on emotional intelligence, protective care without possessiveness, and the courage to be vulnerable. He guides Chihiro not through dominance but through wisdom and support, showing that true masculine power lies in helping others discover their own strength. His relationship with Chihiro is built on mutual respect and emotional honesty.',
+        seoKeywords: ['Haku positive male role model', 'Haku healthy masculinity Spirited Away', 'Hayao Miyazaki male characters', 'Studio Ghibli emotional intelligence', 'Haku protective without dominance', 'Japanese animation positive masculinity', 'Haku river spirit role model', 'nurturing male character anime', 'non-toxic masculinity animation', 'Spirited Away male vulnerability']
     },
     {
         id: 'moonlight',
@@ -190,7 +192,8 @@ const moviesData = [
                 source: 'Entertainment Weekly'
             }
         ],
-        whyIncluded: 'Moonlight revolutionizes our understanding of Black masculinity by showing a man who finds strength through vulnerability and self-acceptance rather than conforming to toxic stereotypes. Chiron\'s journey demonstrates that true masculine courage lies in being authentic to oneself, even when society demands otherwise. The film shows that emotional expression, gentleness, and same-sex love are compatible with masculine identity.'
+        whyIncluded: 'Moonlight revolutionizes our understanding of Black masculinity by showing a man who finds strength through vulnerability and self-acceptance rather than conforming to toxic stereotypes. Chiron\'s journey demonstrates that true masculine courage lies in being authentic to oneself, even when society demands otherwise. The film shows that emotional expression, gentleness, and same-sex love are compatible with masculine identity.',
+        seoKeywords: ['Chiron positive male role model', 'Juan Moonlight healthy masculinity', 'Mahershala Ali father figure', 'Black masculinity positive representation', 'Chiron vulnerability strength', 'Barry Jenkins male characters', 'Juan teaching swimming scene', 'Kevin Moonlight emotional connection', 'LGBTQ positive masculinity', 'Trevante Rhodes emotional performance']
     },
     {
         id: 'call-me-by-your-name',
@@ -254,7 +257,8 @@ const moviesData = [
                 source: 'The Guardian'
             }
         ],
-        whyIncluded: 'Call Me By Your Name presents masculinity as compatible with emotional openness, same-sex desire, and intellectual sensitivity. Elio embodies a new kind of male protagonist who isn\'t afraid to express his feelings, pursue beauty, and embrace vulnerability. The film shows that authentic masculinity includes the full spectrum of human emotion and connection, particularly through Professor Perlman\'s wisdom about preserving one\'s capacity to feel deeply.'
+        whyIncluded: 'Call Me By Your Name presents masculinity as compatible with emotional openness, same-sex desire, and intellectual sensitivity. Elio embodies a new kind of male protagonist who isn\'t afraid to express his feelings, pursue beauty, and embrace vulnerability. The film shows that authentic masculinity includes the full spectrum of human emotion and connection, particularly through Professor Perlman\'s wisdom about preserving one\'s capacity to feel deeply.',
+        seoKeywords: ['Elio Perlman positive male role model', 'Professor Perlman father speech', 'Timothée Chalamet vulnerability', 'Oliver healthy masculinity', 'LGBTQ positive male representation', 'father acceptance speech film', 'Elio emotional intelligence', 'Michael Stuhlbarg supportive father', 'Call Me By Your Name male vulnerability', 'Italian cinema positive masculinity']
     },
     {
         id: 'good-will-hunting',
@@ -318,7 +322,8 @@ const moviesData = [
                 source: 'Chicago Tribune'
             }
         ],
-        whyIncluded: 'Good Will Hunting demonstrates healthy masculinity through Sean\'s therapeutic approach and Will\'s emotional growth. The film shows that true masculine strength involves seeking help when needed, expressing emotions honestly, and building genuine connections. Sean models emotional intelligence and professional care, while Will\'s journey proves that vulnerability and healing are signs of courage, not weakness.'
+        whyIncluded: 'Good Will Hunting demonstrates healthy masculinity through Sean\'s therapeutic approach and Will\'s emotional growth. The film shows that true masculine strength involves seeking help when needed, expressing emotions honestly, and building genuine connections. Sean models emotional intelligence and professional care, while Will\'s journey proves that vulnerability and healing are signs of courage, not weakness.',
+        seoKeywords: ['Will Hunting positive male role model', 'Sean Maguire therapist mentor', 'Robin Williams healthy masculinity', 'it\'s not your fault scene', 'Matt Damon vulnerability', 'male friendship positive portrayal', 'Chuckie Sullivan loyalty', 'therapy masculinity film', 'men seeking help strength', 'Good Will Hunting emotional intelligence']
     },
     {
         id: 'pursuit-of-happyness',
@@ -382,7 +387,8 @@ const moviesData = [
                 source: 'People Magazine'
             }
         ],
-        whyIncluded: 'The Pursuit of Happyness showcases masculinity through caregiving, emotional resilience, and the willingness to sacrifice for others. Chris Gardner demonstrates that true masculine strength comes from nurturing relationships, persistent effort in the face of adversity, and the courage to pursue dreams while maintaining family responsibilities. His devotion to his son shows that being a provider means more than financial success.'
+        whyIncluded: 'The Pursuit of Happyness showcases masculinity through caregiving, emotional resilience, and the willingness to sacrifice for others. Chris Gardner demonstrates that true masculine strength comes from nurturing relationships, persistent effort in the face of adversity, and the courage to pursue dreams while maintaining family responsibilities. His devotion to his son shows that being a provider means more than financial success.',
+        seoKeywords: ['Chris Gardner positive male role model', 'Will Smith father role', 'devoted father film', 'fatherhood healthy masculinity', 'Chris Gardner perseverance', 'father-son relationship cinema', 'single father positive portrayal', 'resilience masculinity film', 'caregiving father movie', 'Pursuit of Happyness emotional strength']
     },
     {
         id: 'princess-mononoke',
@@ -446,7 +452,8 @@ const moviesData = [
                 source: 'The Guardian'
             }
         ],
-        whyIncluded: 'Princess Mononoke presents Ashitaka as an ideal of healthy masculinity through his approach to conflict resolution and relationship with nature. Rather than choosing sides in the human-nature conflict, he seeks understanding and balance. His respect for San as an equal partner and his willingness to suffer for his principles demonstrate that true masculine strength comes from empathy, wisdom, and the courage to stand for what\'s right.'
+        whyIncluded: 'Princess Mononoke presents Ashitaka as an ideal of healthy masculinity through his approach to conflict resolution and relationship with nature. Rather than choosing sides in the human-nature conflict, he seeks understanding and balance. His respect for San as an equal partner and his willingness to suffer for his principles demonstrate that true masculine strength comes from empathy, wisdom, and the courage to stand for what\'s right.',
+        seoKeywords: ['Ashitaka positive male role model', 'Ashitaka healthy masculinity', 'Hayao Miyazaki positive male characters', 'Ashitaka peacemaker', 'conflict resolution masculinity', 'Ashitaka respects women equals', 'environmental hero male character', 'Studio Ghibli male protagonists', 'Ashitaka wisdom compassion', 'Princess Mononoke male vulnerability']
     },
     {
         id: 'twelve-angry-men',
@@ -510,7 +517,8 @@ const moviesData = [
                 source: 'Variety'
             }
         ],
-        whyIncluded: '12 Angry Men demonstrates healthy masculinity through Juror #8\'s approach to conflict and justice. He shows that true masculine strength lies in moral courage, rational thinking, and the patience to change minds through reason rather than intimidation. The film illustrates how men can use their influence responsibly and demonstrates that standing alone for justice requires both intellectual and emotional strength.'
+        whyIncluded: '12 Angry Men demonstrates healthy masculinity through Juror #8\'s approach to conflict and justice. He shows that true masculine strength lies in moral courage, rational thinking, and the patience to change minds through reason rather than intimidation. The film illustrates how men can use their influence responsibly and demonstrates that standing alone for justice requires both intellectual and emotional strength.',
+        seoKeywords: ['Juror 8 positive male role model', 'Henry Fonda moral courage', 'Davis 12 Angry Men justice', 'standing alone for justice', 'rational masculinity film', 'moral courage male character', 'changing minds through reason', 'responsible male leadership', '12 Angry Men emotional intelligence', 'patience masculinity cinema']
     },
     {
         id: 'kings-speech',
@@ -574,7 +582,8 @@ const moviesData = [
                 source: 'Rolling Stone'
             }
         ],
-        whyIncluded: 'The King\'s Speech exemplifies healthy masculinity through its portrayal of vulnerability as strength and the importance of asking for help. King George VI demonstrates that true leadership comes not from perfection but from the courage to face one\'s limitations and grow. His relationship with Lionel Logue shows how men can support each other through professional and personal challenges while maintaining dignity and respect.'
+        whyIncluded: 'The King\'s Speech exemplifies healthy masculinity through its portrayal of vulnerability as strength and the importance of asking for help. King George VI demonstrates that true leadership comes not from perfection but from the courage to face one\'s limitations and grow. His relationship with Lionel Logue shows how men can support each other through professional and personal challenges while maintaining dignity and respect.',
+        seoKeywords: ['King George VI positive male role model', 'Bertie vulnerability strength', 'Colin Firth healthy masculinity', 'Lionel Logue supportive male friendship', 'men asking for help', 'overcoming speech impediment courage', 'male vulnerability leadership', 'Geoffrey Rush mentor role', 'Kings Speech emotional growth', 'men supporting each other film']
     },
     {
         id: 'bicycle-thieves',
@@ -638,7 +647,8 @@ const moviesData = [
                 source: 'Film Quarterly'
             }
         ],
-        whyIncluded: 'Bicycle Thieves presents masculinity through economic vulnerability and emotional complexity rather than traditional strength. Antonio\'s journey shows how external pressures can challenge masculine identity while revealing deeper truths about fatherhood, dignity, and human connection. The film demonstrates that authentic masculinity includes the full range of human emotions and struggles, particularly the vulnerability that comes with caring for others.'
+        whyIncluded: 'Bicycle Thieves presents masculinity through economic vulnerability and emotional complexity rather than traditional strength. Antonio\'s journey shows how external pressures can challenge masculine identity while revealing deeper truths about fatherhood, dignity, and human connection. The film demonstrates that authentic masculinity includes the full range of human emotions and struggles, particularly the vulnerability that comes with caring for others.',
+        seoKeywords: ['Antonio Ricci positive male role model', 'Bruno Ricci father-son relationship', 'fatherhood vulnerability film', 'Lamberto Maggiorani emotional performance', 'Italian neorealism masculinity', 'working class father dignity', 'paternal responsibility cinema', 'male economic vulnerability', 'Bicycle Thieves emotional depth', 'Vittorio De Sica male characters']
     }
 ];
 
