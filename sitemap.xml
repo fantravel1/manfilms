@@ -1,127 +1,222 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
     <!-- Homepage -->
     <url>
         <loc>https://www.manfilms.com/</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2026-01-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
-    
+
     <!-- About Page -->
     <url>
         <loc>https://www.manfilms.com/about.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2026-01-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    
+
     <!-- Blog Listing -->
     <url>
         <loc>https://www.manfilms.com/blog.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2026-01-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
-    
+
     <!-- Blog Posts -->
     <url>
         <loc>https://www.manfilms.com/blog-lack-representation.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2026-01-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-    
+
     <url>
         <loc>https://www.manfilms.com/blog-violence-vs-values.html</loc>
-        <lastmod>2025-01-12</lastmod>
+        <lastmod>2026-01-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-    
+
     <url>
         <loc>https://www.manfilms.com/blog-film-combinations.html</loc>
-        <lastmod>2025-01-10</lastmod>
+        <lastmod>2026-01-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-    
+
     <!-- Submissions Page -->
     <url>
         <loc>https://www.manfilms.com/submissions.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2026-01-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    
-    <!-- Individual Movie Pages -->
+
+    <!-- ==================== -->
+    <!-- Top 20 Individual Movie Pages -->
+    <!-- ==================== -->
+
+    <!-- #1 - A Separation (Iran, 2011) -->
     <url>
         <loc>https://www.manfilms.com/movie.html?movie=a-separation</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2026-01-02</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
-    
+
+    <!-- #2 - Spirited Away (Japan, 2001) -->
     <url>
         <loc>https://www.manfilms.com/movie.html?movie=spirited-away</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2026-01-02</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
-    
+
+    <!-- #3 - Moonlight (USA, 2016) -->
     <url>
         <loc>https://www.manfilms.com/movie.html?movie=moonlight</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2026-01-02</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
-    
+
+    <!-- #4 - Call Me By Your Name (Italy/USA, 2017) -->
     <url>
         <loc>https://www.manfilms.com/movie.html?movie=call-me-by-your-name</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2026-01-02</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
-    
+
+    <!-- #5 - Good Will Hunting (USA, 1997) -->
     <url>
         <loc>https://www.manfilms.com/movie.html?movie=good-will-hunting</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2026-01-02</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
-    
+
+    <!-- #6 - The Pursuit of Happyness (USA, 2006) -->
     <url>
         <loc>https://www.manfilms.com/movie.html?movie=pursuit-of-happyness</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2026-01-02</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
-    
+
+    <!-- #7 - Princess Mononoke (Japan, 1997) -->
     <url>
         <loc>https://www.manfilms.com/movie.html?movie=princess-mononoke</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2026-01-02</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
-    
+
+    <!-- #8 - 12 Angry Men (USA, 1957) -->
     <url>
         <loc>https://www.manfilms.com/movie.html?movie=twelve-angry-men</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2026-01-02</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
-    
+
+    <!-- #9 - The King's Speech (UK, 2010) -->
     <url>
         <loc>https://www.manfilms.com/movie.html?movie=kings-speech</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2026-01-02</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
-    
+
+    <!-- #10 - Bicycle Thieves (Italy, 1948) -->
     <url>
         <loc>https://www.manfilms.com/movie.html?movie=bicycle-thieves</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2026-01-02</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- #11 - Life is Beautiful (Italy, 1997) -->
+    <url>
+        <loc>https://www.manfilms.com/movie.html?movie=life-is-beautiful</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- #12 - Cinema Paradiso (Italy, 1988) -->
+    <url>
+        <loc>https://www.manfilms.com/movie.html?movie=cinema-paradiso</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- #13 - Hunt for the Wilderpeople (New Zealand, 2016) -->
+    <url>
+        <loc>https://www.manfilms.com/movie.html?movie=hunt-for-the-wilderpeople</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- #14 - The Intouchables (France, 2011) -->
+    <url>
+        <loc>https://www.manfilms.com/movie.html?movie=the-intouchables</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- #15 - Departures (Japan, 2008) -->
+    <url>
+        <loc>https://www.manfilms.com/movie.html?movie=departures</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- #16 - Shoplifters (Japan, 2018) -->
+    <url>
+        <loc>https://www.manfilms.com/movie.html?movie=shoplifters</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- #17 - Kramer vs. Kramer (USA, 1979) -->
+    <url>
+        <loc>https://www.manfilms.com/movie.html?movie=kramer-vs-kramer</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- #18 - Big Fish (USA, 2003) -->
+    <url>
+        <loc>https://www.manfilms.com/movie.html?movie=big-fish</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- #19 - Coco (USA/Mexico, 2017) -->
+    <url>
+        <loc>https://www.manfilms.com/movie.html?movie=coco</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- #20 - Dead Poets Society (USA, 1989) -->
+    <url>
+        <loc>https://www.manfilms.com/movie.html?movie=dead-poets-society</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
 </urlset>
