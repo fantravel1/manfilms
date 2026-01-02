@@ -1,25 +1,13 @@
-
 # Robots.txt for Cinema & Character (www.manfilms.com)
-# This file is used to manage crawler traffic to the website
 
-# Allow all crawlers
+# Allow all crawlers to access everything
 User-agent: *
 Allow: /
 
-# Specific directives for major search engines
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 1
+# Sitemap location - this is the key line for Google Search Console
+Sitemap: https://www.manfilms.com/sitemap.xml
 
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 1
-
-User-agent: Slurp
-Allow: /
-Crawl-delay: 1
-
-# Block bad bots
+# Block known bad/aggressive bots (optional)
 User-agent: AhrefsBot
 Disallow: /
 
@@ -31,19 +19,3 @@ Disallow: /
 
 User-agent: MJ12bot
 Disallow: /
-
-# Sitemap location
-Sitemap: https://www.manfilms.com/sitemap.xml
-
-# Allow access to all static assets
-Allow: *.css
-Allow: *.js
-Allow: *.jpg
-Allow: *.jpeg
-Allow: *.gif
-Allow: *.png
-Allow: *.svg
-Allow: *.webp
-
-# No restrictions on any pages - we want all content indexed
-# All pages are SEO-optimized and ready for indexing
